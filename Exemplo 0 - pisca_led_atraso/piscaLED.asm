@@ -1,18 +1,20 @@
 //--------------------------------------------------------------------------- //
-//		AVR e Arduino: Técnicas de Projeto, 2a ed. - 2012.					  //	
+//		AVR e Arduino: TÃ©cnicas de Projeto, 2a ed. - 2012.					  //	
 //--------------------------------------------------------------------------- //
 
-.equ LED   = PB5  		//LED é o substituto de PB5 na programação 
+.equ LED   = PB5  		//LED Ã© o substituto de PB5 na programaÃ§Ã£o 
 
-.ORG 0x000				//endereço de início de escrita do código 
-
+.ORG 0x000				//endereÃ§o de inÃ­cio de escrita do cÃ³digo 
+rjmp INICIO
+.include "lib328Pv01.inc"
 INICIO:
 	LDI R16,0xFF		//carrega R16 com o valor 0xFF
-	OUT DDRB,R16		//configura todos os pinos do PORTB como saída
+	OUT DDRB,R16		//configura todos os pinos do PORTB como saÃ­da
 
 PRINCIPAL:
       SBI PORTB, LED		//coloca o pino PB5 em 5V
-	 RCALL ATRASO		//chama a sub-rotina de atraso
+      ldi delay_time, 2 	; Carrega delay_time com
+      rcall delay_seconds	; Chama rotina de atraso
 	 CBI PORTB, LED 	//coloca o pino PB5 em 0V
 	 RCALL ATRASO		//chama a sub-rotina de atraso
 	 RJMP PRINCIPAL 	//volta para PRINCIPAL
@@ -21,9 +23,9 @@ PRINCIPAL:
 ATRASO:					//atraso de aprox. 200ms
 	LDI R19,16	
  volta:		
-	DEC  R17			//decrementa R17, começa com 0x00
+	DEC  R17			//decrementa R17, comeÃ§a com 0x00
 	BRNE volta 			//enquanto R17 > 0 fica decrementando R17
-	DEC  R18			//decrementa R18, começa com 0x00
+	DEC  R18			//decrementa R18, comeÃ§a com 0x00
 	BRNE volta			//enquanto R18 > 0 volta decrementar R18
 	DEC  R19			//decrementa R19
 	BRNE volta			//enquanto R19 > 0 vai para volta
