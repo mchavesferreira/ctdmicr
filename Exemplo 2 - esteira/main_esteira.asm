@@ -9,8 +9,8 @@
 ;====================================================================
 ; DEFINITIONS
 ;====================================================================
-.equ V1 = pb5	; SaÌda	(Atuador)	
-.equ M1 = pb4	; SaÌda (Atuador)				
+.equ V1 = pb5	; Sa√≠da	(Atuador)	
+.equ M1 = pb4	; Sa√≠da (Atuador)				
 .equ S1 = pb0	; Entrada  (Sensor)
 ;====================================================================
 ; VARIABLES
@@ -29,24 +29,24 @@
 .include "lib328Pv01.inc"
 Start:
       ; Write your code here
-      sbi ddrb,5	; Configura a porta pb5 como saÌda
-      sbi ddrb,4	; Configura a porta pb4 como saÌda
+      sbi ddrb,5	; Configura a porta pb5 como sa√≠da
+      sbi ddrb,4	; Configura a porta pb4 como sa√≠da
       cbi ddrb,0	; Configura a porta pb0 como entrada
       sbi portb,0	; SET 1Habilita resistor de pull-up na porta pb0
 Loop:
-      cbi portb,V1 	;Fecha a v·lvula v1
+      cbi portb,V1 	;Fecha a v√°lvula v1
       sbi portb,M1	; Aciona o motor M1
       
 
 S1_OFF:
-      sbis pinb,S1	; Pula a prÛxima instruÁ„o caso S1 esteja em 1 (Sensor desativado).Verifica se o pino PB0 est· em 1 (setado)e pula a prÛxima instruÁ„o
+      sbic pinb,S1	; Pula a pr√≥xima instru√ß√£o caso S1 esteja em 1 (Sensor desativado).Verifica se o pino PB0 est√° em 1 (setado)e pula a pr√≥xima instru√ß√£o
       rjmp S1_OFF	; Volta para S1_OFF caso pino em (0) sensor ativado
       
 S1_ON:
-      sbic pinb,S1	 	; Pula a prÛxima instruÁ„o caso S1 esteja em 0 (Sensor ativado). Verifica se o pino pb0 est· clear
+      sbis pinb,S1	 	; Pula a pr√≥xima instru√ß√£o caso S1 esteja em 0 (Sensor ativado). Verifica se o pino pb0 est√° clear
       rjmp S1_ON	 	; Volta para S1_ON
       cbi portb,M1	 	; Desliga o motor M1
-      sbi portb,V1	 	; Abre a v·vula V1
+      sbi portb,V1	 	; Abre a v√°vula V1
       ldi delay_time,5  	; Carrega delay_time com 5 (5 segundos)
       rcall delay_seconds	; Chama rotina de atraso
       rjmp  Loop
