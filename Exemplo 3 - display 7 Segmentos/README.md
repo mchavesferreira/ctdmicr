@@ -10,4 +10,4 @@
 <BR><img src=imagens/protoboard.png>
 <BR>Montagem em protoboard
 <BR><img src=imagens/7segmentos5.gif>
-<B>Vista do componente
+<Br>Vista do componente
