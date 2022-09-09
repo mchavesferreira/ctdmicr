@@ -9,3 +9,5 @@
 <br>Ligações ao microcontrolador
 <BR><img src=imagens/protoboard.png>
 <BR>Montagem em protoboard
+<BR><img src=imagens/7segmentos5.gif>
+<B>Vista do componente
