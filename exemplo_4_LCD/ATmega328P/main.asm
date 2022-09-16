@@ -27,114 +27,134 @@
 ;====================================================================
 .include "lib328Pv02.inc"
 Start:
-
-	rcall lcd_init	; Inicialização do LCD (VSS=GND VDD=5V VO=GND RS=PD2 RW=GND E=PD3           D4=PD4 D5=PD5 D6=PD6 D7=PD7 A=5V K=GND) 
+ cbi ddrb,0
+	sbi portb,0 ;PUUL-UP NA PB0
+	sbi ddrb,5
+	rcall lcd_init	; Init do LCD (VSS=GND VDD=5V VO=GND RS=PD2 RW=GND E=PD3           
+                        ; D4=PD4 D5=PD5 D6=PD6 D7=PD7 A=5V K=GND) 
 	rcall lcd_clear	; Chama rotina limpar o LCD e posicionar na linha 0, coluna 0
-	
-
-;;;;;;;  posiciona cursor
-	ldi lcd_col,3    ;define coluna3
+	ldi lcd_col,3 ;define coluna3
 	rcall lcd_lin0_col ;define linha 0
-    
-    rcall BemVindo
-
-	ldi delay_time,5			
-	rcall delay_seconds
-
-    rcall lcd_clear	; Chama rotina limpar o LCD e posicionar na linha 0, coluna 0
-	
-
-    rcall seunome
-    rcall seuprontuario
-
-
-Loop:
-    rjmp  Loop
-
-
-
-;;;;;;;  posiciona cursor
-	ldi lcd_col,1    ;define coluna3
-	rcall lcd_lin1_col ;define linha 1
-
-    ldi lcd_caracter,'V'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	
-     ldi lcd_caracter,'='
-	 rcall lcd_write_caracter  ; chama rotina para imprimir caracter  R19 >> lcd
-	
-
-
-
-
-
-
-
-;;;  biblioteca de frases
-
-;;;;;;;;;;;;;;;;;  escreve mensagem	letra por letra
-BemVindo:
-	ldi lcd_caracter,'B'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
+	ldi lcd_caracter,'C'			
+	rcall lcd_write_caracter				
+	ldi lcd_caracter,'A'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'R'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'R'
+	rcall lcd_write_caracter
 	ldi lcd_caracter,'E'
 	rcall lcd_write_caracter
-	ldi lcd_caracter,'M'
+	ldi lcd_caracter,'G'
 	rcall lcd_write_caracter
-	ldi lcd_caracter,' '
-    rcall lcd_write_caracter
-	ldi lcd_caracter,'V'
+	ldi lcd_caracter,'A'
 	rcall lcd_write_caracter
-    RET
-
-IFSP:
-	ldi lcd_caracter,'I'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	ldi lcd_caracter,'F'
+	ldi lcd_caracter,'N'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'D'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'O'
+	rcall lcd_write_caracter
+	
+	ldi lcd_col,0 ; define coluna 0
+	rcall lcd_lin1_col ; define linha 1,coluna 0
+	
+	ldi lcd_caracter,'C'			
+	rcall lcd_write_caracter				
+	ldi lcd_caracter,'A'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'I'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'X'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'A'
 	rcall lcd_write_caracter
 	ldi lcd_caracter,'S'
 	rcall lcd_write_caracter
+	ldi lcd_caracter,'='
+	rcall lcd_write_caracter
+	
+	ldi aux,0				
+	mov caixas,aux
+	ldi lcd_col,7
+	rcall lcd_lin1_col
+	mov lcd_number,caixas
+	rcall lcd_write_number
+
+Loop:
+	sbi portb,M1 ;liga o motor			
+SP1_ON:
+	sbic pinb,SP1 ;verifica se passou caixas			
+	rjmp SP1_ON					
+SP1_OFF:
+	sbis pinb,SP1				
+	rjmp SP1_OFF				
+	
+	inc caixas ; caixas=caixas+1					
+	
+	ldi lcd_col,7 ;atualiza o valor a patir da coluna 7
+	rcall lcd_lin1_col ;selecina coluna 7, linha1
+	mov lcd_number,caixas ; lcd_number=caixas
+	rcall lcd_write_number ;atualiza o nË™mero no LCD
+	
+	ldi aux,12 ;aux =12				
+	eor aux,caixas	;caixas = aux?			
+	breq ALERTA	;se sim desvia para alerta, se nâ€žo, volta para o loop				
+	
+	ldi delay_time,1			
+	rcall delay_seconds
+  rjmp  Loop
+
+ALERTA:
+	cbi portb,M1 	;desliga o motor			
+	ldi lcd_col,3 ; define linha3
+	rcall lcd_lin0_col ; define linha 0,couna 3
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
 	ldi lcd_caracter,'P'
 	rcall lcd_write_caracter
-	ldi lcd_caracter,64  ; = 65 no codigo ascii
+	ldi lcd_caracter,'R'
 	rcall lcd_write_caracter
-    RET
+	ldi lcd_caracter,'O'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'N'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'T'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'O'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi delay_time,1			
+	rcall delay_seconds
+	ldi lcd_col,3
+	rcall lcd_lin0_col
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi delay_time,1			
+	rcall delay_seconds
+	rjmp ALERTA
+;====================================================================
 
-seunome:
-	ldi lcd_col,1    ;define coluna3
-	rcall lcd_lin0_col ;define linha 0
-	ldi lcd_caracter,'C'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	ldi lcd_caracter,'h'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	ldi lcd_caracter,'a'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	ldi lcd_caracter,'v'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	ldi lcd_caracter,'e'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	ldi lcd_caracter,'s'	  ;; carrega letra entre aspas		
-	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-    RET
-
- seuprontuario:
-;;;;;;;  posiciona cursor
-	ldi lcd_col,0    ;define coluna5
-	rcall lcd_lin1_col ;define linha 1
-
-;;;;;;;;;;;;; imprimir numero	 20  21
-        
-        ldi lcd_number, 23   ;;; move para o registro da biblioteca LCD
-	    rcall lcd_write_number  ;; chama rotina para imprimir numero
-
-        ldi lcd_number, 21   ;;; move para o registro da biblioteca LCD
-	    rcall lcd_write_number  ;; chama rotina para imprimir numero 0 -99
-
-
-    ldi lcd_col,12    ;define coluna5
-	rcall lcd_lin1_col ;define linha 1
-
-
-        ldi lcd_number, 2   ;;; move para o registro da biblioteca LCD
-	    rcall lcd_write_numberunidade  ;; chama rotina para numero apenas uma unidade
-   
-       RET
