@@ -4,7 +4,7 @@ Exemplo modificar.
 <BR><img src=../imagens/maquinadelavar.png><BR>
 <BR>Etapas da maquina de lavar.
   
- <BR><img src=imagens/etapasmaquinalavar.png>
+ <BR><img src=imagens/etapas_maquina_lavar.png>
  <BR><BR>Esquema de uma maquina de lavar 
   <BR><img src=imagens/maquinalavartradicional.png>
   
