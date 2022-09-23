@@ -13,6 +13,6 @@ Teclas de atalho e tutorial para o <a href=https://docs.wokwi.com/pt-BR/guides/d
 <P> <BR>Exemplos de Códigos 
 <br>01 - <a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a><br>
 <BR> Exemplo Maquina de Lavar
-<br><img src=imagens/maquinadelavar.png>
-<BR> <a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar/ATmega328P>Maquina de lavar </a> - Código AVR assembly
+<br><a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar><img src=imagens/maquinadelavar.png border=0>
+<BR> <a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar>Maquina de lavar </a> - Código AVR assembly
 <br><a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
