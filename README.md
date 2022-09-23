@@ -11,7 +11,7 @@ Teclas de atalho e tutorial para o <a href=https://docs.wokwi.com/pt-BR/guides/d
 <BR>Exemplos de programas Assembly
 
 <P> <BR>Exemplos de Códigos 
-<br>01 - <a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a>
+<br>01 - <a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a><br>
 <BR> Exemplo Maquina de Lavar
 <br><img src=imagens/maquinadelavar.png>
 <BR> <a href=https://github.com/mchavesferreira/mcr/tree/main/maquina_lavar_asm>Maquina de lavar </a> - Código AVR assembly
