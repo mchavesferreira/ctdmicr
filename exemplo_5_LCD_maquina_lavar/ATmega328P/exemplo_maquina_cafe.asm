@@ -39,7 +39,7 @@ Start:
      LDI R16, 0b00111111
      OUT PORTB, R16  ;  Ativa pull-up
      LDI R16, 0b00011111;//carrega R16
-     OUT DDRC,R16		;//configura todos os pinos SAÕDA
+     OUT DDRC,R16		;//configura todos os pinos SA√çDA
 
 
 ;; carrega valores iniciais para tempos
@@ -57,7 +57,7 @@ Start:
 
 Inicio:
   ; inicializa lcd
-	rcall lcd_init	; InicializaÁ„o do LCD (VSS=GND VDD=5V VO=GND RS=PD2 RW=GND E=PD3           D4=PD4 D5=PD5 D6=PD6 D7=PD7 A=5V K=GND) 
+	rcall lcd_init	; Inicializa√ß√£o do LCD (VSS=GND VDD=5V VO=GND RS=PD2 RW=GND E=PD3           D4=PD4 D5=PD5 D6=PD6 D7=PD7 A=5V K=GND) 
 	
   
   
