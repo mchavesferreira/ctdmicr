@@ -12,6 +12,7 @@ Teclas de atalho e tutorial para o <a href=https://docs.wokwi.com/pt-BR/guides/d
 
 <P>  
 <br>01 - <a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a>
-
-<BR> <a href=https://github.com/mchavesferreira/mcr/tree/main/maquina_lavar_asm>Maquina de lavar </a>
-<br><a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a>
+<BR> Exemplo Maquina de Lavar
+<br><img src=imagens/maquinadelavar.png>
+<BR> <a href=https://github.com/mchavesferreira/mcr/tree/main/maquina_lavar_asm>Maquina de lavar </a> - Código AVR assembly
+<br><a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
