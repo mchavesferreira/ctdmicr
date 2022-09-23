@@ -1,4 +1,4 @@
-; Arquivo de sub-rotinas de uso geral para o ATMEGA328P - Vers„o 01
+; Arquivo de sub-rotinas de uso geral para o ATMEGA328P - Vers√£o 01
 
 .def delay_time = r25		
 .def display_number = r24		
@@ -116,7 +116,7 @@ eeprom_read:
 	in eeprom_number,EEDR				
 	ret
 	
-; ### Sub-rotina de configuraÁ„o da USART em 9600bps ###
+; ### Sub-rotina de configura√ß√£o da USART em 9600bps ###
 usart_init:
 	ldi r30,0			
 	sts UBRR0H,r30		 
@@ -126,7 +126,7 @@ usart_init:
 	sts UCSR0B,r30		 
 	ret					
 	
-; ### Sub-rotina para transmiss„o de caracter pela USART ###
+; ### Sub-rotina para transmiss√£o de caracter pela USART ###
 usart_transmit:
 	lds r30,UCSR0A		
 	sbrs r30,UDRE0     
@@ -134,7 +134,7 @@ usart_transmit:
 	sts UDR0,transmit_caracter		
 	ret					
 
-; ### Sub-rotina para transmiss„o de caracter pela USART ###
+; ### Sub-rotina para transmiss√£o de caracter pela USART ###
 usart_receive:
 	lds r30,UCSR0A		
 	sbrs r30,RXC0		
@@ -190,7 +190,7 @@ stop_timer1:
 	mov overflow_counter,r30
 	ret
 	
-; ### Sub-rotina para inicializaÁ„o do LCD no PORTD ###
+; ### Sub-rotina para inicializa√ß√£o do LCD no PORTD ###
 lcd_init:
 	sbi ddrd,2
 	sbi ddrd,3
