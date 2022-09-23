@@ -187,14 +187,14 @@ ldi lcd_col,15   ;define coluna0
     RET
 
 
-EscolhaAcucar :    ;; imprimir uma mensagem sobre Acuçar?
+EscolhaAcucar :    ;; imprimir uma mensagem sobre AcuÃ§ar?
     rcall lcd_clear	; Chama rotina limpar o LCD e posicionar na linha 0, coluna 0
 ;;;;;;;  posiciona cursor
 	ldi lcd_col,0   ;define coluna0
 	rcall lcd_lin0_col ;define linha 0
 	ldi lcd_caracter,'A'	  ;; carrega letra entre aspas		
 	rcall lcd_write_caracter  ; chama rotina para imprimir caracter
-	ldi lcd_caracter,'ç'
+	ldi lcd_caracter,'Ã§'
 	rcall lcd_write_caracter
 	ldi lcd_caracter,'u'
 	rcall lcd_write_caracter
