@@ -3,7 +3,7 @@
 //--------------------------------------------------------------------------- //
 
 
-.ORG 0x000				//endereço de início de escrita do código 
+.ORG 0x000				//endereÃ§o de inÃ­cio de escrita do cÃ³digo 
 
 INICIO:
      LDI R19, 0b00000111	//carrega R19 
@@ -16,7 +16,7 @@ PRINCIPAL:
      RJMP Principal
      RJMP ENCHER
 
-; Liga v‡lvula aguarda sensor cheio
+; Liga vâ€¡lvula aguarda sensor cheio
 ENCHER:
     SBI PORTB,0
     SBIC PINB,3
@@ -32,7 +32,7 @@ MISTURAR:
     CBI PORTB, 2
     RJMP ESVAZIAR
 
-; Liga v‡lvula 2 aguarda sensor vazio
+; Liga vâ€¡lvula 2 aguarda sensor vazio
 ESVAZIAR:
     SBI PORTB,1
     SBIC PINB,4
