@@ -10,12 +10,25 @@
 - [Diagrama de blocos](#Diagrama-de-blocos)
 - [Sistemas de clock](#Sistemas-de-clock)
 - [Sistema de Reset](#Sistema-de-Reset)
+- [Interrupção](#Interrupção)
+        - [Interrupção Externa](#Interrupção-Externa)
+        - [Timer 0](#Timer-0)
+        - [Timer 1]
+        - [Timer 2]
+- [Conversor AD]
+- [Comunições Seriais]
+        - [USART]
+        - [SPI]
+        - [I2C]
+- [Memória EEPROM]
+
+
 - [Projetos e Programas](#Projetos-e-Programas)
 	- [Pisca Led](#Pisca-Led)
 	- [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
 	- [Display LCD 16x2](#Display-LCD-16x2)
 	- [Maquina de Lavar](#Maquina-de-Lavar)
- 
+
 
 ## Simulador Wokwi e Atmel Studio
 
@@ -66,22 +79,23 @@ Para maximizar o desempenho e o paralelismo, o AVR usa uma arquitetura harvard �
 
 Durante o reset, todos os registradores de E/S são ajustados para seus valores iniciais, e o programa inicia a execução a partir do vetor de reset. Para o Atmel® ATmega328P, a instrução colocada no vetor de reset deve ser uma instrução RJMP – salto relativo – para a rotina de manipulação de reset. Se o programa nunca habilita uma fonte de interrupção, os vetores de interrupção não são usados e o código de programa regular pode ocupar nesses locais. Este também é o caso se o vetor de reset estiver na seção de aplicação enquanto os vetores de interrupção estiverem na seção de inicialização. As portas de E/S do AVR® são imediatamente redefinidas para seu estado inicial quando uma fonte de redefinição fica ativa. Isso não requer que nenhuma fonte de relógio esteja em execução. Após todas as fontes de reset ficarem inativas, um contador de atraso é invocado, estendendo o reset interno. Isso permite que a potência atinja um nível estável antes do início da operação normal. O tempo limite do contador de atraso é definido pelo usuário através dos fusíveis SUT e CKSEL. 
 
+## Interrupção
+	
+### Interrupção Externa)
+	
+### Timer 0
  
 ## Projetos e Programas
 
 ### Pisca Led
 
-	- [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
-	- [Display LCD 16x2](#Display-LCD-16x2)
-	- [Maquina de Lavar](#Maquina-de-Lavar)
+<details><summary>Código Exemplo Pisca Led</summary>
+<p>
 
-
-Pisca Led
-Código: 
 ```ruby  
 */
 //--------------------------------------------------------------------------- //
-//		AVR e Arduino: Técnicas de Projeto, 2a ed. - 2012.					  //	
+//		Fonte: AVR e Arduino: Técnicas de Projeto, 2a ed. - 2012.					  //	
 //--------------------------------------------------------------------------- //
 
 .equ LED   = PB5  		//LED é o substituto de PB5 na programação 
@@ -115,10 +129,14 @@ ATRASO:					//atraso de aprox. 200ms
 ```
 </p>
 </details> 
+
+Simulação:
 <a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a><br>
  
-LCD 16x2
-
+### Dislplay 7 Segmentos
+	
+### Display LCD 16x2
+	
 Montagem Exemplo 4, esteira com display LCD
 
 <img src=imagens/lcd_simulador.png><BR><br>
@@ -128,10 +146,12 @@ Enable > PD (8)
   
 Simulação online utilizando LCD16x2: <a href=https://wokwi.com/projects/342964449732198994>Exemplo LCD </a>
 
-<BR> Exemplo Maquina de Lavar
-<br><a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar><img src=imagens/maquinadelavar.png border=0>
-<BR> <a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar>Maquina de lavar </a> - Código AVR assembly
-<br><a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
+### Maquina deLavar	
+	
+Exemplo Maquina de Lavar
+<a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar><img src=imagens/maquinadelavar.png border=0>
+<a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar>Maquina de lavar </a> - Código AVR assembly
+<a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
 
 Referências:
 [1] Atmega 328P 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash - Datasheet
