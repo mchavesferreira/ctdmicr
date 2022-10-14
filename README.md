@@ -14,6 +14,8 @@
 
 ## Simulador Wokwi e Atmel Studio
 
+<center><img src=imagens/pinout_atmega328P.png></center>
+
 Simulador <a href=https://wokwi.com/projects/341066839950885460>Atmega328P Assembly Online</a>
 
 Teclas de atalho e tutorial para o <a href=https://docs.wokwi.com/pt-BR/guides/diagram-editor> Simulador Wokwi</a><P>
@@ -28,6 +30,8 @@ Instruções principais para a movimentação de bytes na memória do Atmega328
 <center><img src=https://raw.githubusercontent.com/mchavesferreira/smie/main/imagens/movimentacao_bits_bytes.png></center>
  
 ## Configuração de pinos
+
+<center><img src=imagens/pinout_atmega328P.png></center>
 
 ## Diagrama de blocos
 O Atmel® ATmega328P é um microcontrolador CMOS de 8 bits de baixa potência baseado na arquitetura RISC aprimorada AVR®. Ao executar instruções poderosas em um único ciclo de clock, o ATmega328P atinge taxas de transferência de aproximadamente 1MIPS por MHz, permitindo otimizar consumo de energia versus a velocidade de processamento.[1]
