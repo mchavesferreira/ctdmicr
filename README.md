@@ -1,10 +1,19 @@
-# smie
+# Microcontroladores e microprocessadores 
 
-<b>Links:</b><BR>
+ 
+## Utilizando Atmega328P para a compreensão de funcionamento de microprocessaores e microcontroles em geral utilizando a linguagem Assembly.
 
-Simulador Atmega Uno<a href=https://wokwi.com/projects/341066839950885460>Assembly Online</a>
-<BR>
+## Aulas
+- [Arduino Referências](#Referências-Arduino)
+- [Pinout Esp32](#pinout-esp32)
+- [Programas e Simuladores](#simulador-wokwi-e-Atmel-Studio)
+
+## Simulador Wokwi e Atmel Studio
+
+Simulador <a href=https://wokwi.com/projects/341066839950885460>Atmega328P Assembly Online</a>
+
 Teclas de atalho e tutorial para o <a href=https://docs.wokwi.com/pt-BR/guides/diagram-editor> Simulador Wokwi</a><P>
+
 <br>Atmel Studio:<a href=http://studio.download.atmel.com/7.0.2389/as-installer-7.0.2389-full.exe>Atmel Studio 7.0</a><BR>
 <br><a href=https://github.com/mchavesferreira/smie/blob/main/hexloader.zip>Hexloader</a>
 <img src=https://raw.githubusercontent.com/mchavesferreira/smie/main/imagens/movimentacao_bits_bytes.png>
