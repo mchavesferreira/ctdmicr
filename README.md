@@ -152,8 +152,11 @@ Simulação online utilizando LCD16x2: <a href=https://wokwi.com/projects/342964
 ### Maquina de Lavar	
 	
 Exemplo Maquina de Lavar
+	
 <a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar><img src=imagens/maquinadelavar.png border=0>
-<a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar>Maquina de lavar </a> - Código AVR assembly
+Maquina de lavar </a>
+	
+Código AVR assembly
 <a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
 
 Referências:
