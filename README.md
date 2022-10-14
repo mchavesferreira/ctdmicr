@@ -134,19 +134,22 @@ Simulação:
 <a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a><br>
  
 ### Dislplay 7 Segmentos
+
+	<a href=https://github.com/mchavesferreira/smie/tree/main/Exemplo%203%20-%20display%207%20Segmentos>Exemplo%203%20-%20display%207%20Segmentos/imagens/7segmentos5.gif> Exemplo Display 7 segmentos</a>	
 	
 ### Display LCD 16x2
 	
 Montagem Exemplo 4, esteira com display LCD
 
-<img src=imagens/lcd_simulador.png><BR><br>
-LCD  > AVR (arduino)
-RS > PD2 (9)
-Enable > PD (8)
+<img src=imagens/lcd_simulador.png>
+	
+	- LCD  > AVR (arduino);
+	- RS > PD2 (9)
+	- Enable > PD (8)
   
 Simulação online utilizando LCD16x2: <a href=https://wokwi.com/projects/342964449732198994>Exemplo LCD </a>
 
-### Maquina deLavar	
+### Maquina de Lavar	
 	
 Exemplo Maquina de Lavar
 <a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar><img src=imagens/maquinadelavar.png border=0>
@@ -155,5 +158,6 @@ Exemplo Maquina de Lavar
 
 Referências:
 [1] Atmega 328P 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash - Datasheet
-[2] <a href=https://github.com/mchavesferreira/mcr/blob/main/dicas%20de%20projetos/Dicas%20para%20projetos.pdf> Dicas de projeto</a>
+	
+[2] <a href=https://github.com/mchavesferreira/mcr/blob/main/dicas%20de%20projetos/Dicas%20para%20projetos.pdf>Dicas de projeto</a>
 
