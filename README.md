@@ -134,8 +134,6 @@ Simulação:
 <a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a><br>
  
 ### Dislplay 7 Segmentos
-
-	<a href=https://github.com/mchavesferreira/smie/tree/main/Exemplo%203%20-%20display%207%20Segmentos>Exemplo%203%20-%20display%207%20Segmentos/imagens/7segmentos5.gif> Exemplo Display 7 segmentos</a>	
 	
 ### Display LCD 16x2
 	
