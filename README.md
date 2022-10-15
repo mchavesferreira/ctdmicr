@@ -82,8 +82,9 @@ Durante o reset, todos os registradores de E/S são ajustados para seus valores 
 ## Interrupção
 	
 ### Interrupção Externa)
-	Slide, código para ativação de Int0 e Int1
-	<a href=https://github.com/mchavesferreira/smie/tree/main/interrupcao>Exemplo Interrupção externa</a>
+
+Slide, código para ativação de Int0 e Int1
+<a href=https://github.com/mchavesferreira/smie/tree/main/interrupcao>Exemplo Interrupção externa</a>
 	
 ### Timer 0
  
