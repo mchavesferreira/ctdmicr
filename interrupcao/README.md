@@ -37,6 +37,6 @@ Exemplo de um circuito para exemplificar a interrupção
 Esquema do livro:
 <img src=imagens/int0_livro.png>
 
-<a href=https://wokwi.com/projects/346138374477709906><img src=esquemasimula.png></a>
+<a href=https://wokwi.com/projects/346138374477709906><img src=imagens/esquemasimula.png></a>
 
 
