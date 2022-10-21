@@ -14,10 +14,10 @@
 
 ## Interrupção
 
-<img src=quadro_interrupcoes.png>
+<img src=imagens/quadro_interrupcoes.png>
 
 
 ### Interrupção Externa
 
 
-<img src=pinos_interrupcao_int01.png.png>
+<img src=imagens/pinos_interrupcao_int01.png.png>
