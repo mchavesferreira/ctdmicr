@@ -1,0 +1,62 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\TC0_CTC.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\Debug\TC0_CTC.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>TC0_CTC.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>TC0_CTC.map</FILE>
+  <FILE>TC0_CTC.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Start><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\TC0_CTC.asm</FILE><LINE>35</LINE></Start>
+  <TIM0_COMPA><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\TC0_CTC.asm</FILE><LINE>115</LINE></TIM0_COMPA>
+  <trata_TIM0_COMPB><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\TC0_CTC.asm</FILE><LINE>126</LINE></trata_TIM0_COMPB>
+  <delay_seconds><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>21</LINE></delay_seconds>
+  <loop_delay><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>25</LINE></loop_delay>
+  <delay_miliseconds><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>37</LINE></delay_miliseconds>
+  <loop_delayms><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>40</LINE></loop_delayms>
+  <delay_1microsecond><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>50</LINE></delay_1microsecond>
+  <display_write><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>70</LINE></display_write>
+  <display_show><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>84</LINE></display_show>
+  <display_loop><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>78</LINE></display_loop>
+  <display_off><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>93</LINE></display_off>
+  <eeprom_write><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>101</LINE></eeprom_write>
+  <eeprom_read><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>111</LINE></eeprom_read>
+  <usart_init><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>120</LINE></usart_init>
+  <usart_transmit><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>130</LINE></usart_transmit>
+  <usart_receive><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>138</LINE></usart_receive>
+  <analog_read><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>146</LINE></analog_read>
+  <loop_ad><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>151</LINE></loop_ad>
+  <pwm_write><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>159</LINE></pwm_write>
+  <start_timer1><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>172</LINE></start_timer1>
+  <stop_timer1><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>181</LINE></stop_timer1>
+  <lcd_init><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>194</LINE></lcd_init>
+  <pulse_enable><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>299</LINE></pulse_enable>
+  <lcd_write_caracter><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>261</LINE></lcd_write_caracter>
+  <lcd_clear><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>251</LINE></lcd_clear>
+  <loop_pulse><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>306</LINE></loop_pulse>
+  <lcd_lin0_col><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>314</LINE></lcd_lin0_col>
+  <lcd_lin1_col><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>324</LINE></lcd_lin1_col>
+  <lcd_write_number><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>334</LINE></lcd_write_number>
+  <lcd_show><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>346</LINE></lcd_show>
+  <lcd_loop><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\lib328Pv01.inc</FILE><LINE>340</LINE></lcd_loop>
+  <Loop><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\TC0_CTC.asm</FILE><LINE>109</LINE></Loop>
+  <apagavermelho><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\TC0_CTC.asm</FILE><LINE>121</LINE></apagavermelho>
+  <apagaamarelo><FILE>I:\assembly_aula\codigos\exemplos_timer_0_modos\TC0_CTC\TC0_CTC.asm</FILE><LINE>131</LINE></apagaamarelo>
+ </LABELS>
+</ASSEMBLER_INFO>
