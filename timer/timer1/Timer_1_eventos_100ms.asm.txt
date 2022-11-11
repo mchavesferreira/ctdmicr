@@ -8,7 +8,7 @@
 ; Prof. Marcos Chaves
 
 ;====================================================================
-;DEFINIÇÕES DA PORTAS E FLAGS
+;DEFINIÃ‡Ã•ES DA PORTAS E FLAGS
 ;===============================================================================
 ;FLAG 
 
@@ -123,7 +123,7 @@ Start:
 
     sei ; habilita as interrupcoes no microcontrolador
 
-	rcall lcd_init	; Inicialização do LCD (VSS=GND VDD=5V VO=GND RS=PD2 RW=GND E=PD3 D4=PD4 D5=PD5 D6=PD6 D7=PD7 A=5V K=GND) 
+	rcall lcd_init	; InicializaÃ§Ã£o do LCD (VSS=GND VDD=5V VO=GND RS=PD2 RW=GND E=PD3 D4=PD4 D5=PD5 D6=PD6 D7=PD7 A=5V K=GND) 
 	rcall lcd_clear	; Chama rotina limpar o LCD e posicionar na linha 0, coluna 0
 	
 	ldi lcd_col,0 ;define coluna3
@@ -173,8 +173,9 @@ evento_1seg:   ; eventos a cada 1 segundo
          reti
 
 aumenta_minutos:
+        clr segundos
         inc minutos
-
+       ;; comparar 60 ?
 	reti
 	
 
