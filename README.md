@@ -10,8 +10,7 @@
 - [Diagrama de blocos](#Diagrama-de-blocos)
 - [Sistemas de clock](#Sistemas-de-clock)
 - [Sistema de Reset](#Sistema-de-Reset)
-- [Interrupção](#Interrupção)<BR>
-- [Interrupção Externa]
+- [Interrupção Externa](#Interrupção)<BR>
 - [Temporização](#Temporização) : Timer 0, Timer 1, Timer 2 e PWM
 - [Conversor AD](#Conversor-AD) 
 - [Comunições Seriais](#Comunicação-Serial) 
