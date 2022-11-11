@@ -86,14 +86,15 @@ Slide, código para ativação de Int0 e Int1
 	
 ## Temporização
  
-## Projetos e Programas utilizando Timer 0 e Timer 1
-<a href=https://github.com/mchavesferreira/smie/tree/main/timer>Códigos</a>
+### Projetos e Programas utilizando Timer 0 e Timer 1 e PWM
+<a href=https://github.com/mchavesferreira/smie/tree/main/timer>Códigos</a> utilizando temporização e PWM
 <BR>
 
 ## Conversor AD
-
+Código para conversão AD utilizando periférico interno
 
 ## Comunicação Serial
+Comunicação UART 
 
 ### Pisca Led
 
