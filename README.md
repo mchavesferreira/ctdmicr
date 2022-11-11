@@ -10,17 +10,15 @@
 - [Diagrama de blocos](#Diagrama-de-blocos)
 - [Sistemas de clock](#Sistemas-de-clock)
 - [Sistema de Reset](#Sistema-de-Reset)
-- [Interrupção](#Interrupção)
-        - [Interrupção Externa](#Interrupção-Externa)
-        - [Timer 0]()
-        - [Timer 1]()
-        - [Timer 2]()
-- [Conversor AD]
-- [Comunições Seriais]
+- [Interrupção](#Interrupção)<BR>
+- [Interrupção Externa]
+- [Temporização](#Temporização) : Timer 0, Timer 1, Timer 2 e PWM
+- [Conversor AD](#Conversor-AD) 
+- [Comunições Seriais](#Comunicação-Serial) 
         - [USART]
         - [SPI]
         - [I2C]
-- [Memória EEPROM]
+- [Memória EEPROM](#Conversor-AD) 
 
 
 - [Projetos e Programas](#Projetos-e-Programas)
@@ -86,9 +84,16 @@ Durante o reset, todos os registradores de E/S são ajustados para seus valores 
 Slide, código para ativação de Int0 e Int1
 <a href=https://github.com/mchavesferreira/smie/tree/main/interrupcao>Exemplo Interrupção externa</a>
 	
-### Timer 0
+### Temporização
  
-## Projetos e Programas
+## Projetos e Programas utilizando Timer 0 e Timer 1
+<a href=https://github.com/mchavesferreira/smie/tree/main/timer>Códigos</a>
+<BR>
+
+### Conversor AD
+
+
+### Comunicação Serial) 
 
 ### Pisca Led
 
