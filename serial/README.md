@@ -31,6 +31,21 @@ usart_receive:
 	lds receive_caracter, UDR0		
 	ret
 ```  
+
+Exemplo enviando a palavra IFSP utilizando a biblioteca:
+```ruby
+.include "lib328Pv02.inc"
+     
+	rcall  usart_init ; configura a comunicacao serial em 9600 bps
+
+	ldi transmit_caracter,'I'	; carrega o caracter
+	rcall usart_transmit	; chama a rotina para transmitir o caracter com a USART	
+	ldi transmit_caracter,'F'
+	rcall usart_transmit
+	ldi transmit_caracter,'S'
+	rcall usart_transmit
+```  
+	
   
   Rotina para separação de caracteres em LCD ou em comunicações seriais
   
