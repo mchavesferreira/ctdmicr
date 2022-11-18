@@ -5,7 +5,20 @@ Conversão AD (analógica para Digital)
  <img src=imagens/conversorAd_blocos.png><P>
  
  Utilizando biblioteca
- 
+ ```ruby
+ ; ### Sub-rotina ADC com 8 bits => LSB = Vref/(2^n-1) = 5/255 =~ 20mV => 0b00000001 =~ 20mV ###
+analog_read:
+	ldi r30,0b00100000
+	sts ADMUX,r30
+	ldi r30,0b11000111
+	sts ADCSRA,r30
+loop_ad:
+	lds r30, ADCSRA		
+	sbrc r30, ADSC		
+	rjmp loop_ad 
+	lds adc_value,ADCH
+	ret
+ ```
 
 Exemplo de desvios por comparação
 > < ou =
