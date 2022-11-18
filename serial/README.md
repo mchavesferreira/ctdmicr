@@ -1,4 +1,17 @@
+Comunicações seriais disponíveis no ATMEGA 328P
+- Usart
+- SPI
+- I2C
 
+<br><img src=imagens/link.png>
+<br><img src=imagens/assincrona.png>
+<br><img src=imagens/modos.png>
+<br><img src=imagens/serialparalelo.png>
+<br><img src=imagens/vantagensserial.png>	 
+<br><img src=imagens/sincrona.png>
+<br><img src=imagens/usart.png>
+
+	 
 
 Utilizando a biblioteca para comunicação serial
 ```ruby
@@ -43,6 +56,8 @@ Exemplo enviando a palavra IFSP utilizando a biblioteca:
 	ldi transmit_caracter,'F'
 	rcall usart_transmit
 	ldi transmit_caracter,'S'
+	rcall usart_transmit
+	ldi transmit_caracter,'P'
 	rcall usart_transmit
 ```  
 	
@@ -89,3 +104,104 @@ findunidades:
   
 ```
 
+Exemplo utilizando a comunicação serial para configurar uma saida PWM
+<details><summary>Código PWM/Serial</summary>
+<p>
+```ruby
+.include "lib328Pv02.inc"
+Start:
+      ; Write your code here
+	rcall  usart_init ; configura a comunicaÁ„o serial em 36®00 bps
+
+	ldi transmit_caracter,'+'	; carrega o caracter
+	rcall usart_transmit	;transmite o caracter	
+	ldi transmit_caracter,' '
+	rcall usart_transmit
+	ldi transmit_caracter,'A'
+	rcall usart_transmit
+	ldi transmit_caracter,'u'
+	rcall usart_transmit
+	ldi transmit_caracter,'m'
+	rcall usart_transmit
+	ldi transmit_caracter,'e'
+	rcall usart_transmit
+	ldi transmit_caracter,'n'
+	rcall usart_transmit
+	ldi transmit_caracter,'t'
+	rcall usart_transmit
+	ldi transmit_caracter,'a'
+	rcall usart_transmit
+	
+	ldi transmit_caracter,10
+	rcall usart_transmit
+	ldi transmit_caracter,13
+	rcall usart_transmit
+	
+	ldi transmit_caracter,'-'	
+	rcall usart_transmit		
+	ldi transmit_caracter,' '
+	rcall usart_transmit
+	ldi transmit_caracter,'D'
+	rcall usart_transmit
+	ldi transmit_caracter,'i'
+	rcall usart_transmit
+	ldi transmit_caracter,'m'
+	rcall usart_transmit
+	ldi transmit_caracter,'i'
+	rcall usart_transmit
+	ldi transmit_caracter,'n'
+	rcall usart_transmit
+	ldi transmit_caracter,'u'
+	rcall usart_transmit
+	ldi transmit_caracter,'i'
+	rcall usart_transmit
+	
+	ldi transmit_caracter,10
+	rcall usart_transmit
+	ldi transmit_caracter,13
+	rcall usart_transmit
+	
+	ldi transmit_caracter,'A'	
+	rcall usart_transmit		
+	ldi transmit_caracter,'P'
+	rcall usart_transmit
+	ldi transmit_caracter,'E'
+	rcall usart_transmit
+	ldi transmit_caracter,'R'
+	rcall usart_transmit
+	ldi transmit_caracter,'T'
+	rcall usart_transmit
+	ldi transmit_caracter,'E'
+	rcall usart_transmit
+	ldi transmit_caracter,':'
+	rcall usart_transmit
+	
+	ldi transmit_caracter,10	
+	rcall usart_transmit		
+	ldi transmit_caracter,13	
+	rcall usart_transmit
+Loop:
+	  rcall usart_receive; aguarda a recepÁ„o de um caracter
+	  ldi aux,'+'
+	  eor aux,receive_caracter ;receive_caracter='+'?	
+	  breq mais ; sim, desvia para mais
+      ldi aux,'-'			 
+	  eor aux,receive_caracter ; receive _caracter='-'?	
+	  breq menos ;sim,desvia para menos
+      rjmp  Loop
+
+mais:
+	ldi aux,5
+	add pwm_value,aux ;pwm_value=pwm_value-5 (add=soma)
+	rcall pwm_write ;executa modulaÁ„o pwm
+	rjmp Loop
+	
+menos:
+	ldi aux,5
+	sbc pwm_value,aux ;pwm_value=pwm_value-5 (sbc=subtrai)
+	rcall pwm_write  ;executa modulaÁ„o pwm
+	rjmp Loop
+```
+
+</p>
+</details>
