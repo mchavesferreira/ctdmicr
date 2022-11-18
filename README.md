@@ -89,7 +89,7 @@ Durante o reset, todos os registradores de E/S são ajustados para seus valores 
 <br><img src=imagens/atraso.jpg>
 
 Código:
-```
+```ruby
 //--------------------------------------------------------------------------- //
 // EXEMPLO 					  //	
 //--------------------------------------------------------------------------- //
