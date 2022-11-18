@@ -10,6 +10,7 @@
 - [Diagrama de blocos](#Diagrama-de-blocos)
 - [Sistemas de clock](#Sistemas-de-clock)
 - [Sistema de Reset](#Sistema-de-Reset)
+- [Assembly-primeiro programa](#Assembly-Primeiro-programa)
 - [Interrupção Externa](#Interrupção)<BR>
 - [Temporização](#Temporização) : Timer 0, Timer 1, Timer 2 e PWM
 - [Conversor AD](#Conversor-AD) 
@@ -75,6 +76,17 @@ Para maximizar o desempenho e o paralelismo, o AVR usa uma arquitetura harvard �
 <center><img src=imagens/sistema_reset.png>Lógica Reset</center>
 
 Durante o reset, todos os registradores de E/S são ajustados para seus valores iniciais, e o programa inicia a execução a partir do vetor de reset. Para o Atmel® ATmega328P, a instrução colocada no vetor de reset deve ser uma instrução RJMP – salto relativo – para a rotina de manipulação de reset. Se o programa nunca habilita uma fonte de interrupção, os vetores de interrupção não são usados e o código de programa regular pode ocupar nesses locais. Este também é o caso se o vetor de reset estiver na seção de aplicação enquanto os vetores de interrupção estiverem na seção de inicialização. As portas de E/S do AVR® são imediatamente redefinidas para seu estado inicial quando uma fonte de redefinição fica ativa. Isso não requer que nenhuma fonte de relógio esteja em execução. Após todas as fontes de reset ficarem inativas, um contador de atraso é invocado, estendendo o reset interno. Isso permite que a potência atinja um nível estável antes do início da operação normal. O tempo limite do contador de atraso é definido pelo usuário através dos fusíveis SUT e CKSEL. 
+
+## Assembly Primeiroprograma
+
+<br><img src=imagens/oprojeto.png>
+<br><img src=imagens/configuracaopinos.png>
+<br><img src=imagens/inicio.png>
+<br><img src=imagens/principal.png>
+<br><img src=imagens/encher.png>
+<br><img src=imagens/misturar.png>
+<br><img src=imagens/esvaziar.png>
+<br><img src=imagens/atraso.png>
 
 ## Interrupção
 	
