@@ -172,7 +172,10 @@ Código para conversão AD utilizando periférico interno
 <a href=https://github.com/mchavesferreira/smie/tree/main/conversor_ad>Saiba mais sobre o conversor AD</a>
 
 ## Comunicação Serial
+
 Comunicação UART 
+
+<a href=https://github.com/mchavesferreira/smie/tree/main/serial>Saiba mais sobre a comunicação serial</a>
 
 ### Pisca Led
 
