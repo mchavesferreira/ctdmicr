@@ -26,7 +26,31 @@ Comunicação síncrona possui uma via de sinal de sincronismo (clock)
 A comunicação USART, a mesa utilizada em RS232
 <br><img src=imagens/usart.png>
 
+Registradores importantes para configuração da comnicação
+UBRR0H e  UBRR0L //Ajusta a taxa de transmissão
+UCSR0B   //Habilita o transmissor e o receptor 
+UCSR0C  //Ajusta o formato do frame:
 
+Exemplo em C para transmitir um caractere
+<BR><img src=imagens/mototransmissao.png>
+	
+Exemplo em C para receber um caractere
+<BR><img src=imagens/mototransmissao.png>
+	
+Registradores de controle
+<BR><img src=imagens/controlandStatusregistera.png>
+<BR><img src=imagens/controlandStatusregisterb.png>
+<BR><img src=imagens/controlandStatusregisterc.png>
+
+Ajuste de baud rate register
+<BR><img src=imagens/baudrateregister.png>
+	
+Ajuste do frame de comunicação
+<BR><img src=imagens/ajustedosbits.png>	
+	
+Equações para o cálculo do registrador UBRR0 da taxa de transmissão
+<BR><img src=imagens/equacoesbaud.png>	
+	
 Utilizando a biblioteca para comunicação serial
 ```ruby
 .def transmit_caracter = r21	
