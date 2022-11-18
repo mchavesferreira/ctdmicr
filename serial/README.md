@@ -1,7 +1,7 @@
 
 
 Utilizando a biblioteca para comunicação serial
-```java
+```ruby
 .def transmit_caracter = r21	
 .def receive_caracter = r15	
 
@@ -34,7 +34,7 @@ usart_receive:
   
   Rotina para separação de caracteres em LCD ou em comunicações seriais
   
-```java  
+```ruby 
   ; ### Sub-rotina para escrever um numero de 0 a 255 no LCD ###
 lcd_write_number_0_999:
 	clr   centenas
@@ -60,8 +60,8 @@ findunidades:
 	mov   unidades,lcd_numberL
 	ldi r29,48
  	add centenas,r29   ;  soma 48 para tabela ascii
-  add dezenas,r29
-  add unidades,r29
+ 	add dezenas,r29
+ 	add unidades,r29
 	mov lcd_caracter,centenas 
 	rcall lcd_write_caracter
 	mov lcd_caracter,dezenas
