@@ -93,7 +93,7 @@ Durante o reset, todos os registradores de E/S são ajustados para seus valores 
 </details>
 	
 Código para o primeiro programa
-```asm
+```java
 //--------------------------------------------------------------------------- //
 // EXEMPLO 					  //	
 //--------------------------------------------------------------------------- //
