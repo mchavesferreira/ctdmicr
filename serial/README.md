@@ -3,15 +3,29 @@ Comunicações seriais disponíveis no ATMEGA 328P
 - SPI
 - I2C
 
+A importância de uma comunicação entre periféricos ou meio externo
 <br><img src=imagens/link.png>
-<br><img src=imagens/assincrona.png>
+
+
+Modos de comunicação em apenas uma direção ou simultânea
 <br><img src=imagens/modos.png>
+
+Comunicações paralela/série
 <br><img src=imagens/serialparalelo.png>
-<br><img src=imagens/vantagensserial.png>	 
+
+Vantagens e desvantagens das comunicações série/paralelo
+<br><img src=imagens/vantagensserial.png>	
+
+
+Comunicações Assíncronas não utilizam clock e estabelecem tempo para o envio ou tempo de cada caractere
+<br><img src=imagens/assincrona.png>
+
+Comunicação síncrona possui uma via de sinal de sincronismo (clock)
 <br><img src=imagens/sincrona.png>
+
+A comunicação USART, a mesa utilizada em RS232
 <br><img src=imagens/usart.png>
 
-	 
 
 Utilizando a biblioteca para comunicação serial
 ```ruby
@@ -181,7 +195,7 @@ Start:
 	ldi transmit_caracter,13	
 	rcall usart_transmit
 Loop:
-	  rcall usart_receive; aguarda a recepÁ„o de um caracter
+	  rcall usart_receive; aguarda a recepcao de caracter
 	  ldi aux,'+'
 	  eor aux,receive_caracter ;receive_caracter='+'?	
 	  breq mais ; sim, desvia para mais
