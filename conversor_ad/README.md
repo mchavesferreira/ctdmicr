@@ -1,5 +1,11 @@
 
+Conversão AD (analógica para Digital)
 
+<img src=imagens/conversor_ad.png><P>
+ <img src=imagens/conversorAd_blocos.png><P>
+ 
+ Utilizando biblioteca
+ 
 
 Exemplo de desvios por comparação
 > < ou =
