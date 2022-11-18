@@ -169,6 +169,7 @@ Slide, código para ativação de Int0 e Int1
 
 ## Conversor AD
 Código para conversão AD utilizando periférico interno
+<a href=https://github.com/mchavesferreira/smie/tree/main/conversor_ad>Saiba mais sobre o conversor AD</a>
 
 ## Comunicação Serial
 Comunicação UART 
