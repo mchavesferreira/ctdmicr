@@ -81,6 +81,9 @@ Durante o reset, todos os registradores de E/S são ajustados para seus valores 
 	
 Exemplo de um programa para controle de uma caixa d'agua.
 <BR>Defina pinos de entrada e saída. As entradas com push button aterradas e  pull up ativos. O Programa aguarda “Start” ser pressionado, que liga a  Valvula 1 até que sensor cheio seja acionado. O misturador é acionado  por2 segundos. Esvazia-se o tanque até o sensor vazio ser acionado, retornando ao estado inicial. Considere clock 16Mhz.
+<br><BR>Solução:
+<br>Para que servem e quais são os registradores de I/O de um AVR Atmega?  Os registradores de IO  funcionam para configurar, ler e escrever cada  pino das portas  do microcontrolador, cada bit representa um pino:  DDRx  quando em 0=entrada e 1=saída. PINx para a leitura do pino quando este é  definido com entrada; PORTx escreve na saída se o pino é definido como  saída ou ativa pull-up se o pino é definido como entrada.
+	<Br>
 <details><summary>Ilustrando o primeiro programa (clique)</summary>
 <p>
 <br><img src=imagens/oprojeto.jpg>
