@@ -7,6 +7,7 @@ Conversão AD (analógica para Digital)
  Utilizando biblioteca
  ```ruby
  ; ### Sub-rotina ADC com 8 bits => LSB = Vref/(2^n-1) = 5/255 =~ 20mV => 0b00000001 =~ 20mV ###
+.def adc_value = r14
 analog_read:
 	ldi r30,0b00100000
 	sts ADMUX,r30
