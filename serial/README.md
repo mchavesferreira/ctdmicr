@@ -32,10 +32,10 @@ UCSR0B   //Habilita o transmissor e o receptor
 UCSR0C  //Ajusta o formato do frame:
 
 Exemplo em C para transmitir um caractere
-<BR><img src=imagens/mototransmissao.png>
+<BR><img src=imagens/modotransmissao.png>
 	
 Exemplo em C para receber um caractere
-<BR><img src=imagens/mototransmissao.png>
+<BR><img src=imagens/modotransmissao.png>
 	
 Registradores de controle
 <BR><img src=imagens/controlandStatusregistera.png>
