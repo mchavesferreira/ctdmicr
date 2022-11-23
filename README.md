@@ -44,8 +44,8 @@
 - Prazo Trabalho prático: 09/12/2022 (Peso do trabalho na nota final: 40%)
 <BR>
 
-<BR>Peso das provas escritas: P1 30%  e  P2 30% 
-<BR>Participação e desenvolvimento em aula: 10% (caderno, código em sala...
+<BR>Peso das provas escritas: P1 30%  e  P2 30% (09/12/2022)
+<Br>Confira exemplos de <a href=https://github.com/mchavesferreira/smie/tree/main/timer>projetos</a> de ex-alunos matriculados na disciplina: 
 
 
 ## Simulador Wokwi e Atmel Studio
