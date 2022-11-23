@@ -33,7 +33,7 @@
 - Utilizar microcontrolador Atmega328P
 - Linguagen Assembly
 - Montagem prática em matriz de contados(protoboard) utilizando potênciometros como entrada analógica, botões como entradas digitais, e leds como saídas digitais
-- Opcionalmente pode-se utilizar entradas com sensores
+- Opcionalmente pode-se utilizar sensores e cargas (saídas) reais
 - Trabalho em dupla (apenas 1 equipe terá três integrantes já informado).
 - Programação com envio de código fonte e simulação em proteus para o email do professor
 - Utilizar display LCD 16x2
