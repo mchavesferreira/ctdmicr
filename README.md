@@ -27,6 +27,26 @@
 	- [Display LCD 16x2](#Display-LCD-16x2)
 	- [Maquina de Lavar](#Maquina-de-Lavar)
 
+### SMIE 2022- Projeto Final
+
+## Requisitos
+- Utilizar microcontrolador Atmega328P
+- Linguagen Assembly
+- Montagem prática em matriz de contados(protoboard) utilizando potênciometros como entrada analógica, botões como entradas digitais, e leds como saídas digitais
+- Opcionalmente pode-se utilizar entradas com sensores
+- Trabalho em dupla (apenas 1 equipe terá três integrantes já informado).
+- Programação com envio de código fonte e simulação em proteus para o email do professor
+- Utilizar display LCD 16x2
+- Utilizar menu com no mínimo 3 alterações de valores em configuração (tempo, limite, etc...) para uma máquina de processo 
+- Reliazar leitura analógica
+- Utilizar temporização com interrupção (Timer 0, 1 e 2)
+- Complexidade e criatividade será ponderada
+- Prazo Trabalho prático: 09/12/2022 (Peso do trabalho na nota final: 40%)
+<BR>
+
+<BR>Peso das provas escritas: P1 30%  e  P2 30% 
+<BR>Participação e desenvolvimento em aula: 10% (caderno, código em sala...
+
 
 ## Simulador Wokwi e Atmel Studio
 
