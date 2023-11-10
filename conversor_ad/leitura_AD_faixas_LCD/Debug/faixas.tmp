@@ -1,0 +1,66 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.51</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\marcos\Documents\material AVR\faixas\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.1\extensions\Atmel\AVRAssembler\2.1.51.17\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.1\extensions\Atmel\AVRAssembler\2.1.51.17\AvrAssembler/Include\m328pdef.inc</FILE>
+  <FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\marcos\Documents\material AVR\faixas\Debug/faixas.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\marcos\Documents\material AVR\faixas\Debug/faixas.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\marcos\Documents\material AVR\faixas\Debug\faixas.map</FILE>
+  <FILE>C:\Users\marcos\Documents\material AVR\faixas\Debug\faixas.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <Start><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>42</LINE></Start>
+  <delay_seconds><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>29</LINE></delay_seconds>
+  <loop_delay><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>33</LINE></loop_delay>
+  <delay_miliseconds><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>45</LINE></delay_miliseconds>
+  <loop_delayms><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>48</LINE></loop_delayms>
+  <delay_1microsecond><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>58</LINE></delay_1microsecond>
+  <display_write><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>78</LINE></display_write>
+  <display_show><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>92</LINE></display_show>
+  <display_loop><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>86</LINE></display_loop>
+  <display_off><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>101</LINE></display_off>
+  <eeprom_write><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>109</LINE></eeprom_write>
+  <eeprom_read><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>119</LINE></eeprom_read>
+  <usart_init><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>128</LINE></usart_init>
+  <usart_transmit><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>138</LINE></usart_transmit>
+  <usart_receive><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>146</LINE></usart_receive>
+  <analog_read><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>154</LINE></analog_read>
+  <loop_ad><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>159</LINE></loop_ad>
+  <pwm_write><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>167</LINE></pwm_write>
+  <start_timer1><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>180</LINE></start_timer1>
+  <stop_timer1><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>189</LINE></stop_timer1>
+  <lcd_init><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>202</LINE></lcd_init>
+  <pulse_enable><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>307</LINE></pulse_enable>
+  <lcd_write_caracter><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>269</LINE></lcd_write_caracter>
+  <lcd_clear><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>259</LINE></lcd_clear>
+  <loop_pulse><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>314</LINE></loop_pulse>
+  <lcd_lin0_col><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>322</LINE></lcd_lin0_col>
+  <lcd_lin1_col><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>332</LINE></lcd_lin1_col>
+  <lcd_write_number><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>342</LINE></lcd_write_number>
+  <lcd_show><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>354</LINE></lcd_show>
+  <lcd_loop><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>348</LINE></lcd_loop>
+  <lcd_write_number_0_999><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>367</LINE></lcd_write_number_0_999>
+  <findcentenas><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>372</LINE></findcentenas>
+  <finddezenas><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>379</LINE></finddezenas>
+  <findunidades><FILE>C:\Users\marcos\Documents\material AVR\faixas\lib328Pv03.inc</FILE><LINE>386</LINE></findunidades>
+  <loop><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>49</LINE></loop>
+  <faixa1><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>76</LINE></faixa1>
+  <faixa2><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>87</LINE></faixa2>
+  <faixa3><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>99</LINE></faixa3>
+  <faixa4><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>110</LINE></faixa4>
+  <faixa5><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>121</LINE></faixa5>
+  <fim_analise><FILE>C:\Users\marcos\Documents\material AVR\faixas\faixas.asm</FILE><LINE>134</LINE></fim_analise>
+ </LABELS>
+</ASSEMBLER_INFO>
