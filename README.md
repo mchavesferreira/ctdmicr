@@ -298,3 +298,14 @@ Referências:
 	
 [2] <a href=https://github.com/mchavesferreira/mcr/blob/main/dicas%20de%20projetos/Dicas%20para%20projetos.pdf>Dicas de projeto</a>
 
+## Links de auxilio
+
+Microcontroladores Atmega e placa ESP32
+
+<img src=https://github.com/mchavesferreira/img/blob/main/logogpt.png> https://chatgpt.com/g/g-TFvuISQH5-professor-dos-embarcados
+
+<img src=https://github.com/mchavesferreira/img/blob/main/logogpt.png>  https://chatgpt.com/g/g-thK1Ja9RM-referencias-de-artigos-normas-abnt-nbr
+
+Norma IEC-61131-3: https://plcopen.org/sites/default/files/downloads/intro_iec_march04_portuguese.pdf
+
+
