@@ -27,7 +27,13 @@
 	- [Display LCD 16x2](#Display-LCD-16x2)
 	- [Maquina de Lavar](#Maquina-de-Lavar)
 
-### SMIE 2022- Projeto Final
+### Histórico
+
+Z80 -
+https://www.8bity.cz/files/zx80_schema.pdf
+
+
+### SMIE 2024- Projeto Final (breve)
 
 ## Requisitos
 - Utilizar microcontrolador Atmega328P
