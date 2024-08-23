@@ -66,6 +66,8 @@ O Zilog Z80 é um microprocessador de 8 bits lançado em 1976, amplamente utiliz
 
 ## Características Principais
 
+
+
 - **Arquitetura de 8 bits**: O Z80 opera com dados de 8 bits, podendo endereçar até 64KB de memória através de seu barramento de endereços de 16 bits.
 
 - **Barramento de Endereços de 16 bits**: Permite acessar diretamente até 64KB de memória, que era o espaço máximo de endereçamento em muitos sistemas da época.
