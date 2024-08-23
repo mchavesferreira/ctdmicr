@@ -4,7 +4,7 @@
 ## Utilizando Atmega328P para a compreensão e funcionamento de microprocessadores e microcontroladores em geral utilizando a linguagem Assembly.
 
 ## Sumário
-- <a href=https://github.com/mchavesferreira/mice/processador>Microprocessadores</a>
+- <a href=https://github.com/mchavesferreira/mice/tree/main/processadores>Microprocessadores</a>
 - [Programas e Simuladores](#simulador-wokwi-e-Atmel-Studio)
 - [Mapeamento de Memória](#Mapeamento-de-memória)
 - [Configuração de pinos](#Configuração-de-pinos)
