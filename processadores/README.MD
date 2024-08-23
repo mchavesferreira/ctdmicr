@@ -88,6 +88,8 @@ O Zilog Z80 é um microprocessador de 8 bits lançado em 1976, amplamente utiliz
 
 ## Conjunto de Instruções
 
+<a href=https://github.com/mchavesferreira/mice/blob/main/processadores/Z80.pdf>resumo das instruções</a>
+
 O conjunto de instruções do Z80 é um dos seus pontos mais fortes, oferecendo uma grande variedade de operações:
 
 - **Operações Aritméticas e Lógicas**:
