@@ -4,6 +4,12 @@ Processadores
 
 Z80
 
+https://ps4star.github.io/z80studio/
+
+https://ignaciosearles.github.io/Z80-AssemblerAndEmulator/
+
+IDE
+https://www.oshonsoft.com/downloads.php
 
 Simuladores online
 
