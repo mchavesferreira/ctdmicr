@@ -60,6 +60,62 @@ https://www.youtube.com/watch?v=pcL8EIsQNwk&list=PLZ8dBTV2_5HTB43Mhfz-TyIATkECrp
 - **RESET**: Reinicia o processador.
 
 
+# Processador Z80: Características Principais
+
+O Zilog Z80 é um microprocessador de 8 bits lançado em 1976, amplamente utilizado em computadores pessoais, sistemas embarcados e videogames das décadas de 1970 e 1980. Foi projetado como uma evolução do Intel 8080, oferecendo compatibilidade com seu conjunto de instruções e introduzindo melhorias significativas em termos de funcionalidade e eficiência.
+
+## Características Principais
+
+- **Arquitetura de 8 bits**: O Z80 opera com dados de 8 bits, podendo endereçar até 64KB de memória através de seu barramento de endereços de 16 bits.
+
+- **Barramento de Endereços de 16 bits**: Permite acessar diretamente até 64KB de memória, que era o espaço máximo de endereçamento em muitos sistemas da época.
+
+- **Instruções**: Suporta mais de 150 instruções diferentes, incluindo operações aritméticas, lógicas, de controle e manipulação de dados, além de um conjunto expandido em relação ao 8080.
+
+- **Registros**:
+  - **Registros Gerais**: O Z80 possui seis registros de 8 bits (B, C, D, E, H, L) que podem ser combinados em três registros de 16 bits (BC, DE, HL).
+  - **Registros de Propósito Específico**: Inclui o acumulador (A) e o registrador de flags (F), além de dois pares de registros (IX/IY) usados para operações de indexação.
+  - **Ponteiro de Pilha (SP)**: Gerencia a pilha na memória.
+  - **Contador de Programa (PC)**: Aponta para a próxima instrução a ser executada.
+
+- **Interrupções**: Suporta múltiplos modos de interrupção, incluindo interrupções mascaráveis e não-mascaráveis, oferecendo flexibilidade no gerenciamento de eventos externos.
+
+- **Ciclos de Máquina**: O Z80 pode executar instruções em um número variável de ciclos de máquina, com operações mais simples executando em poucos ciclos, aumentando a eficiência.
+
+- **Ciclo de Refresh**: Integra um ciclo automático de refresh de memória, crucial para o suporte a DRAMs.
+
+## Conjunto de Instruções
+
+O conjunto de instruções do Z80 é um dos seus pontos mais fortes, oferecendo uma grande variedade de operações:
+
+- **Operações Aritméticas e Lógicas**:
+  - **ADD, ADC, SUB**: Operações de adição e subtração.
+  - **AND, OR, XOR**: Operações lógicas.
+  - **INC, DEC**: Incremento e decremento de registros.
+
+- **Transferência de Dados**:
+  - **LD**: Carrega dados entre registros, memória e I/O.
+  - **EX**: Troca o conteúdo de dois registradores.
+  - **PUSH, POP**: Operações com a pilha.
+
+- **Controle de Fluxo**:
+  - **JP, JR**: Saltos incondicionais e condicionais.
+  - **CALL, RET**: Chamadas e retornos de subrotinas.
+  - **RST**: Reinício de rotina em um endereço fixo.
+
+- **Manipulação de Bits**:
+  - **BIT, SET, RES**: Verifica, seta e reseta bits individuais.
+
+- **Operações de I/O**:
+  - **IN, OUT**: Entrada e saída de dados de dispositivos periféricos.
+
+- **Instruções de Indexação e Deslocamento**:
+  - **INX, DEX**: Incremento e decremento de registradores de índice.
+  - **RL, RR**: Rotações de bits, utilizadas em operações mais complexas.
+
+- **Instruções de Controle**:
+  - **NOP**: Não faz nada, usado para sincronização.
+  - **HALT**: Coloca o processador em estado de espera.
 
 
 
