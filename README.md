@@ -34,25 +34,6 @@ Z80 -
 https://www.8bity.cz/files/zx80_schema.pdf
 
 
-### SMIE 2024- Projeto Final (breve)
-
-## Requisitos
-- Utilizar microcontrolador Atmega328P
-- Linguagen Assembly
-- Montagem prática em matriz de contados(protoboard) utilizando potênciometros como entrada analógica, botões como entradas digitais, e leds como saídas digitais
-- Opcionalmente pode-se utilizar sensores e cargas (saídas) reais
-- Trabalho em dupla (apenas 1 equipe terá três integrantes já informado).
-- Programação com envio de código fonte e simulação em proteus para o email do professor
-- Utilizar display LCD 16x2
-- Utilizar menu com no mínimo 3 alterações de valores em configuração (tempo, limite, etc...) para uma máquina de processo 
-- Reliazar leitura analógica
-- Utilizar temporização com interrupção (Timer 0, 1 e 2)
-- Complexidade e criatividade será ponderada
-- Prazo Trabalho prático: 09/12/2022 (Peso do trabalho na nota final: 40%)
-<BR>
-
-<BR>Peso das provas escritas: P1 30%  e  P2 30% (09/12/2022)
-<Br>Confira exemplos de <a href=https://github.com/mchavesferreira/smie/tree/main/timer>projetos</a> de ex-alunos matriculados na disciplina: 
 
 
 ## Simulador Wokwi e Atmel Studio
@@ -299,6 +280,28 @@ Maquina de lavar </a>
 	
 Código AVR assembly
 <a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
+
+
+### SMIE 2024- Projeto Final (breve)
+
+## Requisitos
+- Utilizar microcontrolador Atmega328P
+- Linguagen Assembly
+- Montagem prática em matriz de contados(protoboard) utilizando potênciometros como entrada analógica, botões como entradas digitais, e leds como saídas digitais
+- Opcionalmente pode-se utilizar sensores e cargas (saídas) reais
+- Trabalho em dupla (apenas 1 equipe terá três integrantes já informado).
+- Programação com envio de código fonte e simulação em proteus para o email do professor
+- Utilizar display LCD 16x2
+- Utilizar menu com no mínimo 3 alterações de valores em configuração (tempo, limite, etc...) para uma máquina de processo 
+- Reliazar leitura analógica
+- Utilizar temporização com interrupção (Timer 0, 1 e 2)
+- Complexidade e criatividade será ponderada
+- Prazo Trabalho prático: 09/12/2022 (Peso do trabalho na nota final: 40%)
+<BR>
+
+<BR>Peso das provas escritas: P1 30%  e  P2 30% (09/12/2022)
+<Br>Confira exemplos de <a href=https://github.com/mchavesferreira/smie/tree/main/timer>projetos</a> de ex-alunos matriculados na disciplina: 
+
 
 Referências:
 [1] Atmega 328P 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash - Datasheet
