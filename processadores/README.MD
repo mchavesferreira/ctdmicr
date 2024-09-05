@@ -172,6 +172,12 @@ https://chatgpt.com/g/g-ndeyJ4Bo3-fluxcore-z80
 http://www.z80.info/z80-op.txt
 
 
+Apolo 11
+
+http://www.righto.com/2019/09/a-computer-built-from-nor-gates-inside.html
+
+
+
 
 Tk 85   layout
 https://ekaww4.wixsite.com/tecnologia/post/projeto-7-tk-85-microdigital-%C3%BAltimo-projeto-de-2019
