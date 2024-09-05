@@ -230,9 +230,15 @@ Portanto, afirmar que o número de cores é equivalente ao número de ALUs não 
 
 # Thread
 
-O primeiro processador a implementar a tecnologia de hyper-threading foi o Intel Pentium 4 da série Northwood, lançado em 2002. Este processador marcou o início da aplicação comercial de multithreading simultâneo (SMT), onde um único núcleo físico era capaz de executar dois threads simultaneamente.
-Detalhes do Primeiro Processador com Hyper-Threading:
+Um thread é uma unidade de execução de um programa ou processo. Em termos simples, é o caminho que o código percorre durante sua execução.
 
+Em processadores modernos, como os da Intel e AMD, um core pode processar vários threads simultaneamente usando uma tecnologia chamada hyper-threading (Intel) ou simultaneous multithreading (SMT) (AMD).
+
+Cada core pode gerenciar um ou mais threads. Por exemplo, se um processador tem 4 núcleos e suporta hyper-threading, ele pode executar 8 threads simultaneamente (2 threads por núcleo).
+
+Um thread pode acessar recursos como a ALU, mas um thread não é equivalente a uma ALU; é apenas um caminho de execução.
+
+O primeiro processador a implementar a tecnologia de hyper-threading foi o Intel Pentium 4 da série Northwood, lançado em 2002. Este processador marcou o início da aplicação comercial de multithreading simultâneo (SMT), onde um único núcleo físico era capaz de executar dois threads simultaneamente.
 
 # Explicação da Imagem: Estrutura de Processador Hyper-Threading
 
@@ -260,6 +266,18 @@ A imagem ilustra a arquitetura de um processador com **hyper-threading**, com fo
 
 ## Interpretação Geral
 - A imagem representa um processador com **um único núcleo** que suporta **hyper-threading**, permitindo que múltiplas threads sejam executadas simultaneamente, compartilhando os recursos do núcleo.
+
+
+Arquiteturas:
+
+CPU (Unidade Central de Processamento):
+
+GPU (Unidade de Processamento Gráfico):
+
+Arquiteturas Emergentes: TPUs, IPUs, NPUs
+
+Arquiteturas Baseadas em FPGA (Field-Programmable Gate Arrays):
+
 
 
 
