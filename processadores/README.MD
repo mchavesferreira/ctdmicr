@@ -172,14 +172,62 @@ https://chatgpt.com/g/g-ndeyJ4Bo3-fluxcore-z80
 http://www.z80.info/z80-op.txt
 
 
-Apolo 11
+1960- https://en.wikipedia.org/wiki/Honeywell_800
+
+
+1964  - IBM 360
+
+https://dodlithr.blogspot.com/2011/10/apollo-guidance-computer-agc-software.html
+
+https://en.wikipedia.org/wiki/IBM_System/360
+
+
+Apolo 11 1969
 
 http://www.righto.com/2019/09/a-computer-built-from-nor-gates-inside.html
 
+Vídeo com AGC da Apolo 11
+
+https://www.youtube.com/watch?v=2KSahAoOLdU&list=PL-_93BVApb59FWrLZfdlisi_x7-Ut_-w7
+
+Construção:
+
+https://apollo11space.com/apollo-guidance-computer-agc/
+
+A memória
+Construção Manual da Memória (Core Rope Memory)
+O AGC tinha cerca de 72 kilobytes de memória disponível, 
 
 
 
 Tk 85   layout
 https://ekaww4.wixsite.com/tecnologia/post/projeto-7-tk-85-microdigital-%C3%BAltimo-projeto-de-2019
+
+
+
+## Core X ALU
+
+### em estudo de microprocessadores, podemos afirmar que core seria equivalente ao numero de  ALU?
+
+
+Não, o número de cores de um processador não é diretamente equivalente ao número de ALUs (Unidades Lógicas e Aritméticas). Embora exista uma relação entre cores e ALUs, são conceitos distintos.
+Explicação dos Termos:
+
+    Core (núcleo): Um core é uma unidade independente de processamento em um microprocessador moderno, capaz de executar suas próprias instruções. Cada core tem seus próprios componentes, como unidades de controle, cache, e pode conter uma ou mais ALUs. Um processador multicore possui vários núcleos, permitindo a execução paralela de várias tarefas (multithreading ou multitasking).
+
+    ALU (Arithmetic Logic Unit): A ALU é um componente dentro de um core que realiza operações aritméticas (como adição, subtração) e lógicas (como AND, OR, NOT). Um core pode ter uma ou mais ALUs, dependendo do design da arquitetura. A ALU é essencialmente a parte "matemática" do core, mas o core também inclui outras unidades, como as de controle e de acesso à memória.
+
+Diferença entre Cores e ALUs:
+
+    Core: Refere-se a uma unidade de processamento completa, capaz de buscar, decodificar, executar instruções e interagir com a memória e outros componentes.
+    ALU: É um componente dentro de um core. Um único core pode conter mais de uma ALU para melhorar o desempenho ao permitir que várias operações matemáticas sejam realizadas simultaneamente.
+
+Exemplo em Processadores Modernos:
+
+Nos processadores modernos, como os da série Intel Core ou AMD Ryzen, um core pode ter várias ALUs. Além disso, muitos processadores também possuem unidades vetoriais (como as unidades SIMD) e FPUs (Unidades de Ponto Flutuante), que realizam operações matemáticas mais complexas.
+
+Portanto, afirmar que o número de cores é equivalente ao número de ALUs não está correto. Um processador com múltiplos cores pode ter múltiplas ALUs por core, mas as duas métricas (cores e ALUs) são diferentes e tratam de aspectos distintos da arquitetura do processador.
+
+
 
 
