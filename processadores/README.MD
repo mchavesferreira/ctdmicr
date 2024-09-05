@@ -228,6 +228,38 @@ Nos processadores modernos, como os da série Intel Core ou AMD Ryzen, um core p
 
 Portanto, afirmar que o número de cores é equivalente ao número de ALUs não está correto. Um processador com múltiplos cores pode ter múltiplas ALUs por core, mas as duas métricas (cores e ALUs) são diferentes e tratam de aspectos distintos da arquitetura do processador.
 
+# Thread
+
+O primeiro processador a implementar a tecnologia de hyper-threading foi o Intel Pentium 4 da série Northwood, lançado em 2002. Este processador marcou o início da aplicação comercial de multithreading simultâneo (SMT), onde um único núcleo físico era capaz de executar dois threads simultaneamente.
+Detalhes do Primeiro Processador com Hyper-Threading:
+
+
+# Explicação da Imagem: Estrutura de Processador Hyper-Threading
+
+<img src=https://upload.wikimedia.org/wikipedia/commons/2/27/Hyper-threaded_CPU.png>
+
+A imagem ilustra a arquitetura de um processador com **hyper-threading**, com foco em como um único núcleo físico pode executar múltiplas threads simultaneamente.
+
+## Componentes da Imagem
+
+### 1. Threads (Parte Superior)
+- Representadas por blocos coloridos.
+- Cada bloco simboliza uma **thread**, ou seja, uma sequência de instruções que o processador deve executar.
+- Em processadores com **hyper-threading**, várias threads podem ser processadas por um único núcleo.
+
+### 2. Front End (Parte Intermediária)
+- O **front end** organiza e decodifica as instruções das threads antes de enviá-las para a execução.
+- Aqui, as threads são preparadas para serem distribuídas entre as unidades de execução do núcleo.
+
+### 3. Execution Core (Parte Inferior)
+- A seção chamada **execution core** contém as unidades de execução, como as **ALUs (Arithmetic Logic Units)**, onde as instruções são processadas.
+- As threads compartilham essas unidades para realizar cálculos e operações lógicas.
+
+### 4. Fluxo de Instruções
+- A seta azul indica o caminho que as threads seguem desde o front end até o execution core, demonstrando o fluxo de instruções dentro do processador.
+
+## Interpretação Geral
+- A imagem representa um processador com **um único núcleo** que suporta **hyper-threading**, permitindo que múltiplas threads sejam executadas simultaneamente, compartilhando os recursos do núcleo.
 
 
 
