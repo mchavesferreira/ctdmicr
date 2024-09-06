@@ -138,31 +138,32 @@ https://terremoth.github.io/z80-simulator/
 
 
 
-IDE
+## IDE
+
 https://www.oshonsoft.com/downloads.php
 
-Simuladores online
+# Simuladores online
 
-Simulador CPU-VSIM
+## Simulador CPU-VSIM
+
 https://www.merlot.org/merlot/viewMaterial.htm?id=773407108
 
-
-
 https://cpulator.01xz.net/?sys=mipsr6
-Instruçoes:
+
+### Instruçoes:
+
 https://cpuvisualsimulator.github.io/manual
-
-
 
 https://www.101computing.net/LMC/#
 
 
-Enigma
+## Enigma
 https://www.101computing.net/enigma-machine-emulator/
 
 
 
 Link Materiais
+
 https://download.file-hunter.com/Books/PT/
 
 
@@ -171,6 +172,7 @@ https://chatgpt.com/g/g-ndeyJ4Bo3-fluxcore-z80
 
 http://www.z80.info/z80-op.txt
 
+# Computador Apolo 11
 
 1960- https://en.wikipedia.org/wiki/Honeywell_800
 
@@ -182,25 +184,26 @@ https://dodlithr.blogspot.com/2011/10/apollo-guidance-computer-agc-software.html
 https://en.wikipedia.org/wiki/IBM_System/360
 
 
-Apolo 11 1969
+## Apolo 11 1969
 
 http://www.righto.com/2019/09/a-computer-built-from-nor-gates-inside.html
 
-Vídeo com AGC da Apolo 11
+## Vídeo com AGC da Apolo 11
 
 https://www.youtube.com/watch?v=2KSahAoOLdU&list=PL-_93BVApb59FWrLZfdlisi_x7-Ut_-w7
 
-Construção:
+## Construção:
 
 https://apollo11space.com/apollo-guidance-computer-agc/
 
-A memória
+## A memória
+
 Construção Manual da Memória (Core Rope Memory)
 O AGC tinha cerca de 72 kilobytes de memória disponível, 
 
 
 
-Tk 85   layout
+## Tk 85   layout
 https://ekaww4.wixsite.com/tecnologia/post/projeto-7-tk-85-microdigital-%C3%BAltimo-projeto-de-2019
 
 
