@@ -312,6 +312,7 @@ Simulação:  https://wokwi.com/projects/394247093827346433
 
 -Volta-se ao estado inicial, desligando saídas.
 
+<a href= >pdf</a>
  
 # Dislplay 7 Segmentos
 
