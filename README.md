@@ -1,7 +1,7 @@
 # Microcontroladores e microprocessadores 
 
 ## Aulas Turma 2024
-### 1° Bimestre
+
 - 16/08  - Introdução a Disciplina, Histórico sobre microprocessadores
 - 23/08 -  Arquitetura VonNeuman, Arquitetura de funcionamento de um microprocessador genérico
 - 30/08 -  Arquitetura AVR Atmega 328P
