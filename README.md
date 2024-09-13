@@ -42,11 +42,10 @@
 	- 
 	- 
 
-### Histórico
+## Histórico
 
 Z80 -
 https://www.8bity.cz/files/zx80_schema.pdf
-
 
 
 
@@ -62,7 +61,7 @@ Atmel Studio:<a href=http://studio.download.atmel.com/7.0.2389/as-installer-7.0.
   
 Gravador para firmware .hex utilizando bootloader Arduino: <a href=https://github.com/mchavesferreira/smie/blob/main/hexloader.zip>Hexloader</a>
  
-## Mapeamento-de-memória
+# Mapeamento-de-memória
  
 Instruções principais para a movimentação de bytes na memória do Atmega328
 <center><img src=https://raw.githubusercontent.com/mchavesferreira/smie/main/imagens/movimentacao_bits_bytes.png></center>
@@ -70,6 +69,38 @@ Instruções principais para a movimentação de bytes na memória do Atmega328
 ## Configuração de pinos
 
 <center><img src=imagens/pinout_atmega328P.png></center>
+
+## Atmega 328p
+
+https://youtu.be/q9hdLVaBdvM?si=qtBKph2J_WjbxWr6&t=30  Video Laser fibra
+
+## Pinos Arduino UNO
+![tabela_arduino](https://github.com/mchavesferreira/mcr/assets/63993080/315726ac-c35e-4365-84e5-910684880c2a)
+
+| Nome do Pino (Porta) | Descrição no Arduino | Funções Principais          |
+|----------------------|----------------------|-----------------------------|
+| PC0                  | A0                   | ADC0, PCINT8                |
+| PC1                  | A1                   | ADC1, PCINT9                |
+| PC2                  | A2                   | ADC2, PCINT10               |
+| PC3                  | A3                   | ADC3, PCINT11               |
+| PC4                  | A4 (SDA)             | ADC4, PCINT12, SDA (TWI)    |
+| PC5                  | A5 (SCL)             | ADC5, PCINT13, SCL (TWI)    |
+| PD0                  | 0 (RX)               | RXD, PCINT16                |
+| PD1                  | 1 (TX)               | TXD, PCINT17                |
+| PD2                  | 2                    | INT0, PCINT18               |
+| PD3                  | 3 (PWM)              | OC2B, INT1, PCINT19         |
+| PD4                  | 4                    | XCK, T0, PCINT20            |
+| PD5                  | 5 (PWM)              | OC0B, T1, PCINT21           |
+| PD6                  | 6 (PWM)              | AIN0, OC0A, PCINT22         |
+| PD7                  | 7                    | AIN1, PCINT23               |
+| PB0                  | 8                    | ICP1, CLKO, PCINT0          |
+| PB1                  | 9 (PWM)              | OC1A, PCINT1                |
+| PB2                  | 10 (PWM, SS)         | OC1B, SS, PCINT2            |
+| PB3                  | 11 (PWM, MOSI)       | MOSI, OC2A, PCINT3          |
+| PB4                  | 12 (MISO)            | MISO, PCINT4                |
+| PB5                  | 13 (SCK, LED)        | SCK, PCINT5                 |
+
+
 
 ## Diagrama de blocos
 O Atmel® ATmega328P é um microcontrolador CMOS de 8 bits de baixa potência baseado na arquitetura RISC aprimorada AVR®. Ao executar instruções poderosas em um único ciclo de clock, o ATmega328P atinge taxas de transferência de aproximadamente 1MIPS por MHz, permitindo otimizar consumo de energia versus a velocidade de processamento.[1]
@@ -98,15 +129,88 @@ Para maximizar o desempenho e o paralelismo, o AVR usa uma arquitetura harvard �
 <center><img src=imagens/sistema_reset.png>Lógica Reset</center>
 
 Durante o reset, todos os registradores de E/S são ajustados para seus valores iniciais, e o programa inicia a execução a partir do vetor de reset. Para o Atmel® ATmega328P, a instrução colocada no vetor de reset deve ser uma instrução RJMP – salto relativo – para a rotina de manipulação de reset. Se o programa nunca habilita uma fonte de interrupção, os vetores de interrupção não são usados e o código de programa regular pode ocupar nesses locais. Este também é o caso se o vetor de reset estiver na seção de aplicação enquanto os vetores de interrupção estiverem na seção de inicialização. As portas de E/S do AVR® são imediatamente redefinidas para seu estado inicial quando uma fonte de redefinição fica ativa. Isso não requer que nenhuma fonte de relógio esteja em execução. Após todas as fontes de reset ficarem inativas, um contador de atraso é invocado, estendendo o reset interno. Isso permite que a potência atinja um nível estável antes do início da operação normal. O tempo limite do contador de atraso é definido pelo usuário através dos fusíveis SUT e CKSEL. 
+## Programa Pisca Led
 
-## Assembly Primeiro programa
-	
-Exemplo de um programa para controle de uma caixa d'agua.
+Programa Pisca Led
+<center><a href=https://wokwi.com/projects/341066839950885460><img src=https://github.com/mchavesferreira/mcr/blob/main/imagens/pisca.png  width=300 height=300 border=0></a></center>
+
+ ```ruby  
+; Pisca LED on PB5(Arduino Uno pin 13)
+#define __SFR_OFFSET 0
+
+#include "avr/io.h"  
+
+.global main   ; obrigatorio simulador
+
+.ORG 0x000
+main:
+  LDI R16,0b11111111		//carrega R16 com o valor 0xFF
+	OUT DDRB,R16
+
+principal:
+  sbi   PORTB, 5 ; Seta o pino da porta   
+  call  ATRASO
+  cbi   PORTB, 5   ; Clear(0) o pino da porta   
+  call  ATRASO
+  rjmp principal
+
+ATRASO:
+	LDI R19,80	
+volta:		
+	DEC  R17			//decrementa R17, comeÁa com 0x00
+	BRNE volta 			//enquanto R17 > 0 fica decrementando R17
+	DEC  R18			//decrementa R18, comeÁa com 0x00
+	BRNE volta			//enquanto R18 > 0 volta decrementar R18
+	DEC  R19			//decrementa R19
+	BRNE volta
+  ret
+; Exemplo Pisca Led Avr Projetos
+
+```
+
+
+### Pisca Led com biblioteca
+
+<details><summary>Código Exemplo Pisca Led com utilização de biblioteca para delay</summary>
+<p>
+
+```ruby  
+*/
+//--------------------------------------------------------------------------- //
+//		Fonte: AVR e Arduino: Técnicas de Projeto, 2a ed. - 2012.					  //	
+//--------------------------------------------------------------------------- //
+
+.equ LED   = PB5  		//LED é o substituto de PB5 na programação 
+
+.ORG 0x000				//endereço de início de escrita do código 
+rjmp INICIO
+.include "lib328Pv03.inc"
+INICIO:
+	LDI R16,0xFF		//carrega R16 com o valor 0xFF
+	OUT DDRB,R16		//configura todos os pinos do PORTB como saída
+
+PRINCIPAL:
+      SBI PORTB, LED		//coloca o pino PB5 em 5V
+      ldi delay_time, 2 	; Carrega delay_time com
+      rcall delay_seconds	; Chama rotina de atraso
+	 CBI PORTB, LED 	//coloca o pino PB5 em 0V
+	 RCALL ATRASO		//chama a sub-rotina de atraso
+	 RJMP PRINCIPAL 	//volta para PRINCIPAL
+```
+</p>
+</details> 
+
+Biblioteca: <a href=https://raw.githubusercontent.com/mchavesferreira/mcr/main/programas_livro/lib328Pv03.inc>lib328Pv03.inc</a>
+
+### Programa-Reservatorio
+
+Exemplo de um programa para controle de reservatório.
+
 <BR>Defina pinos de entrada e saída. As entradas com push button aterradas e  pull up ativos. O Programa aguarda “Start” ser pressionado, que liga a  Valvula 1 até que sensor cheio seja acionado. O misturador é acionado  por2 segundos. Esvazia-se o tanque até o sensor vazio ser acionado, retornando ao estado inicial. Considere clock 16Mhz.
 <br><BR>Solução:
 <br>Para que servem e quais são os registradores de I/O de um AVR Atmega?  Os registradores de IO  funcionam para configurar, ler e escrever cada  pino das portas  do microcontrolador, cada bit representa um pino:  DDRx  quando em 0=entrada e 1=saída. PINx para a leitura do pino quando este é  definido com entrada; PORTx escreve na saída se o pino é definido como  saída ou ativa pull-up se o pino é definido como entrada.
 	<Br>
-<details><summary>Ilustrando o primeiro programa (clique)</summary>
+<details><summary>Ilustração da Solução (clique)</summary>
 <p>
 <br><img src=imagens/oprojeto.jpg>
 <br><img src=imagens/configuracaopinos.jpg>
@@ -118,13 +222,14 @@ Exemplo de um programa para controle de uma caixa d'agua.
 <br><img src=imagens/atraso.jpg>
 </p>
 </details>
-	
-Código para o primeiro programa
-```java
+
+<details><summary>Código Solução Controle Reservatório</summary>
+<p>
+
+```ruby 
 //--------------------------------------------------------------------------- //
 // EXEMPLO 					  //	
 //--------------------------------------------------------------------------- //
-
 
 .ORG 0x000				
 
@@ -175,6 +280,11 @@ volta:
       BRNE volta
       RET
 ```
+</details>
+
+Simulação:  https://wokwi.com/projects/394247093827346433
+
+![image](https://github.com/mchavesferreira/mcr/assets/63993080/fee83e1b-24d9-4df6-bfa0-f8256ef35413)
 
  
 ### Dislplay 7 Segmentos
