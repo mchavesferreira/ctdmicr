@@ -42,7 +42,7 @@
 	- 
 	- 
 
-## Histórico
+# Histórico
 
 Z80 -
 https://www.8bity.cz/files/zx80_schema.pdf
@@ -66,7 +66,7 @@ Gravador para firmware .hex utilizando bootloader Arduino: <a href=https://githu
 Instruções principais para a movimentação de bytes na memória do Atmega328
 <center><img src=https://raw.githubusercontent.com/mchavesferreira/smie/main/imagens/movimentacao_bits_bytes.png></center>
  
-## Configuração de pinos
+# Configuração de pinos
 
 <center><img src=imagens/pinout_atmega328P.png></center>
 
@@ -74,7 +74,8 @@ Instruções principais para a movimentação de bytes na memória do Atmega328
 
 https://youtu.be/q9hdLVaBdvM?si=qtBKph2J_WjbxWr6&t=30  Video Laser fibra
 
-## Pinos Arduino UNO
+# Pinos Arduino UNO
+
 ![tabela_arduino](https://github.com/mchavesferreira/mcr/assets/63993080/315726ac-c35e-4365-84e5-910684880c2a)
 
 | Nome do Pino (Porta) | Descrição no Arduino | Funções Principais          |
@@ -102,34 +103,36 @@ https://youtu.be/q9hdLVaBdvM?si=qtBKph2J_WjbxWr6&t=30  Video Laser fibra
 
 
 
-## Diagrama de blocos
+# Diagrama de blocos
+
 O Atmel® ATmega328P é um microcontrolador CMOS de 8 bits de baixa potência baseado na arquitetura RISC aprimorada AVR®. Ao executar instruções poderosas em um único ciclo de clock, o ATmega328P atinge taxas de transferência de aproximadamente 1MIPS por MHz, permitindo otimizar consumo de energia versus a velocidade de processamento.[1]
 <center><img src=imagens/diagrama_blocos.png></center
+
+Para maximizar o desempenho e o paralelismo, o AVR usa uma arquitetura harvard – com memórias e barramentos separados para programa e dados. As instruções na memória do programa são executadas com um pipelining de nível único. Enquanto uma instrução está sendo executada, a próxima instrução é pré-buscada na memória do programa. Este conceito permite que as instruções sejam executadas em cada ciclo de clock. A memória do programa é uma memória flash reprogramável no sistema.[1]
 
 O núcleo AVR® combina um rico conjunto de instruções com 32 registradores de trabalho de uso geral(GPR). Todos os 32 registradores são conectados diretamente à unidade lógica aritmética (ULA), permitindo que dois registradores independentes sejam acessados em uma única instrução executada em um ciclo de clock. A arquitetura resultante é mais eficiente em termos de código, ao mesmo tempo em que alcança rendimentos até dez vezes mais rápidos do que os microcontroladores CISC convencionais.
 O Atmel® ATmega328P fornece os seguintes recursos: 32K bytes de flash programável no sistema com recursos de leitura durante a gravação, 1K bytes EEPROM, 2K bytes SRAM, 23 linhas de E/S de uso geral, 32 registradores de trabalho de uso geral, três temporizadores flexíveis /Contadores com modos de comparação, interrupções internas e externas, um USART programável serial, uma interface serial de 2 fios orientada a byte, uma porta serial SPI, um ADC de 6 canais e 10 bits (8 canais em pacotes TQFP e QFN/MLF) , um temporizador de watchdog programável com oscilador interno e cinco modos de economia de energia selecionáveis por software. O modo ocioso para a CPU enquanto permite que a SRAM, Temporizador/Contadores, USART, interface serial de 2 fios, porta SPI e sistema de interrupção continuem funcionando. O modo de desligamento salva o conteúdo do registro, mas congela o oscilador, desabilitando todas as outras funções do chip até a próxima interrupção ou reinicialização do hardware. No modo de economia de energia, o temporizador assíncrono continua a funcionar, permitindo que o usuário mantenha uma base de temporizador enquanto o restante do dispositivo está dormindo. O modo de redução de ruído ADC para a CPU e todos os módulos de E/S, exceto temporizador assíncrono e ADC, para minimizar o ruído de comutação durante as conversões ADC. No modo de espera, o oscilador de cristal/ressonador está funcionando enquanto o restante do dispositivo está dormindo. Isto permite um arranque muito rápido combinado com um baixo consumo de energia.[1]
 
 
-Core CPU
+## Core CPU
 A principal função do núcleo da CPU (core CPU) é garantir a execução correta do programa. A CPU deve, portanto, ser capaz de acessar memórias, realizar cálculos, controlar periféricos e lidar com interrupções.
 
 <center><img src=imagens/core_cpu.png></center
-Diagrama de Blocos da Arquitetura AVR
+					      
 
-Para maximizar o desempenho e o paralelismo, o AVR usa uma arquitetura harvard – com memórias e barramentos separados para programa e dados. As instruções na memória do programa são executadas com um pipelining de nível único. Enquanto uma instrução está sendo executada, a próxima instrução é pré-buscada na memória do programa. Este conceito permite que as instruções sejam executadas em cada ciclo de clock. A memória do programa é uma memória flash reprogramável no sistema.[1]
-
-## Sistemas de clock
+# Sistemas de clock
 
 Principais sistemas de clock do AVR® e sua distribuição. Todos os clock não precisam estar ativos em um determinado momento. Para reduzir o consumo de energia, os relógios dos módulos que não estão sendo usados podem ser interrompidos usando diferentes modos de suspensão, conforme descrito na Seção "Modes Sleep Gerenciamento de energia e modos de suspensão". 
 <center><img src=imagens/distribuicaoclock_f_8_1.png></center>
 Para maximizar o desempenho e o paralelismo, o AVR usa uma arquitetura harvard – com memórias e barramentos separados para programa e dados. As instruções na memória do programa são executadas com um pipelining de nível único. Enquanto uma instrução está sendo executada, a próxima instrução é pré-buscada na memória do programa. Este conceito permite que as instruções sejam executadas em cada ciclo de clock. A memória do programa é uma memória flash reprogramável no sistema.[1]
 
-## Sistema de Reset
+# Sistema de Reset
 
 <center><img src=imagens/sistema_reset.png>Lógica Reset</center>
 
 Durante o reset, todos os registradores de E/S são ajustados para seus valores iniciais, e o programa inicia a execução a partir do vetor de reset. Para o Atmel® ATmega328P, a instrução colocada no vetor de reset deve ser uma instrução RJMP – salto relativo – para a rotina de manipulação de reset. Se o programa nunca habilita uma fonte de interrupção, os vetores de interrupção não são usados e o código de programa regular pode ocupar nesses locais. Este também é o caso se o vetor de reset estiver na seção de aplicação enquanto os vetores de interrupção estiverem na seção de inicialização. As portas de E/S do AVR® são imediatamente redefinidas para seu estado inicial quando uma fonte de redefinição fica ativa. Isso não requer que nenhuma fonte de relógio esteja em execução. Após todas as fontes de reset ficarem inativas, um contador de atraso é invocado, estendendo o reset interno. Isso permite que a potência atinja um nível estável antes do início da operação normal. O tempo limite do contador de atraso é definido pelo usuário através dos fusíveis SUT e CKSEL. 
-## Programa Pisca Led
+
+# Programa Pisca Led
 
 Programa Pisca Led
 <center><a href=https://wokwi.com/projects/341066839950885460><img src=https://github.com/mchavesferreira/mcr/blob/main/imagens/pisca.png  width=300 height=300 border=0></a></center>
@@ -169,7 +172,7 @@ volta:
 ```
 
 
-### Pisca Led com biblioteca
+## Pisca Led com biblioteca
 
 <details><summary>Código Exemplo Pisca Led com utilização de biblioteca para delay</summary>
 <p>
@@ -202,7 +205,7 @@ PRINCIPAL:
 
 Biblioteca: <a href=https://raw.githubusercontent.com/mchavesferreira/mcr/main/programas_livro/lib328Pv03.inc>lib328Pv03.inc</a>
 
-### Programa-Reservatorio
+## Programa-Reservatorio
 
 Exemplo de um programa para controle de reservatório.
 
@@ -286,12 +289,35 @@ Simulação:  https://wokwi.com/projects/394247093827346433
 
 ![image](https://github.com/mchavesferreira/mcr/assets/63993080/fee83e1b-24d9-4df6-bfa0-f8256ef35413)
 
+
+### Projeto
+
+-Modifique o projeto de simulação anterior para atender este projeto. Envie este link no SUAP Trabalho 1. Utilizando wokwi, SALVE O PROJETO COM LOCK.
+
+-Elabore um exemplo de programação utilizando AVR Atmega 328P em assembly para automação de processos da seguinte figura: 
+
+-Ao ligar a máquina, aguarda-se pressionar o botão1. Então a válvula V4 é fechada (High) e V1 é acionada por 4 segundos.
+
+-A válvula V2 é acionada até que o sensor nível1 seja acionado.
+
+-A válvula V3 é acionada por 2 segundos.
+
+-O misturador M1 é acionado por 3 segundos.
+
+-A válvula V4 é acionada por 2 segundo para esvaziar parcialmente o tanque.
+
+-A válvula V2 é acionada por 5 segundos para diluir novamente a solução.
+
+-O misturador é acionado por  4 segundos. Em seguida o tanque é esvaziado totalmente, abrindo-se a válvula V4 até o sensor nível 0 seja acionado.
+
+-Volta-se ao estado inicial, desligando saídas.
+
  
-### Dislplay 7 Segmentos
+# Dislplay 7 Segmentos
 
 <a href=https://github.com/mchavesferreira/mice/tree/main/Exemplo%203%20-%20display%207%20Segmentos>Saiba mais</a>
 	
-### Display LCD 16x2
+# Display LCD 16x2
 	
 
 <a href=https://github.com/mchavesferreira/mice/tree/main/exemplo_4_LCD>Display LCD </a>
