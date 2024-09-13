@@ -1,5 +1,20 @@
 # Microcontroladores e microprocessadores 
 
+## Aulas Turma 2024
+### 1° Bimestre
+- 16/08  - Introdução a Disciplina, Histórico sobre microprocessadores
+- 23/08 -  Arquitetura VonNeuman, Arquitetura de funcionamento de um microprocessador genérico
+- 30/08 -  Arquitetura AVR Atmega 328P
+- 03/09 -  Primeiras instruções assembly para Atmega328P. [Mapeamento de Memória](#Mapeamento-de-memória)
+  06/09 -  Ambiente de programação
+- 13/09 -  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
+- 20/09 -  Simulador Wowki, Display 7 segmentos  [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
+- 27/09 -  [Display LCD 16x2](#Display-LCD-16x2)
+- 04/10 -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
+- 11/10 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
+- 18/10 -  Avaliação Escrita/Trabalho em Grupo
+
+ 
  
 ## Utilizando Atmega328P para a compreensão e funcionamento de microprocessadores e microcontroladores em geral utilizando a linguagem Assembly.
 
@@ -12,7 +27,6 @@
 - [Sistemas de clock](#Sistemas-de-clock)
 - [Sistema de Reset](#Sistema-de-Reset)
 - [Assembly-primeiro programa](#Assembly-Primeiro-programa)
-- [Interrupção Externa](#Interrupção)<BR>
 - [Temporização](#Temporização) : Timer 0, Timer 1, Timer 2 e PWM
 - [Conversor AD](#Conversor-AD) 
 - [Comunições Seriais](#Comunicação-Serial) 
@@ -24,9 +38,9 @@
 
 - [Projetos e Programas](#Projetos-e-Programas)
 	- [Pisca Led](#Pisca-Led)
-	- [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
-	- [Display LCD 16x2](#Display-LCD-16x2)
-	- [Maquina de Lavar](#Maquina-de-Lavar)
+	- 
+	- 
+	- 
 
 ### Histórico
 
