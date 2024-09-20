@@ -18,7 +18,9 @@
 - 11/10 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
 - 18/10 -  Avaliação Escrita/Trabalho em Grupo
 
+ Help:  
  
+ https://chatgpt.com/g/g-TFvuISQH5-professor-dos-embarcados
  
 ## Utilizando Atmega328P para a compreensão e funcionamento de microprocessadores e microcontroladores em geral utilizando a linguagem Assembly.
 
