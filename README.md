@@ -14,8 +14,8 @@
 - 13/09 -  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
 - 20/09 -  Simulador Wowki, Display 7 segmentos  [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
 - 27/09 -  [Display LCD 16x2](#Display-LCD-16x2)
-- 04/10 -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
-- 11/10 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
+- 04/10 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
+- 11/10  -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
 - 18/10 -  Avaliação Escrita/Trabalho em Grupo
 
  Help:  
