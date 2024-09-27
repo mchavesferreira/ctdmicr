@@ -1,5 +1,9 @@
 Montagem Exemplo 4, esteira com display LCD
 
+Datasheet:   https://github.com/mchavesferreira/mice/blob/main/exemplo_4_LCD/HD44780.pdf
+
+Slide: https://github.com/mchavesferreira/mice/blob/main/exemplo_4_LCD/aula_lcd_assembly_v2.pdf
+
 <img src=lcd_simula.png>
 	
 	- LCD  > AVR (arduino);
