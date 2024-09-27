@@ -1,6 +1,6 @@
 Montagem Exemplo 4, esteira com display LCD
 
-<img src=imagens/lcd_simulador.png>
+<img src=lcd_simulador.png>
 	
 	- LCD  > AVR (arduino);
 	- RS > PD2 (9)
