@@ -24,7 +24,7 @@
 - 22/11 - Conversor AD
 - 29/11 - Memória EEPROM (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
 - 6/12 - Prova 2
-- 13/12 - Apresentação FINAL do Projeto da disciplina
+- 13/12 - [PROJETO](#PROJETO) Apresentação FINAL do Projeto da disciplina 
 - 20/12 - IFA
 
 
@@ -306,29 +306,7 @@ Simulação:  https://wokwi.com/projects/394247093827346433
 ![image](https://github.com/mchavesferreira/mcr/assets/63993080/fee83e1b-24d9-4df6-bfa0-f8256ef35413)
 
 
-### Projeto
 
--Modifique o projeto de simulação anterior para atender este projeto. Envie este link no SUAP Trabalho 1. Utilizando wokwi, SALVE O PROJETO COM LOCK.
-
--Elabore um exemplo de programação utilizando AVR Atmega 328P em assembly para automação de processos da seguinte figura: 
-
--Ao ligar a máquina, aguarda-se pressionar o botão1. Então a válvula V4 é fechada (High) e V1 é acionada por 4 segundos.
-
--A válvula V2 é acionada até que o sensor nível1 seja acionado.
-
--A válvula V3 é acionada por 2 segundos.
-
--O misturador M1 é acionado por 3 segundos.
-
--A válvula V4 é acionada por 2 segundo para esvaziar parcialmente o tanque.
-
--A válvula V2 é acionada por 5 segundos para diluir novamente a solução.
-
--O misturador é acionado por  4 segundos. Em seguida o tanque é esvaziado totalmente, abrindo-se a válvula V4 até o sensor nível 0 seja acionado.
-
--Volta-se ao estado inicial, desligando saídas.
-
-<a href= >pdf</a>
  
 # Dislplay 7 Segmentos
 
@@ -443,7 +421,7 @@ Código AVR assembly
 <a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
 
 
-### SMIE 2024- Projeto Final (breve)
+# PROJETO
 
 ## Requisitos
 - Utilizar microcontrolador Atmega328P
