@@ -17,6 +17,8 @@
 - 04/10 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
 - 11/10  -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
 - 18/10 -  Avaliação Escrita/Trabalho em Grupo
+- /10 - Prática com Timer 0
+- 01/11 - Introdução e prática com timer 1
 
  Help:  
  
