@@ -351,6 +351,17 @@ Slide, código para ativação de Int0 e Int1
 	
 ## Temporização
 
+## Timer 0
+
+Modos para o timer
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modonormal.png>
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modoctc.png>
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/fasecorrigida.png>
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/pwmrapido.png>
 
  
 ### Projetos e Programas utilizando Timer 0 e Timer 1 e PWM
