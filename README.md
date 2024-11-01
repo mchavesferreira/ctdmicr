@@ -19,6 +19,14 @@
 - 18/10 -  Avaliação Escrita/Trabalho em Grupo
 - /10 - Prática com Timer 0
 - 01/11 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
+- 08/11 - Comunicação UART15 
+- 15/11 - Multiplexação de display (cronometro)
+- 22/11 - Conversor AD
+- 29/11 - Memória EEPROM (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
+- 6/12 - Prova 2
+- 13/12 - Apresentação FINAL do Projeto da disciplina
+- 20/12 - IFA
+
 
  Help:  
  
@@ -442,17 +450,20 @@ Código AVR assembly
 - Linguagen Assembly
 - Montagem prática em matriz de contados(protoboard) utilizando potênciometros como entrada analógica, botões como entradas digitais, e leds como saídas digitais
 - Opcionalmente pode-se utilizar sensores e cargas (saídas) reais
-- Trabalho em dupla (apenas 1 equipe terá três integrantes já informado).
-- Programação com envio de código fonte e simulação em proteus para o email do professor
+- Projeto individual ou dupla
+- Programação com envio de código fonte e simulação em proteus ou wokwi inserido no SUAP 
 - Utilizar display LCD 16x2
-- Utilizar menu com no mínimo 3 alterações de valores em configuração (tempo, limite, etc...) para uma máquina de processo 
-- Reliazar leitura analógica
+- Utilizar menu com no mínimo 3 alterações de valores em configuração (tempo, limite, etc...) para uma máquina de processo
 - Utilizar temporização com interrupção (Timer 0, 1 e 2)
-- Complexidade e criatividade será ponderada
-- Prazo Trabalho prático: 09/12/2022 (Peso do trabalho na nota final: 40%)
+- Utilizar uma saída com ajuste PWM
+- Realizar leitura analógica (conversor AD)
+- Registrar ajustes em EEPROM
+- Documentar em relatório simples descrendo o projeto, procurem relacionar o uso dos requisitos com aplicações reais.
+- Complexidade e criatividade serão ponderadas.  
+- Prazo Trabalho prático: 13/12/2024 (Peso do trabalho na nota final: 40%)
 <BR>
 
-<BR>Peso das provas escritas: P1 30%  e  P2 30% (09/12/2022)
+<BR>Peso das provas escritas: P1 30%  e  P2 30% 
 <Br>Confira exemplos de <a href=https://github.com/mchavesferreira/smie/tree/main/timer>projetos</a> de ex-alunos matriculados na disciplina: 
 
 
