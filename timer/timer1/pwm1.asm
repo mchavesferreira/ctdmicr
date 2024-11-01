@@ -79,7 +79,8 @@ stop_timer1:
 ;; .include "lib328Pv02.inc"
 Start:
   ldi pwm_value,100 
-	rcall pwm_write ;executa modulação pwm
+  rcall pwm_write ;executa modulação pwm
+  rcall start_timer1
 Loop:
 
       rjmp  Loop
