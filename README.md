@@ -18,7 +18,7 @@
 - 11/10  -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
 - 18/10 -  Avaliação Escrita/Trabalho em Grupo
 - /10 - Prática com Timer 0
-- 01/11 - Introdução e prática com timer 1
+- 01/11 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
 
  Help:  
  
