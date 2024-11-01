@@ -69,3 +69,8 @@ Na entrada dos temporizadores há um pré-escalador, que basicamente é um divis
 ### Blocos Timer 1
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/bloco_timer1.png>
+
+### Pratique com timer 1
+
+<a href=https://github.com/mchavesferreira/mice/tree/main/timer/timer1> Códigos exemplos timer 1</a>
+
