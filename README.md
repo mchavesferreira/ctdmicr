@@ -355,6 +355,10 @@ Slide, código para ativação de Int0 e Int1
 <a href=https://github.com/mchavesferreira/smie/tree/main/timer>Códigos</a> utilizando temporização e PWM
 <BR>
 
+## Timer 1
+
+<a href=https://github.com/mchavesferreira/mice/blob/main/timer/timer1/Timer_1_livro.pdf>Timer 1 Capítulo livro</a>
+
 ## Conversor AD
 Código para conversão AD utilizando periférico interno
 <a href=https://github.com/mchavesferreira/smie/tree/main/conversor_ad>Saiba mais sobre o conversor AD</a>
