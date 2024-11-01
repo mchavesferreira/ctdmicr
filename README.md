@@ -351,9 +351,7 @@ Slide, código para ativação de Int0 e Int1
 	
 ## Temporização
 
-## Preescaler
 
-Na entrada dos temporizadores há um pré-escalador, que basicamente é um divisor de frequência com diferentes saídas conectadas a um multiplexador. Os temporizadores 0 e 1 compartilham o pré-escalador, mas com seleção independente."
  
 ### Projetos e Programas utilizando Timer 0 e Timer 1 e PWM
 <a href=https://github.com/mchavesferreira/smie/tree/main/timer>Códigos</a> utilizando temporização e PWM
@@ -363,8 +361,15 @@ Na entrada dos temporizadores há um pré-escalador, que basicamente é um divis
 
 <a href=https://github.com/mchavesferreira/mice/blob/main/timer/timer1/Timer_1_livro.pdf>Timer 1 Capítulo livro</a>
 
-<img src=imagens/blocotimer1.png>
+### Preescaler
 
+Na entrada dos temporizadores há um pré-escalador, que basicamente é um divisor de frequência com diferentes saídas conectadas a um multiplexador. Os temporizadores 0 e 1 compartilham o pré-escalador, mas com seleção independente.
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/divisor.png>
+
+### Blocos Timer 1
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/bloco_timer1.png>
 
 ## Conversor AD
 Código para conversão AD utilizando periférico interno
