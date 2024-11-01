@@ -74,3 +74,14 @@ Na entrada dos temporizadores há um pré-escalador, que basicamente é um divis
 
 <a href=https://github.com/mchavesferreira/mice/tree/main/timer/timer1> Códigos exemplos timer 1</a>
 
+## exemplo pwm
+
+https://github.com/mchavesferreira/mice/blob/main/timer/timer1/pwm1.asm
+
+## exemplo estouro timer 1 com lcd
+
+
+https://github.com/mchavesferreira/mice/blob/main/timer/timer1/Timer_1_eventos_100ms.asm
+
+
+
