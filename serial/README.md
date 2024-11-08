@@ -78,6 +78,15 @@ As principais características do módulo de comunicação USART do ATmega328 s�
 - **Modo de comunicação assíncrono com velocidade duplicável**.
 - **Interface SPI mestre**: Pode ser utilizada para comunicação SPI no modo mestre.
 
+## Taxa de Transmissão da UART no ATmega328
+
+A taxa de comunicação no modo mestre é gerada pelo registrador **UBRR0** (USART Baud Rate Register 0). Um contador, operando na frequência do clock da CPU, é carregado com o valor de UBRR0 ao chegar a zero ou quando um novo valor é escrito no registrador. Cada vez que o contador chega a zero, um pulso de clock é gerado, determinando o **baud rate**.
+
+O transmissor divide o clock do baud rate por 2, 8 ou 16, dependendo do modo configurado. Esse sinal resultante é usado diretamente pela unidade de recepção e transmissão de dados.
+
+A tabela 15.1 fornece as equações para calcular a taxa de comunicação (bps) e o valor apropriado de UBRR0 para diferentes modos de operação, utilizando o clock interno.
+
+
 
 A comunicação USART, a mesa utilizada em RS232
 
