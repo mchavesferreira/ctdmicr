@@ -19,9 +19,9 @@
 - 18/10 -  Avaliação Escrita/Trabalho em Grupo
 - /10 - Prática com Timer 0
 - 01/11 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
-- 08/11 - Comunicação UART15 
+- 08/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
 - 15/11 - Multiplexação de display (cronometro)
-- 22/11 - Conversor AD <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>saiba mais...</a>
+- 22/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
 - 29/11 - Memória EEPROM (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
 - 6/12 - Prova 2
 - 13/12 - [PROJETO](#PROJETO) Apresentação FINAL do Projeto da disciplina 
