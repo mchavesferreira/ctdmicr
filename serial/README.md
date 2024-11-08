@@ -17,14 +17,36 @@ Vantagens e desvantagens das comunicações série/paralelo
 <br><img src=imagens/vantagensserial.png>	
 
 
-Comunicações Assíncronas não utilizam clock e estabelecem tempo para o envio ou tempo de cada caractere
+## Comunicações Assíncronas 
+
+Não utilizam clock e estabelecem tempo para o envio ou tempo de cada caractere
+
+O remetente envia dados a uma certa velocidade. Para flexibilidade, os protocolos permitem várias velocidades.
+
+Se o destinatário não souber a velocidade ou julgá-la incorretamente, podem ocorrer erros.
+
 <br><img src=imagens/assincrona.png>
 
-Comunicação síncrona possui uma via de sinal de sincronismo (clock)
+## Comunicação síncrona 
+
+Possui uma via de sinal de sincronismo (clock)
+
+O remetente envia um sinal de clock junto com os dados: a cada borda ascendente/descendente do clock, o valor dos dados é lido pelo receptor.
+
 <br><img src=imagens/sincrona.png>
 
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/serial/imagens/modosincronismo.png>
+
+## Universal Asynchronous Receiver-Transmitter (UART)
+•UART é um protocolo serial half-duplex, assíncrono e simples.
+•Comunicação simples entre dois nós equivalentes.
+•Qualquer nó pode iniciar a comunicação.
+•Como a conexão é half-duplex, as duas vias de comunicação são completamente independentes.
+
 A comunicação USART, a mesa utilizada em RS232
-<br><img src=imagens/usart.png>
+
+<img src=imagens/usart.png>
 
 Registradores importantes para configuração da comnicação
 UBRR0H e  UBRR0L //Ajusta a taxa de transmissão
