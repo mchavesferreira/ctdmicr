@@ -17,23 +17,18 @@ Comunicações paralela/série
 ## Vantagens e desvantagens das comunicações série/paralelo
 
 ### Modo Serial
+
 •Vantagens:
-–Confiável
-–Baixo custo
-–Baixo consumo
-•Desvantagens:
-–Lento
-–Requer controle complexo
+Confiável, 
+Baixo custo, Baixo consumo
+
+•Desvantagens: Lento, Requer controle complexo
 
 ###  Modo Paralelo
-•Vantagens:
-–Muito rápido
-–Simples de implementar
-•Desvantagens:
-–Não confiável
-–Curto alcance
-–Caro
-–Consome mais energia
+
+•Vantagens: Muito rápido, Simples de implementar
+
+•Desvantagens: Não confiável, Curto alcance, Caro, Consome mais energia
 
 
 ## Comunicações Assíncronas 
