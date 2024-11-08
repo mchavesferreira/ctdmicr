@@ -75,7 +75,7 @@ Registradores de controle
 
 <BR><img src=imagens/controlandStatusregisterb.png>
 
-<BR><img src=imagens/controlandstatusregisterc.png>
+<BR><img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/serial/imagens/controlandstatusregisterc.png>
 
 Ajuste de baud rate register
 <BR><img src=imagens/baudrateregister.png>
