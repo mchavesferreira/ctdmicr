@@ -47,9 +47,6 @@ Possui uma via de sinal de sincronismo (clock)
 
 O remetente envia um sinal de clock junto com os dados: a cada borda ascendente/descendente do clock, o valor dos dados é lido pelo receptor.
 
-<br><img src=imagens/sincrona.png>
-
-
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/serial/imagens/modosincronismo.png>
 
 ## Universal Asynchronous Receiver-Transmitter (UART)
