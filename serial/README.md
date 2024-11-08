@@ -59,6 +59,26 @@ O remetente envia um sinal de clock junto com os dados: a cada borda ascendente/
 •Qualquer nó pode iniciar a comunicação.
 •Como a conexão é half-duplex, as duas vias de comunicação são completamente independentes.
 
+## Principais Características do Módulo de Comunicação USART do ATmega328
+
+As principais características do módulo de comunicação USART do ATmega328 são:
+
+- **Operação Full Duplex**: Possui registradores independentes para recepção e transmissão.
+- **Operação síncrona ou assíncrona**.
+- **Operação síncrona**: Pode operar com clock mestre ou escravo.
+- **Gerador de taxa de comunicação de alta resolução** (Baud Rate Generator).
+- **Suporte a frames seriais** com 5, 6, 7, 8 ou 9 bits de dados e 1 ou 2 bits de parada.
+- **Gerador de paridade**: Suporte para paridade par ou ímpar e conferência de paridade por hardware.
+- **Detecção de erros**: Inclui detecção de colisão de dados e erros de frames.
+- **Filtro para ruído**: Inclui detecção de bit de início falso e filtro digital passa-baixa.
+- **Três fontes de interrupção separadas**:
+  - Transmissão completa
+  - Recepção completa
+  - Esvaziamento do registrador de dados
+- **Modo de comunicação assíncrono com velocidade duplicável**.
+- **Interface SPI mestre**: Pode ser utilizada para comunicação SPI no modo mestre.
+
+
 A comunicação USART, a mesa utilizada em RS232
 
 <img src=imagens/usart.png>
