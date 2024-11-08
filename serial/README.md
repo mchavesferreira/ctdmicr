@@ -1,5 +1,9 @@
 # Comunicações seriais disponíveis no ATMEGA 328P
 
+https://github.com/mchavesferreira/mice/blob/main/serial/slide_serial_smc.pdf
+
+https://github.com/mchavesferreira/mice/blob/main/serial/USART_%20cap%20Livro.pdf
+
 - Usart
 - SPI
 - I2C
