@@ -144,7 +144,7 @@ findunidades:
 
 Exemplo utilizando a comunicação serial para configurar uma saida PWM
 <details><summary>Código PWM/Serial</summary>
-<p>
+
 ```ruby
 .include "lib328Pv02.inc"
 Start:
@@ -219,7 +219,7 @@ Start:
 	ldi transmit_caracter,13	
 	rcall usart_transmit
 Loop:
-	  rcall usart_receive; aguarda a recepcao de caracter
+	rcall usart_receive; aguarda a recepcao de caracter
 	  ldi aux,'+'
 	  eor aux,receive_caracter ;receive_caracter='+'?	
 	  breq mais ; sim, desvia para mais
@@ -241,5 +241,4 @@ menos:
 	rjmp Loop
 ```
 
-</p>
 </details>
