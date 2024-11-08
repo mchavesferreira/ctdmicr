@@ -1,4 +1,5 @@
-Comunicações seriais disponíveis no ATMEGA 328P
+# Comunicações seriais disponíveis no ATMEGA 328P
+
 - Usart
 - SPI
 - I2C
@@ -13,8 +14,26 @@ Modos de comunicação em apenas uma direção ou simultânea
 Comunicações paralela/série
 <br><img src=imagens/serialparalelo.png>
 
-Vantagens e desvantagens das comunicações série/paralelo
-<br><img src=imagens/vantagensserial.png>	
+## Vantagens e desvantagens das comunicações série/paralelo
+
+### Modo Serial
+•Vantagens:
+–Confiável
+–Baixo custo
+–Baixo consumo
+•Desvantagens:
+–Lento
+–Requer controle complexo
+
+###  Modo Paralelo
+•Vantagens:
+–Muito rápido
+–Simples de implementar
+•Desvantagens:
+–Não confiável
+–Curto alcance
+–Caro
+–Consome mais energia
 
 
 ## Comunicações Assíncronas 
