@@ -245,3 +245,9 @@ menos:
 ```
 
 </details>
+
+## Conversão de dados
+
+A rotina https://github.com/mchavesferreira/mice/blob/main/serial/CONVERT.asm  pode ser utilizada para converter valores antes da transmissão
+
+
