@@ -22,6 +22,7 @@ loop_ad:
  ```
 
 <details><summary>Explicação da rotina AD</summary>
+```ruby
 analog_read:
     ldi r30, 0b00100000          ; Configura o canal analógico e a referência de tensão
                                  ; Carrega 0b00100000 em r30:
@@ -48,8 +49,8 @@ loop_ad:
     lds adc_value, ADCH          ; Lê o valor alto da conversão do ADC (ADCH) e armazena em adc_value
                                  ; (Essa leitura é de 8 bits, se a precisão de 8 bits for suficiente)
     ret                          ; Retorna da sub-rotina com o valor lido em adc_value
-
-<details>
+```ruby
+</details>
 	
 ## Exemplo de leitura de um canal em assembly:
 
