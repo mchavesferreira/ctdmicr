@@ -143,6 +143,9 @@ findunidades:
 ```
 
 Exemplo utilizando a comunicação serial para configurar uma saida PWM
+
+O código a seguir é um exemplo de ajuste de uma saída serial através da comunicacao serial, onde + e - ajusta a largura de pulso
+
 <details><summary>Código PWM/Serial</summary>
 
 ```ruby
@@ -220,13 +223,13 @@ Start:
 	rcall usart_transmit
 Loop:
 	rcall usart_receive; aguarda a recepcao de caracter
-	  ldi aux,'+'
-	  eor aux,receive_caracter ;receive_caracter='+'?	
-	  breq mais ; sim, desvia para mais
-      ldi aux,'-'			 
-	  eor aux,receive_caracter ; receive _caracter='-'?	
-	  breq menos ;sim,desvia para menos
-      rjmp  Loop
+        ldi aux,'+'
+        eor aux,receive_caracter ;receive_caracter='+'?	
+        breq mais ; sim, desvia para mais
+        ldi aux,'-'			 
+        eor aux,receive_caracter ; receive _caracter='-'?	
+        breq menos ;sim,desvia para menos
+rjmp  Loop
 
 mais:
 	ldi aux,5
