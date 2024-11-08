@@ -1,6 +1,8 @@
 
 # Conversão AD (analógica para Digital)
 
+referência:   https://github.com/mchavesferreira/mice/blob/main/conversor_ad/cap_livro_AD.pdf
+
 <img src=imagens/conversor_ad.png><P>
  <img src=imagens/conversorAd_blocos.png><P>
  
