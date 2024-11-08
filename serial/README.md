@@ -39,8 +39,10 @@ Exemplo em C para receber um caractere
 	
 Registradores de controle
 <BR><img src=imagens/controlandStatusregistera.png>
+
 <BR><img src=imagens/controlandStatusregisterb.png>
-<BR><img src=imagens/controlandStatusregisterc.png>
+
+<BR><img src=imagens/controlandstatusregisterc.png>
 
 Ajuste de baud rate register
 <BR><img src=imagens/baudrateregister.png>
