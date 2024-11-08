@@ -54,35 +54,37 @@ Equações para o cálculo do registrador UBRR0 da taxa de transmissão
 <BR><img src=imagens/equacoesbaud.png>	
 	
 Utilizando a biblioteca para comunicação serial
+
 ```ruby
 .def transmit_caracter = r21	
 .def receive_caracter = r15	
 
 ; ### Sub-rotina de configuração da USART em 9600bps ###
 usart_init:
-	ldi r30,0			
-	sts UBRR0H,r30		 
-	ldi r30,103			
-	sts UBRR0L,r30		
-	ldi r30,0b00011000	
-	sts UCSR0B,r30		 
-	ret					
+    ldi r30, 0                ; Carrega o valor 0 no registrador r30
+    sts UBRR0H, r30           ; Define o registrador UBRR0H (parte alta do Baud Rate) como 0
+    ldi r30, 103              ; Carrega o valor 103 no registrador r30
+    sts UBRR0L, r30           ; Define o registrador UBRR0L (parte baixa do Baud Rate) com 103
+    ldi r30, 0b00011000       ; Carrega o valor binário 00011000 em r30
+    sts UCSR0B, r30           ; Define o registrador UCSR0B para habilitar o transmissor e receptor USART
+    ret                       ; Retorna da sub-rotina			
 	
 ; ### Sub-rotina para transmissão de caracter pela USART ###
 usart_transmit:
-	lds r30,UCSR0A		
-	sbrs r30,UDRE0     
-	rjmp usart_transmit	
-	sts UDR0,transmit_caracter		
-	ret					
+    lds r30, UCSR0A          ; Carrega o conteúdo do registrador UCSR0A em r30
+    sbrs r30, UDRE0          ; Salta a próxima instrução se o bit UDRE0 (buffer de dados vazio) estiver limpo
+    rjmp usart_transmit      ; Se o buffer não estiver vazio, continua tentando (espera buffer estar pronto)
+    sts UDR0, transmit_caracter ; Escreve o dado de transmit_caracter no registrador UDR0 para enviar
+    ret                      ; Retorna da sub-rotina
+				
 
 ; ### Sub-rotina para transmissão de caracter pela USART ###
 usart_receive:
-	lds r30,UCSR0A		
-	sbrs r30,RXC0		
-	rjmp usart_receive	
-	lds receive_caracter, UDR0		
-	ret
+    lds r30, UCSR0A          ; Carrega o conteúdo do registrador UCSR0A em r30
+    sbrs r30, RXC0           ; Salta a próxima instrução se o bit RXC0 (recepção completa) estiver limpo
+    rjmp usart_receive       ; Se o bit RXC0 não estiver setado, continua tentando ler (espera o dado chegar)
+    lds receive_caracter, UDR0 ; Carrega o dado recebido no registrador UDR0 para receive_caracter
+    ret                      ; Retorna da sub-rotina
 ```  
 
 Exemplo enviando a palavra IFSP utilizando a biblioteca:
