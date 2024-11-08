@@ -4,7 +4,8 @@
 <img src=imagens/conversor_ad.png><P>
  <img src=imagens/conversorAd_blocos.png><P>
  
- Utilizando biblioteca
+ ### Utilizando biblioteca
+ 
  ```ruby
  ; ### Sub-rotina ADC com 8 bits => LSB = Vref/(2^n-1) = 5/255 =~ 20mV => 0b00000001 =~ 20mV ###
 .def adc_value = r14
@@ -22,6 +23,7 @@ loop_ad:
  ```
 
 <details><summary>Explicação da rotina AD</summary>
+	
 ```ruby
 analog_read:
     ldi r30, 0b00100000          ; Configura o canal analógico e a referência de tensão
@@ -49,7 +51,8 @@ loop_ad:
     lds adc_value, ADCH          ; Lê o valor alto da conversão do ADC (ADCH) e armazena em adc_value
                                  ; (Essa leitura é de 8 bits, se a precisão de 8 bits for suficiente)
     ret                          ; Retorna da sub-rotina com o valor lido em adc_value
-```ruby
+```
+
 </details>
 	
 ## Exemplo de leitura de um canal em assembly:
