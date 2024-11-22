@@ -153,7 +153,8 @@ usart_receive:
     ret                      ; Retorna da sub-rotina
 ```  
 
-Exemplo enviando a palavra IFSP utilizando a biblioteca:
+# Exemplo enviando a palavra IFSP utilizando a biblioteca
+
 ```ruby
 .include "lib328Pv02.inc"
      
@@ -168,9 +169,10 @@ Exemplo enviando a palavra IFSP utilizando a biblioteca:
 	ldi transmit_caracter,'P'
 	rcall usart_transmit
 ```  
-	
+
+Biblioteca: https://github.com/mchavesferreira/mice/blob/main/serial/include%20%22lib328Pv02.inc
   
-  Rotina para separação de caracteres em LCD ou em comunicações seriais
+## Rotina para separação de caracteres em LCD ou em comunicações seriais
   
 ```ruby 
   ; ### Sub-rotina para escrever um numero de 0 a 255 no LCD ###
@@ -216,7 +218,7 @@ Exemplo utilizando a comunicação serial para configurar uma saida PWM
 
 O código a seguir é um exemplo de ajuste de uma saída serial através da comunicacao serial, onde + e - ajusta a largura de pulso
 
-<details><summary>Código PWM/Serial</summary>
+# Exemplo Código PWM/Serial
 
 ```ruby
 .include "lib328Pv02.inc"
@@ -314,9 +316,9 @@ menos:
 	rjmp Loop
 ```
 
-</details>
 
-## Conversão de dados
+
+## Rotina para Conversão de dados
 
 A rotina https://github.com/mchavesferreira/mice/blob/main/serial/CONVERT.asm  pode ser utilizada para converter valores antes da transmissão
 
