@@ -151,3 +151,12 @@ cp r21,aux
 brlo faixa4   ;150 <= r21 <200 
 rjmp faixa5   ; r21>=200
 ``` 
+
+
+##  Exemplo Lendo AD e exibindo no diplay LCD Faixas
+
+https://github.com/mchavesferreira/mice/blob/main/conversor_ad/faixas.asm
+
+## Exemplo Lendo AD e alterando PWM
+
+https://github.com/mchavesferreira/mice/tree/main/conversor_ad/exemplo_AD_pwm
