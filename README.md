@@ -435,7 +435,7 @@ Código AVR assembly
 - Utilizar temporização com interrupção (Timer 0, 1 e 2)
 - Utilizar uma saída com ajuste PWM
 - Realizar leitura analógica (conversor AD)
-- ** Imprimir na UART (serial) ** as etapas e "status" de funcionamento
+- Imprimir na UART (serial) as etapas e "status" de funcionamento
 - Registrar ajustes em EEPROM
 - Documentar em relatório simples descrendo o projeto, procurem relacionar o uso dos requisitos com aplicações reais.
 - Complexidade e criatividade serão ponderadas.  
