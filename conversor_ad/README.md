@@ -57,13 +57,66 @@ loop_ad:
 
 </details>
 	
-## Exemplo de leitura de um canal em assembly:
+# Exemplo de leitura de um canal em assembly:
 
 https://github.com/mchavesferreira/mice/tree/main/conversor_ad/ad_assembly
 
+``` rubby
+.org 0x0000
+      ; Reset Vector
+      rjmp  Start
+
+
+;====================================================================
+; CODE SEGMENT
+;====================================================================
+.include "lib328Pv02.inc"
+Start:
+      ; Write your code here
+	rcall lcd_init	; inicializa o LCD (coluna 0, linha 0)		 
+	rcall lcd_clear	;	
+	
+	ldi lcd_col,0
+	rcall lcd_lin0_col
+	
+	ldi lcd_caracter,'T'			
+	rcall lcd_write_caracter				
+	ldi lcd_caracter,'e'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'m'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'p'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'.'
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'='
+	rcall lcd_write_caracter
+	ldi lcd_caracter,' '
+	rcall lcd_write_caracter
+Loop:
+	ldi lcd_col,8
+	rcall lcd_lin0_col
+	
+	rcall analog_read	; Efetua a leitura analógica com 8 bits pelo ADC0 (LSB = Vref/(2^n-1) = 5/255 =~ 20mV => 0b00000001 =~ 20mV) do pino A0
+	;lsl adc_value       ; Multiplica o valor da conversão por 2 (Rotaciona 1 vez à esquerda),ignorei porquecom o potenciometro colocado no hardwere, não é mais necessário
+	mov lcd_number,adc_value
+	;mov temperatura,acd_value
+	rcall lcd_write_number
+
+	ldi lcd_caracter,223 	; Código do símbolo de graus, em binario seria 0b11011111 de acordo com a tabela ASC
+	rcall lcd_write_caracter
+	ldi lcd_caracter,'C'
+	rcall lcd_write_caracter	
+	rjmp  Loop
+ ```
+
+
 Exemplo de desvios por comparação
 > < ou =
-```
+> 
+``` rubby
 ;;; ---------------- exemplo com desvios de comparacao: =, <, >
  cp r11,r12  ; ou sub r11,r12
   
