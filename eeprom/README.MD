@@ -69,14 +69,18 @@ A EEPROM é utilizada para armazenar o valor atual de caixas. Sempre que o valor
 O código  armazena e gerencia valores na EEPROM de forma persistente, ou seja, não volátil.
 
 ```ruby
+
 .equ SP1 = pb0              ; Define o nome SP1 para representar o pino PB0.
 .equ AL = pb4               ; Define o nome AL para representar o pino PB4 (provavelmente usado para um alarme).
 .equ M1 = pb5               ; Define o nome M1 para representar o pino PB5 (provavelmente usado para controlar um motor).
 
-.def caixas = r0            ; Define o registrador `r0` como o registrador usado para armazenar o valor "caixas".
+.def caixas = r0            ; Define o registrador `r0` como o registrador usado 
 
+.ORG 0X00
 ; Reset Vector
 rjmp Start                  ; Após um reset, o código pula para a label `Start`.
+para armazenar o valor "caixas".
+
 
 .include "lib328Pv01.inc"   ; Inclui a biblioteca ou cabeçalho com definições específicas do microcontrolador ATmega328P.
 
