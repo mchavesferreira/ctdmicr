@@ -4,6 +4,15 @@
 Exemplo EEPROM
 
 
+
+De acordo com os registradores e bits de trabalho da EEPROM, os seguintes passos são necessários para efetuar-se uma escrita (a ordem dos passos 2 e 3 não é importante). Esses passos são necessários para se evitar um eventual escrita acidental.
+
+**1. Esperar até que o bit EEPE do registrador EECR se torne zero.**
+**2. Escrever o novo endereço da EEPROM no registrador EEAR** (opcional).
+**3. Escrever o dado a ser gravado no registrador EEDR (opcional).**
+**4. Escrever 1 lógico no bit EEMPE enquanto escreve 0 no bit EEPE do registrador EECR.**
+**5. Dentro de quatro ciclos de clock após ativar EEMPE, escrever 1 lógico no bit EEPE.**
+
 ## Biblioteca para EEPROM
 
 ```ruby
