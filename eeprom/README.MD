@@ -12,7 +12,7 @@ Para realizar uma gravação segura na EEPROM e evitar alterações indesejadas,
 
 De acordo com os registradores e bits de trabalho da EEPROM, os seguintes passos são necessários para efetuar-se uma escrita (a ordem dos passos 2 e 3 não é importante). Esses passos são necessários para se evitar um eventual escrita acidental.
 
-### Registrador EECR
+### Registradores para EEPROM
 <img src=registradoreseeprom.png>
 
 **1. Esperar até que o bit EEPE do registrador EECR se torne zero.**
