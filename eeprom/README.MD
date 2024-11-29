@@ -59,60 +59,80 @@ eeprom_read:
 
 ```
 
+## Exemplo de uso da memória eeprom
+
+A EEPROM é utilizada para armazenar o valor atual de caixas. Sempre que o valor de caixas é incrementado no loop principal, ele é escrito na EEPROM. Se ocorrer a condição de alarme (caixas = 12), o valor armazenado na EEPROM é resetado para 0.
+
+O código  armazena e gerencia valores na EEPROM de forma persistente, ou seja, não volátil.
+
 ```ruby
+.equ SP1 = pb0              ; Define o nome SP1 para representar o pino PB0.
+.equ AL = pb4               ; Define o nome AL para representar o pino PB4 (provavelmente usado para um alarme).
+.equ M1 = pb5               ; Define o nome M1 para representar o pino PB5 (provavelmente usado para controlar um motor).
 
-.equ SP1 = pb0
-.equ AL = pb4
-.equ M1 = pb5
+.def caixas = r0            ; Define o registrador `r0` como o registrador usado para armazenar o valor "caixas".
 
-.def caixas = r0
+; Reset Vector
+rjmp Start                  ; Após um reset, o código pula para a label `Start`.
 
-      ; Reset Vector
-      rjmp  Start
+.include "lib328Pv01.inc"   ; Inclui a biblioteca ou cabeçalho com definições específicas do microcontrolador ATmega328P.
 
-.include "lib328Pv01.inc"
 Start:
-      ; Write your code here
-      cbi ddrb,0
-      sbi portb,0
-      sbi ddrb,4
-      sbi ddrb,5
-      ldi eeprom_address,0   ;  define o endereço da memoria
-      rcall eeprom_read      ;  chama a leitura e faz a leitura no endereço
-      mov caixas,eeprom_number   ; o valor é recuperado em eeprom_number
-      mov display_number,caixas
-      rcall display_write
-Loop:
-      sbi portb,M1
-      cbi portb,AL
- SP1ON:
-      sbic pinb,SP1
-      rjmp SP1ON
- SP1OFF:
-      sbis pinb,SP1
-      rjmp SP1OFF
-      
-      inc caixas
-      mov display_number,caixas
-      rcall display_write   
-      mov eeprom_number,caixas
-      rcall eeprom_write
-      ldi aux,12
-      eor aux,caixas
-      breq ALERTA
-      rjmp  Loop
+    ; Configuração inicial
+    cbi ddrb,0              ; Configura o pino PB0 como entrada.
+    sbi portb,0             ; Ativa o pull-up interno no pino PB0.
+    sbi ddrb,4              ; Configura o pino PB4 como saída (possivelmente para o alarme).
+    sbi ddrb,5              ; Configura o pino PB5 como saída (possivelmente para o motor).
 
- ALERTA:
-      cbi portb,M1
-      sbi portb,AL
-      ldi eeprom_number,0
-      rcall eeprom_write
-      ldi delay_time,1
-      rcall delay_seconds
-      cbi portb,AL
-      ldi delay_time,1
-      rcall delay_seconds
-      rjmp ALERTA
+    ; Leitura inicial da EEPROM
+    ldi eeprom_address,0    ; Carrega o endereço 0 no registrador `eeprom_address`.
+    rcall eeprom_read       ; Chama a sub-rotina `eeprom_read` para ler o valor armazenado na EEPROM no endereço 0.
+    mov caixas,eeprom_number ; Move o valor lido da EEPROM para o registrador `caixas`.
+    mov display_number,caixas ; Copia o valor de `caixas` para `display_number` (usado para exibir o valor no display).
+    rcall display_write     ; Atualiza o display com o valor inicial de `caixas`.
+
+Loop:
+    ; Controle do motor e do alarme
+    sbi portb,M1            ; Ativa o motor (sinal no pino PB5).
+    cbi portb,AL            ; Desativa o alarme (sinal no pino PB4).
+
+    ; Aguarda o acionamento do SP1
+SP1ON:
+    sbic pinb,SP1           ; Verifica se o pino PB0 (SP1) está baixo. Se não estiver, pula a próxima instrução.
+    rjmp SP1ON              ; Se SP1 não foi acionado, continua verificando.
+
+    ; Aguarda o desligamento do SP1
+SP1OFF:
+    sbis pinb,SP1           ; Verifica se o pino PB0 (SP1) está alto. Se não estiver, pula a próxima instrução.
+    rjmp SP1OFF             ; Se SP1 ainda está acionado, continua verificando.
+
+    ; Incrementa o valor de caixas e atualiza a EEPROM
+    inc caixas              ; Incrementa o valor armazenado em `caixas`.
+    mov display_number,caixas ; Move o valor incrementado para `display_number` para exibição.
+    rcall display_write     ; Atualiza o display com o novo valor de `caixas`.
+    mov eeprom_number,caixas ; Move o novo valor de `caixas` para `eeprom_number`.
+    rcall eeprom_write      ; Chama a sub-rotina `eeprom_write` para salvar o valor atualizado na EEPROM.
+
+    ; Verificação de alarme
+    ldi aux,12              ; Carrega o valor 12 no registrador `aux`.
+    eor aux,caixas          ; Compara `caixas` com 12 usando XOR. O resultado será 0 se forem iguais.
+    breq ALERTA             ; Se `aux` for zero (caixas == 12), pula para a label `ALERTA`.
+    rjmp Loop               ; Retorna ao início do loop.
+
+ALERTA:
+    ; Ativação do alarme
+    cbi portb,M1            ; Desativa o motor (sinal no pino PB5).
+    sbi portb,AL            ; Ativa o alarme (sinal no pino PB4).
+    ldi eeprom_number,0     ; Prepara para gravar o valor 0 na EEPROM.
+    rcall eeprom_write      ; Grava o valor 0 na EEPROM no endereço especificado.
+
+    ; Sinalização do alarme com atraso
+    ldi delay_time,1        ; Configura o atraso de 1 segundo.
+    rcall delay_seconds     ; Aguarda 1 segundo.
+    cbi portb,AL            ; Desativa o alarme.
+    ldi delay_time,1        ; Configura outro atraso de 1 segundo.
+    rcall delay_seconds     ; Aguarda mais 1 segundo.
+    rjmp ALERTA             ; Retorna para o início do alarme (loop infinito).
 
 
 
