@@ -22,7 +22,7 @@
 - 08/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
 - 15/11 - Multiplexação de display (cronometro)
 - 22/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
-- 29/11 - Memória EEPROM (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
+- 29/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
 - 6/12 - Prova 2
 - 13/12 - [PROJETO](#PROJETO) Apresentação FINAL do Projeto da disciplina 
 - 20/12 - IFA
