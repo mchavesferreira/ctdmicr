@@ -6,26 +6,26 @@
 
 ## Aulas Turma 2024
 
-- 16/08  - Introdução a Disciplina, Histórico sobre microprocessadores
-- 23/08 -  Arquitetura VonNeuman, Arquitetura de funcionamento de um microprocessador genérico
-- 30/08 -  Arquitetura AVR Atmega 328P
-- 03/09 -  Primeiras instruções assembly para Atmega328P. [Mapeamento de Memória](#Mapeamento-de-memória)
-  06/09 -  Ambiente de programação
-- 13/09 -  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
-- 20/09 -  Simulador Wowki, Display 7 segmentos  [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
-- 27/09 -  [Display LCD 16x2](#Display-LCD-16x2)
-- 04/10 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
-- 11/10  -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
-- 18/10 -  Avaliação Escrita/Trabalho em Grupo
-- /10 - Prática com Timer 0
-- 01/11 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
-- 08/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
-- 15/11 - Multiplexação de display (cronometro)
-- 22/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
-- 29/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
-- 6/12 - Prova 2
-- 13/12 - [PROJETO](#PROJETO) Apresentação FINAL do Projeto da disciplina 
-- 20/12 - IFA
+- 29/07  - Introdução a Disciplina, Histórico sobre microcomputadores. Revisão de sistemas digitais, conversão de bases, decodificadores e memórias
+- 05/08 - Arquitetura de funcionamento de um microprocessador genérico. Funcionamento básico. Z80
+- 12/08 - Arquitetura VonNeuman, Havard, CISC, RISC. Memórias Voláteis e não Voláteis
+- 19/08 -  Arquitetura de microcontroladores. 8051, PIC16F628, AVR Atmega 328P
+- 26/08 -  Primeiras instruções assembly para Atmega328P. [Mapeamento de Memória](#Mapeamento-de-memória) 
+- 02/09 -  Ambiente de programação
+- 09/09 -  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
+- 16/09 -  Simulador Wowki, Display 7 segmentos  [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
+- 23/09 -  [Display LCD 16x2](#Display-LCD-16x2)
+- 30/09 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
+- 07/10  -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
+- 21/10 -  Avaliação Escrita/Trabalho em Grupo
+- 28/10 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
+- 04/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
+- 11/11 - Multiplexação de display (cronometro)
+- 18/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
+- 25/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
+- 02/12 - Prova 2
+- 09/12 - [PROJETO](#PROJETO) Apresentação FINAL do Projeto da disciplina 
+- 16/12 - IFA
 
 
  Help:  
@@ -449,7 +449,7 @@ Código AVR assembly
 Referências:
 [1] Atmega 328P 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash - Datasheet
 	
-[2] <a href=https://github.com/mchavesferreira/mcr/blob/main/dicas%20de%20projetos/Dicas%20para%20projetos.pdf>Dicas de projeto</a>
+[2] <a href=https://github.com/mchavesferreira/mcr/tree/main/dicas%20de%20projetos>Dicas de projeto</a>
 
 ## Links de auxilio
 
