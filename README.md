@@ -4,7 +4,7 @@
 
 <a href=https://github.com/mchavesferreira/mice/blob/main/ASSEMBLY/anexo%20A%20-%20Instru%C3%A7oes%20Assembly%20AVR.pdf>Anexo A - Instruções assembly Atemga328P</a>
 
-## Aulas Turma 2024
+## Aulas Turma 2025
 
 - 29/07  - Introdução a Disciplina, Histórico sobre microcomputadores. Revisão de sistemas digitais, conversão de bases, decodificadores e memórias
 - 05/08 - Arquitetura de funcionamento de um microprocessador genérico. Funcionamento básico. Z80
