@@ -5,7 +5,19 @@
 
 <img width="1374" height="786" alt="memoria_flip_flop" src="https://github.com/user-attachments/assets/84984292-29a6-4ccc-98a3-1164a64a4336" /></a>
 
+
 https://www.101computing.net/logic-gates-studio/ram.html?q=load
+
+
+
+### as primeiras memórias magnéticas
+
+![Magnetic_core](https://github.com/user-attachments/assets/1fb0d4ae-eacf-4390-89e0-6fe5ec85c689)
+
+
+Vídeo com a memória magnética do UNIVAC:  https://www.youtube.com/watch?v=siP5rvfLBWo
+
+https://apollo11space.com/apollo-guidance-computer-agc/
 
 
 <img width="967" height="827" alt="circuito_processador" src="https://github.com/user-attachments/assets/a984b14a-40b5-4906-965a-6fbb2eaca653" />
