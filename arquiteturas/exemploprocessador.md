@@ -14,6 +14,8 @@ https://www.101computing.net/logic-gates-studio/ram.html?q=load
 
 ![Magnetic_core](https://github.com/user-attachments/assets/1fb0d4ae-eacf-4390-89e0-6fe5ec85c689)
 
+<img src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhapixGaylNTQZhEuIXFjS_O0vbrYenT_cIjDi_y7k0LrfeNqHC8HAQClpQp-FwMGBiyqQck0xAwxwkQe-FdkuJnKSNs6kMOpySeHH9o-7_CpXVN8v3Rm4VU1pej3fXUN3LrKx9kNCoscD8/s1600/mem%C3%B3ria.gif>
+
 
 Vídeo com a memória magnética do UNIVAC:  https://www.youtube.com/watch?v=siP5rvfLBWo
 
