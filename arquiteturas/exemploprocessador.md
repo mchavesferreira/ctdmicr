@@ -4,7 +4,7 @@
 
 https://www.101computing.net/cpu-design-using-logic-gates/
 
-```markdown
+
 ## Memória de Instruções (Instruction Store)
 
 | Endereço | Instrução (Formato Binário) | Instrução de Baixo Nível | Descrição                                                                                   |
@@ -17,5 +17,5 @@ https://www.101computing.net/cpu-design-using-logic-gates/
 | 5        | 101                         | 01 10                     | LDA 10 — Carrega no acumulador o valor armazenado no endereço 10                           |
 | 6        | 110                         | 11 01                     | ADD 10 — Soma ao acumulador o valor armazenado no endereço 01                              |
 | 7        | 111                         | 10 10                     | STA 10 — Armazena no endereço 10 o valor contido no acumulador                             |
-```
+
 
