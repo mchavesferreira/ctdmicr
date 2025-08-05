@@ -1,6 +1,5 @@
 # Microprocessadores 
 
-https://chatgpt.com/g/g-ndeyJ4Bo3-fluxcore-z80
 
 
 ## Introdução
