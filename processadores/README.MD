@@ -1,8 +1,10 @@
-# Microprocessadores 
+# Processador Z80
 
 
 
-## Introdução
+## Computadores com Z80
+
+Exemplo Z80 - https://www.8bity.cz/files/zx80_schema.pdf
 
 
 ## Montando um processador de 8 bits em protoboard
@@ -14,20 +16,20 @@ https://www.youtube.com/watch?v=pcL8EIsQNwk&list=PLZ8dBTV2_5HTB43Mhfz-TyIATkECrp
 <img src=https://terremoth.github.io/z80-simulator/assets/z80-1.jpg>
 
 
-# Relação dos Pinos do Processador Z80
+## Relação dos Pinos do Processador Z80
 
-## Alimentação e Clock
+### Alimentação e Clock
 
 - **VCC**: Fornece a tensão de alimentação ao processador (geralmente +5V).
 - **GND**: Conexão ao terra, completando o circuito elétrico.
 - **CLK (Clock)**: Entrada de sinal de clock que sincroniza as operações do processador. Cada ciclo de clock corresponde a um passo nas operações do Z80.
 
-## Barramento de Endereços e Dados
+### Barramento de Endereços e Dados
 
 - **A0-A15 (Address Bus)**: Barramento de endereços de 16 bits. Estes pinos são usados para selecionar os locais de memória ou dispositivos de I/O que o Z80 acessará.
 - **D0-D7 (Data Bus)**: Barramento de dados de 8 bits. Utilizado para transferência bidirecional de dados entre o processador e os dispositivos conectados.
 
-## Controle de Memória e I/O
+### Controle de Memória e I/O
 
 - **MREQ (Memory Request)**: Ativo quando o Z80 está acessando a memória.
 - **IORQ (I/O Request)**: Indica que o processador está acessando um dispositivo de I/O.
@@ -46,7 +48,7 @@ https://www.youtube.com/watch?v=pcL8EIsQNwk&list=PLZ8dBTV2_5HTB43Mhfz-TyIATkECrp
 - **BUSACK (Bus Acknowledge)**: Indica que o processador liberou o barramento.
 - **RFSH (Refresh)**: Sinal usado para indicar que o processador está realizando um ciclo de refresh de memória dinâmica.
 
-## Barramento de Controle
+### Barramento de Controle
 
 - **WAIT**: Indica que um dispositivo não está pronto, fazendo o Z80 esperar antes de continuar.
 - **NMI (Non-Maskable Interrupt)**: Sinal de interrupção não mascarável que força o Z80 a atender a interrupção imediatamente.
@@ -54,7 +56,7 @@ https://www.youtube.com/watch?v=pcL8EIsQNwk&list=PLZ8dBTV2_5HTB43Mhfz-TyIATkECrp
 - **BUSREQ (Bus Request)**: Solicitação para liberar os barramentos de dados e endereço.
 - **BUSACK (Bus Acknowledge)**: Resposta do Z80 indicando que liberou os barramentos.
 
-## Outros
+### Outros
 
 - **RFSH (Refresh)**: Usado para atualizar a memória dinâmica (DRAM).
 - **WAIT**: Informa ao Z80 que um dispositivo está ocupado e o processador deve esperar.
@@ -62,11 +64,11 @@ https://www.youtube.com/watch?v=pcL8EIsQNwk&list=PLZ8dBTV2_5HTB43Mhfz-TyIATkECrp
 - **RESET**: Reinicia o processador.
 
 
-# Processador Z80: Características Principais
+## Processador Z80: Características Principais
 
 O Zilog Z80 é um microprocessador de 8 bits lançado em 1976, amplamente utilizado em computadores pessoais, sistemas embarcados e videogames das décadas de 1970 e 1980. Foi projetado como uma evolução do Intel 8080, oferecendo compatibilidade com seu conjunto de instruções e introduzindo melhorias significativas em termos de funcionalidade e eficiência.
 
-## Características Principais
+### Características Principais
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/main/processadores/ass04.gif>
 
@@ -137,13 +139,13 @@ https://terremoth.github.io/z80-simulator/
 
 
 
-## IDE
+### IDE
 
 https://www.oshonsoft.com/downloads.php
 
-# Simuladores online
+## Simuladores online
 
-## Simulador CPU-VSIM
+### Simulador CPU-VSIM
 
 https://www.merlot.org/merlot/viewMaterial.htm?id=773407108
 
@@ -155,6 +157,9 @@ https://cpuvisualsimulator.github.io/manual
 
 https://www.101computing.net/LMC/#
 
+# Exercícios na prática 12/0/2025 
+
+Apostila sobre Z80 Português  > https://github.com/mchavesferreira/ctdmicr/blob/main/processadores/z80a.pdf
 
 ## Enigma
 https://www.101computing.net/enigma-machine-emulator/
@@ -281,5 +286,8 @@ Arquiteturas Emergentes: TPUs, IPUs, NPUs
 Arquiteturas Baseadas em FPGA (Field-Programmable Gate Arrays):
 
 
+# Referências
 
+Intel Processador
+https://userpages.umbc.edu/~squire/intel_book.pdf
 
