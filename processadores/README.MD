@@ -140,7 +140,34 @@ https://marmsx.msxall.com/cursos/assembly/assembly4.html
 
 https://terremoth.github.io/z80-simulator/
 
+## Abra o simulador
 
+
+https://ignaciosearles.github.io/Z80-AssemblerAndEmulator/
+
+
+Copie o seguinte codigo
+
+
+```java
+org 10
+start:
+ld B, 0
+ld D, 17         
+ld E, 15                 
+loop:
+INC B
+
+ld D, B                  ;load necesarry shifts into B                  
+
+inc D                    ;increment shifts for ne
+CP 10
+JR z,fim
+jr loop
+fim:
+LD B, 0
+
+```
 
 ### IDE
 
