@@ -84,6 +84,9 @@ O Zilog Z80 é um microprocessador de 8 bits lançado em 1976, amplamente utiliz
   - **Ponteiro de Pilha (SP)**: Gerencia a pilha na memória.
   - **Contador de Programa (PC)**: Aponta para a próxima instrução a ser executada.
 
+<a href=https://github.com/IgnacioSearles/Z80-AssemblerAndEmulator/blob/master/Z80%20Instructions.pdf>Registradores do Z80</a>
+
+
 - **Interrupções**: Suporta múltiplos modos de interrupção, incluindo interrupções mascaráveis e não-mascaráveis, oferecendo flexibilidade no gerenciamento de eventos externos.
 
 - **Ciclos de Máquina**: O Z80 pode executar instruções em um número variável de ciclos de máquina, com operações mais simples executando em poucos ciclos, aumentando a eficiência.
