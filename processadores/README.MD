@@ -1,3 +1,4 @@
+
 # Processador Z80
 
 
@@ -156,11 +157,8 @@ ld B, 0
 ld D, 17         
 ld E, 15                 
 loop:
-INC B
-
-ld D, B                  ;load necesarry shifts into B                  
-
-inc D                    ;increment shifts for ne
+INC D                              
+inc D                   
 CP 10
 JR z,fim
 jr loop
