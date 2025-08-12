@@ -131,15 +131,6 @@ O conjunto de instruções do Z80 é um dos seus pontos mais fortes, oferecendo 
 
 
 
-https://ps4star.github.io/z80studio/
-
-https://ignaciosearles.github.io/Z80-AssemblerAndEmulator/
-
-
-https://marmsx.msxall.com/cursos/assembly/assembly4.html
-
-
-https://terremoth.github.io/z80-simulator/
 
 ## Abra o simulador
 
@@ -168,6 +159,19 @@ LD B, 0
 ```
 
 ### IDE
+
+outros simuladores
+
+https://ps4star.github.io/z80studio/
+
+https://ignaciosearles.github.io/Z80-AssemblerAndEmulator/
+
+
+https://marmsx.msxall.com/cursos/assembly/assembly4.html
+
+
+https://terremoth.github.io/z80-simulator/
+
 
 https://www.oshonsoft.com/downloads.php
 
