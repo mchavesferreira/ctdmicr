@@ -144,16 +144,18 @@ Copie o seguinte codigo
 ```java
 org 10
 start:
-ld B, 0
-ld D, 17         
-ld E, 15                 
+ld A, 0
+ld D, 2         
+ld E, 7  
+ADD A, D             
 loop:                          
-inc D                   
-CP 10
-JR z,fim
+inc A                   
+CP 8
+jr Z, fim
 jr loop
 fim:
-LD B, 0
+LD A, 0
+LD D, 0
 
 ```
 
