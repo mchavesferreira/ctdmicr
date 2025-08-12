@@ -147,8 +147,7 @@ start:
 ld B, 0
 ld D, 17         
 ld E, 15                 
-loop:
-INC D                              
+loop:                          
 inc D                   
 CP 10
 JR z,fim
