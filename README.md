@@ -7,12 +7,12 @@
 - 29/07  - Introdução a Disciplina, Histórico sobre microcomputadores. Revisão de sistemas digitais, conversão de bases, decodificadores e memórias
 - 05/08 - Arquitetura de funcionamento de um microprocessador genérico. 
 - 12/08 - <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/processadores> Z80 Funcionamento básico </a>. Arquitetura VonNeuman, Havard, CISC, RISC. Memórias Voláteis e não Voláteis
-- 19/08 -  Arquitetura de microcontroladores. 8051, PIC16F628, AVR Atmega 328P
-- 26/08 -  Primeiras instruções assembly para Atmega328P. [Mapeamento de Memória](#Mapeamento-de-memória) 
-- 02/09 -  Ambiente de programação
-- 09/09 -  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
-- 16/09 -  Simulador Wowki, Display 7 segmentos  [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
-- 23/09 -  [Display LCD 16x2](#Display-LCD-16x2)
+- 19/08 -  Arquitetura de microcontroladores. 8051, PIC16F628, AVR Atmega 328P [Mapeamento de Memória](#Mapeamento-de-memória)
+- 26/08 -  Primeiras instruções assembly para Atmega328P. Ambiente de programação.  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
+- 02/09 -  Pisca Led com biblioteca. Display 7 segmentos  [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
+- 09/09 -  [Display LCD 16x2](#Display-LCD-16x2)
+- 16/09 -  
+- 23/09 -  
 - 30/09 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
 - 07/10  -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
 - 21/10 -  Avaliação Escrita/Trabalho em Grupo
