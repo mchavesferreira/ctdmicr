@@ -11,5 +11,4 @@
 <BR>Montagem em protoboard
 <BR><img src=imagens/7segmentos5.gif>
 <Br>Vista do componente
-
-![funcionamentodeumdisplayde7segmentoscomoarduino3](https://github.com/user-attachments/assets/7846ffe1-cacf-4474-a116-1e8df63440bd)
+<img src=https://www.sta-eletronica.com.br/resources/artigos/funcionamentodeumdisplayde7segmentoscomoarduino3.jpg width=300>
