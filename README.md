@@ -302,7 +302,7 @@ Simulação:  https://wokwi.com/projects/394247093827346433
 
 
  
-# Dislplay 7 Segmentos
+# Display 7 Segmentos
 
 <a href=https://github.com/mchavesferreira/mice/tree/main/Exemplo%203%20-%20display%207%20Segmentos>Saiba mais</a>
 	
