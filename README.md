@@ -9,13 +9,13 @@
 - 12/08 - <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/processadores> Z80 Funcionamento básico </a>. Arquitetura VonNeuman, Havard, CISC, RISC. Memórias Voláteis e não Voláteis
 - 19/08 -  Arquitetura de microcontroladores. 8051, PIC16F628, AVR Atmega 328P [Mapeamento de Memória](#Mapeamento-de-memória)
 - 26/08 -  Primeiras instruções assembly para Atmega328P. Ambiente de programação.  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
-- 02/09 -  Pisca Led com biblioteca. Display 7 segmentos  [Dislplay 7 Segmentos](#Dislplay-7-Segmentos)
+- 02/09 -  Pisca Led com biblioteca. Display 7 segmentos  [Display 7 Segmentos](#Display-7-Segmentos)
 - 09/09 -  [Display LCD 16x2](#Display-LCD-16x2)
-- 16/09 -  
-- 23/09 -  
-- 30/09 -  Timer0, Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
-- 07/10  -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
-- 21/10 -  Avaliação Escrita/Trabalho em Grupo
+- 16/09 -  Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
+- 23/09 -   Timer0, Interrupções, Temporização
+- 30/09 -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
+- 07/10  -  Avaliação Escrita/Trabalho em Grupo
+- 21/10 - 
 - 28/10 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
 - 04/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
 - 11/11 - Multiplexação de display (cronometro)
@@ -344,53 +344,8 @@ Comunicação UART
 
 <a href=https://github.com/mchavesferreira/smie/tree/main/serial>Saiba mais sobre a comunicação serial</a>
 
-### Pisca Led
 
-<details><summary>Código Exemplo Pisca Led</summary>
-<p>
-
-```ruby  
-*/
-//--------------------------------------------------------------------------- //
-//		Fonte: AVR e Arduino: Técnicas de Projeto, 2a ed. - 2012.					  //	
-//--------------------------------------------------------------------------- //
-
-.equ LED   = PB5  		//LED é o substituto de PB5 na programação 
-
-.ORG 0x000				//endereço de início de escrita do código 
-rjmp INICIO
-.include "lib328Pv01.inc"
-INICIO:
-	LDI R16,0xFF		//carrega R16 com o valor 0xFF
-	OUT DDRB,R16		//configura todos os pinos do PORTB como saída
-
-PRINCIPAL:
-      SBI PORTB, LED		//coloca o pino PB5 em 5V
-      ldi delay_time, 2 	; Carrega delay_time com
-      rcall delay_seconds	; Chama rotina de atraso
-	 CBI PORTB, LED 	//coloca o pino PB5 em 0V
-	 RCALL ATRASO		//chama a sub-rotina de atraso
-	 RJMP PRINCIPAL 	//volta para PRINCIPAL
-
-
-ATRASO:					//atraso de aprox. 200ms
-	LDI R19,16	
- volta:		
-	DEC  R17			//decrementa R17, começa com 0x00
-	BRNE volta 			//enquanto R17 > 0 fica decrementando R17
-	DEC  R18			//decrementa R18, começa com 0x00
-	BRNE volta			//enquanto R18 > 0 volta decrementar R18
-	DEC  R19			//decrementa R19
-	BRNE volta			//enquanto R19 > 0 vai para volta
-	RET	
-```
-</p>
-</details> 
-
-Simulação:
-<a href=https://wokwi.com/projects/341066839950885460> Pisca Led</a><br>
  
-### Dislplay 7 Segmentos
 	
 ### Display LCD 16x2
 	
