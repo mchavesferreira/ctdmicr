@@ -314,12 +314,12 @@ Simulação:  https://wokwi.com/projects/394247093827346433
 ### Maquina de Lavar	
 	
 Exemplo Maquina de Lavar
-	
-<a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar><img src=imagens/maquinadelavar.png border=0>
+
+<img src=imagens/maquinadelavar.png border=0>
+Exemplo 5: 
+<a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar>
 Maquina de lavar </a>
-	
-Código AVR assembly
-<a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
+
 
 
 ## Interrupção
