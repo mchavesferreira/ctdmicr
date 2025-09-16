@@ -1,3 +1,6 @@
+# Maquina de lavar
+## Exemplo de uma maquina de estados
+
 Códigos de uma maquina de lavar utilizando maquina de estados como mudança de etapa em assembly. 
 O código exibe mensagens em LCD 16x2 para configuração de tempo em segundos para cada um das etapas.
 Exemplo modificar.
