@@ -307,11 +307,21 @@ Simulação:  https://wokwi.com/projects/394247093827346433
 <a href=https://github.com/mchavesferreira/mice/tree/main/Exemplo%203%20-%20display%207%20Segmentos>Saiba mais</a>
 	
 # Display LCD 16x2
+
 	
+Montagem Exemplo 4, esteira com display LCD
 
-<a href=https://github.com/mchavesferreira/mice/tree/main/exemplo_4_LCD>Display LCD </a>
+<img src=imagens/lcd_simulador.png>
+	
+	- LCD  > AVR (arduino);
+	- RS > PD2 (9)
+	- Enable > PD (8)
 
-### Maquina de Lavar	
+Exemplo 4:  <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/exemplo_4_LCD>Programação de LCD</a>
+
+
+
+# Maquina de Lavar	
 	
 Exemplo Maquina de Lavar
 
@@ -347,29 +357,7 @@ Comunicação UART
 
  
 	
-## Display LCD 16x2
-	
-Montagem Exemplo 4, esteira com display LCD
 
-<img src=imagens/lcd_simulador.png>
-	
-	- LCD  > AVR (arduino);
-	- RS > PD2 (9)
-	- Enable > PD (8)
-
-Exemplo 4:  <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/exemplo_4_LCD>Programação de LCD</a>
-
-
-
-## Maquina de Lavar	
-	
-Exemplo Maquina de Lavar
-	
-<a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar><img src=imagens/maquinadelavar.png border=0>
-Maquina de lavar </a>
-	
-Código AVR assembly
-<a href=https://wokwi.com/projects/341106129478091346>Simulação Maquina de lavar</a> (woki)
 
 
 # PROJETO
