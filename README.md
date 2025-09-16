@@ -347,7 +347,7 @@ Comunicação UART
 
  
 	
-### Display LCD 16x2
+## Display LCD 16x2
 	
 Montagem Exemplo 4, esteira com display LCD
 
@@ -356,10 +356,12 @@ Montagem Exemplo 4, esteira com display LCD
 	- LCD  > AVR (arduino);
 	- RS > PD2 (9)
 	- Enable > PD (8)
-  
-Simulação online utilizando LCD16x2: <a href=https://wokwi.com/projects/342964449732198994>Exemplo LCD </a>
 
-### Maquina de Lavar	
+Exemplo 4:  <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/exemplo_4_LCD>Programação de LCD</a>
+
+
+
+## Maquina de Lavar	
 	
 Exemplo Maquina de Lavar
 	
