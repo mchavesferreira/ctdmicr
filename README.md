@@ -317,7 +317,7 @@ Exemplo Maquina de Lavar
 
 <img src=imagens/maquinadelavar.png border=0>
 Exemplo 5: 
-<a href=https://github.com/mchavesferreira/smie/tree/main/exemplo_5_LCD_maquina_lavar>
+<a href=https://github.com/mchavesferreira/ctdmicr/tree/main/exemplo_5_LCD_maquina_lavar>
 Maquina de lavar </a>
 
 
