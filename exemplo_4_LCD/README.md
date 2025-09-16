@@ -1,3 +1,5 @@
+# Prática com Display LCD
+
 Montagem Exemplo 4, esteira com display LCD
 
 Datasheet:   https://github.com/mchavesferreira/mice/blob/main/exemplo_4_LCD/HD44780.pdf
@@ -13,5 +15,8 @@ Slide: https://github.com/mchavesferreira/mice/blob/main/exemplo_4_LCD/aula_lcd_
 Simulação online utilizando LCD16x2: <a href=https://wokwi.com/projects/342964449732198994>Exemplo LCD </a>
   
   
+Para programação com AVR Studio ou Microchip Studio utilize os códigos da pasta:
+
+https://github.com/mchavesferreira/ctdmicr/tree/main/exemplo_4_LCD/ATmega328P
 
 <br>https://wokwi.com/projects/342964449732198994
