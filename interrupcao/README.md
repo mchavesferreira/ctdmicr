@@ -41,7 +41,7 @@ Esquema do livro:
 
 
 
-Modos para o timer
+## Modos para o timer
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modonormal.png>
 
