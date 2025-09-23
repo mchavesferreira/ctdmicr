@@ -25,7 +25,7 @@ Endereços (interrupt vector) das interrupções para Atmega 328P
 
 
 
-### Interrupção Externa
+## Interrupção Externa Int0 e Int1
 
 Pinos da interrupção PD2(Int0) e PD3(int1)
 <img src=imagens/pinos_interrupcao_int01.png>
@@ -33,7 +33,6 @@ Pinos da interrupção PD2(Int0) e PD3(int1)
 
 Exemplo de um circuito para exemplificar a interrupção
 
-<img src=imagens/enderecoes_interrupcao.png>
 
 Esquema do livro:
 <img src=imagens/int0_livro.png>
@@ -53,7 +52,7 @@ Modos para o timer
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/pwmrapido.png>
 
  
-### Projetos e Programas utilizando Timer 0 e Timer 1 e PWM
+# Projetos e Programas utilizando Timer 0 e Timer 1 e PWM
 <a href=https://github.com/mchavesferreira/smie/tree/main/timer>Códigos</a> utilizando temporização e PWM
 <BR>
 
