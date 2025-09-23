@@ -49,6 +49,10 @@ Na entrada dos temporizadores há um pré-escalador, que basicamente é um divis
 
 ## Timer 0
 
+Datasheet:  https://cdn.awsli.com.br/945/945993/arquivos/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf.pdf4
+
+paginas 74
+
 ### Modos para o timer 0
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modonormal.png>
