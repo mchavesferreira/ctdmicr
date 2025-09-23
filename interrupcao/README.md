@@ -39,9 +39,17 @@ Esquema do livro:
 
 <a href=https://wokwi.com/projects/346138374477709906><img src=imagens/esquemasimula.png></a>
 
+# Temporizadores
 
+## Preescaler
 
-## Modos para o timer
+Na entrada dos temporizadores há um pré-escalador, que basicamente é um divisor de frequência com diferentes saídas conectadas a um multiplexador. Os temporizadores 0 e 1 compartilham o pré-escalador, mas com seleção independente.
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/divisor.png>
+
+## Timer 0
+
+### Modos para o timer 0
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modonormal.png>
 
@@ -60,11 +68,6 @@ Esquema do livro:
 
 <a href=https://github.com/mchavesferreira/mice/blob/main/timer/timer1/Timer_1_livro.pdf>Timer 1 Capítulo livro</a>
 
-### Preescaler
-
-Na entrada dos temporizadores há um pré-escalador, que basicamente é um divisor de frequência com diferentes saídas conectadas a um multiplexador. Os temporizadores 0 e 1 compartilham o pré-escalador, mas com seleção independente.
-
-<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/divisor.png>
 
 ### Blocos Timer 1
 
