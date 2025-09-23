@@ -28,7 +28,8 @@ Endereços (interrupt vector) das interrupções para Atmega 328P
 ### Interrupção Externa
 
 Pinos da interrupção PD2(Int0) e PD3(int1)
-<img src=imagens/pinos_interrupcao_int01.png.png>
+<img src=imagens/pinos_interrupcao_int01.png>
+
 
 Exemplo de um circuito para exemplificar a interrupção
 
