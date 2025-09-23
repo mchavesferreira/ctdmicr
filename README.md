@@ -332,16 +332,19 @@ Maquina de lavar </a>
 
 
 
-## Interrupção
+# Interrupção
 	
-### Interrupção Externa
+## Interrupção Externa
 
 Slide, código para ativação de Int0 e Int1
+
 <a href=https://github.com/mchavesferreira/smie/tree/main/interrupcao>Exemplo Interrupção externa</a>
+
+Exemplo 
 	
 ## Temporização
 
-## Timer 0
+## Timer 0, 1 e 2
 
 
 ## Conversor AD
@@ -360,7 +363,7 @@ Comunicação UART
 
 
 
-# PROJETO
+# PROJETO 1
 
 ## Requisitos
 - Utilizar microcontrolador Atmega328P
@@ -372,18 +375,23 @@ Comunicação UART
 - Utilizar display LCD 16x2
 - Utilizar menu com no mínimo 3 alterações de valores em configuração (tempo, limite, etc...) para uma máquina de processo
 - Utilizar temporização com interrupção (Timer 0, 1 e 2)
-- Utilizar uma saída com ajuste PWM
-- Realizar leitura analógica (conversor AD)
-- Imprimir na UART (serial) as etapas e "status" de funcionamento
-- Registrar ajustes em EEPROM
+
 - Documentar em relatório simples descrendo o projeto, procurem relacionar o uso dos requisitos com aplicações reais.
 - Complexidade e criatividade serão ponderadas.  
-- Prazo Trabalho prático: 13/12/2024 (Peso do trabalho na nota final: 40%)
+- Prazo Trabalho prático: 21/10/2025 (Peso do trabalho na nota final: 20%)
 <BR>
 
 <BR>Peso das provas escritas: P1 30%  e  P2 30% 
 <Br>Confira exemplos de <a href=https://github.com/mchavesferreira/smie/tree/main/timer>projetos</a> de ex-alunos matriculados na disciplina: 
 
+# Projeto 2
+Utilizar o projeto 1 acrescentando outros periféricos e recursos.
+
+- Utilizar uma saída com ajuste PWM
+- Realizar leitura analógica (conversor AD)
+- Imprimir na UART (serial) as etapas e "status" de funcionamento
+- Registrar ajustes em EEPROM
+- Utilizar multiplexação de pinos 
 
 Referências:
 [1] Atmega 328P 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash - Datasheet
