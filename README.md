@@ -138,7 +138,7 @@ Para maximizar o desempenho e o paralelismo, o AVR usa uma arquitetura harvard �
 
 # Sistema de Reset
 
-<center><img src=imagens/sistema_reset.png>Lógica Reset</center>
+<center><img src=imagens/sistema_reset.png width=80%>Lógica Reset</center>
 
 Durante o reset, todos os registradores de E/S são ajustados para seus valores iniciais, e o programa inicia a execução a partir do vetor de reset. Para o Atmel® ATmega328P, a instrução colocada no vetor de reset deve ser uma instrução RJMP – salto relativo – para a rotina de manipulação de reset. Se o programa nunca habilita uma fonte de interrupção, os vetores de interrupção não são usados e o código de programa regular pode ocupar nesses locais. Este também é o caso se o vetor de reset estiver na seção de aplicação enquanto os vetores de interrupção estiverem na seção de inicialização. As portas de E/S do AVR® são imediatamente redefinidas para seu estado inicial quando uma fonte de redefinição fica ativa. Isso não requer que nenhuma fonte de relógio esteja em execução. Após todas as fontes de reset ficarem inativas, um contador de atraso é invocado, estendendo o reset interno. Isso permite que a potência atinja um nível estável antes do início da operação normal. O tempo limite do contador de atraso é definido pelo usuário através dos fusíveis SUT e CKSEL. 
 
@@ -370,7 +370,7 @@ Comunicação UART
 ## Requisitos
 - Utilizar microcontrolador Atmega328P
 - Linguagen Assembly
-- Montagem prática em matriz de contados(protoboard) utilizando potênciometros como entrada analógica, botões como entradas digitais, e leds como saídas digitais
+- Montagem prática em matriz de contados(protoboard), botões como entradas digitais, e leds como saídas digitais
 - Opcionalmente pode-se utilizar sensores e cargas (saídas) reais
 - Projeto individual ou dupla
 - Programação com envio de código fonte e simulação em proteus ou wokwi inserido no SUAP 
@@ -391,6 +391,7 @@ Utilizar o projeto 1 acrescentando outros periféricos e recursos.
 
 - Utilizar uma saída com ajuste PWM
 - Realizar leitura analógica (conversor AD)
+- utilizar potênciometros como entrada analógica, 
 - Imprimir na UART (serial) as etapas e "status" de funcionamento
 - Registrar ajustes em EEPROM
 - Utilizar multiplexação de pinos 
