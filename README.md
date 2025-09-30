@@ -344,7 +344,9 @@ Exemplo
 	
 ## Temporização
 
-## Timer 0, 1 e 2
+Uso de Timer 0, 1 e 2:
+
+https://github.com/mchavesferreira/ctdmicr/tree/main/timer
 
 
 ## Conversor AD
