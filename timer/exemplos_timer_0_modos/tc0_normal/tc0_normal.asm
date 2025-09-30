@@ -108,7 +108,6 @@ Start:
 
 
 Loop:
-
 sbi PORTB,2
 LDI aux,10
 mov delay_time,aux
@@ -117,8 +116,7 @@ cbi PORTB,2
 LDI aux,10
 mov delay_time,aux
 RCALL delay_miliseconds
-
-    rjmp  Loop
+ rjmp  Loop
 
 	
 ;==============================================================	
@@ -133,5 +131,6 @@ TIM0_OV:
 apagaled: ; pisca o amarelo
     cbi portb,1
 	reti	
+
 
 
