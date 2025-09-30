@@ -12,17 +12,17 @@
 - 02/09 -  Pisca Led com biblioteca. Display 7 segmentos  [Display 7 Segmentos](#Display-7-Segmentos)
 - 09/09 -  [Display LCD 16x2](#Display-LCD-16x2)
 - 16/09 -  Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
-- 23/09 -   Timer0, Interrupções, Temporização
-- 30/09 -  Interrupções, Temporização - [Interrupção Externa](#Interrupção)<BR>
-- 07/10  -  Avaliação Escrita/Trabalho em Grupo
-- 21/10 - 
+- 23/09 -  Interrupções, Temporização modos [Interrupção Externa](#Interrupção)
+- 30/09 -  Temporização:  Timer0 - [Temporização](#Temporização)<BR>
+- 07/10  - Avaliação Escrita/Projeto 1
+- 21/10 -  SNCT
 - 28/10 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
 - 04/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
 - 11/11 - Multiplexação de display (cronometro)
 - 18/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
 - 25/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
 - 02/12 - Prova 2
-- 09/12 - [PROJETO](#PROJETO) Apresentação FINAL do Projeto da disciplina 
+- 09/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
 - 16/12 - IFA
 
 
