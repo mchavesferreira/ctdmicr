@@ -346,7 +346,7 @@ Exemplo
 
 Uso de Timer 0, 1 e 2:
 
-https://github.com/mchavesferreira/ctdmicr/tree/main/timer
+<a href=https://github.com/mchavesferreira/ctdmicr/tree/main/timer>Saiba mais sobre temporizadores (timers)</a>
 
 
 ## Conversor AD
