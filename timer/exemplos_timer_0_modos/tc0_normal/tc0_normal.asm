@@ -37,14 +37,14 @@ Start:
 	sbi ddrb,1
 	sbi ddrb,2 
 
-	ldi r16,120  ;  ativa pinos 0C0A E 0C0B com mudança na igualdade, operacao TC0 modo NORMAL
+	ldi r16,120  ;  ativa pinos 0C0A E 0C0B com mudanÃ§a na igualdade, operacao TC0 modo NORMAL
 	out OCR0A,r16
 
-	ldi r16,120  ;  ativa pinos 0C0A E 0C0B com mudança na igualdade, operacao TC0 modo NORMAL
+	ldi r16,120  ;  ativa pinos 0C0A E 0C0B com mudanÃ§a na igualdade, operacao TC0 modo NORMAL
 	out OCR0B,r16
 
 
-   ldi r16,0b01010000  ;  ativa pinos 0C0A E 0C0B com mudança na igualdade, operacao TC0 modo NORMAL
+   ldi r16,0b01010000  ;  ativa pinos 0C0A E 0C0B com mudanÃ§a na igualdade, operacao TC0 modo NORMAL
 	out TCCR0A,r16
 	
 	/* TCCR0A  Registrador de controle A do TC0  
@@ -79,9 +79,9 @@ Start:
 	/* TIMSK0 Interruptor de mascara do contador TC0
 	- - - - - 0CIE0B 0CIE0A TOIE0
 	7 6 5 4 3   2      1      0
-	0CIE0B ativa a interrupção na igualdade de comparação 0CR0B
-	0CIE0A ativa a interrupção na igualdade de comparação 0CR0A
-	TOIE0  ativa a interrupção de estouro em TOP=FF
+	0CIE0B ativa a interrupÃ§Ã£o na igualdade de comparaÃ§Ã£o 0CR0B
+	0CIE0A ativa a interrupÃ§Ã£o na igualdade de comparaÃ§Ã£o 0CR0A
+	TOIE0  ativa a interrupÃ§Ã£o de estouro em TOP=FF
 
 	*/
 
@@ -104,13 +104,18 @@ Start:
 
 	ldi r16,100
 	out TCNT0,r16   ; valor inicial do TC0  
-    sei ; habilita as interrupções no microcontrolador
+    sei ; habilita as interrupÃ§Ãµes no microcontrolador
 
 
 Loop:
-  ; codigo principal 
 
-  ;;;;;;
+sbi PORTB,2
+LDI R16,10
+RCALL delay_miliseconds
+cbi PORTB,2
+LDI R16,10
+RCALL delay_miliseconds
+
     rjmp  Loop
 
 	
@@ -126,3 +131,4 @@ TIM0_OV:
 apagaled: ; pisca o amarelo
     cbi portb,1
 	reti	
+
