@@ -386,7 +386,7 @@ Comunicação UART
 <BR>Peso das provas escritas: P1 30%  e  P2 30% 
 <Br>Confira exemplos de <a href=https://github.com/mchavesferreira/smie/tree/main/timer>projetos</a> de ex-alunos matriculados na disciplina: 
 
-Tema: Upgrade em cafeteira Dolce Gusto acrescento de 20% na nota de trabalho
+Tema: Upgrade em cafeteira Dolce Gusto acrescento de 25% na nota de trabalho
 
 # Projeto 2
 Utilizar o projeto 1 acrescentando outros periféricos e recursos.
