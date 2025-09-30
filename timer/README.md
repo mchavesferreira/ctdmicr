@@ -25,8 +25,8 @@ paginas 74
  ### Projetos com pwm
 
  
-# Projetos e Programas utilizando Timer 0 e Timer 1 e PWM
-<a href=https://github.com/mchavesferreira/smie/tree/main/timer>Códigos</a> utilizando temporização e PWM
+# Exemplos de códigos para os modos TIMER 0
+<a href=https://github.com/mchavesferreira/ctdmicr/tree/main/timer/exemplos_timer_0_modos>Códigos</a> utilizando temporização e PWM
 <BR>
 
 ## Timer 1
