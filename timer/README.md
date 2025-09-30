@@ -6,13 +6,13 @@ Na entrada dos temporizadores há um pré-escalador, que basicamente é um divis
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/divisor.png>
 
-## Timer 0
+# Timer 0
 
 Datasheet:  https://cdn.awsli.com.br/945/945993/arquivos/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf.pdf4
 
 paginas 74
 
-### Modos para o timer 0
+## Modos para o timer 0
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modonormal.png>
 
@@ -22,14 +22,19 @@ paginas 74
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/pwmrapido.png>
 
- ### Projetos com pwm
+ ## Sinais com pwm
+
+<img src=https://github.com/mchavesferreira/ctdmicr/blob/main/timer/imagens/PWMan.gif> Valor médio com PWM<P>
+
+<img src=https://github.com/mchavesferreira/ctdmicr/blob/main/timer/imagens/pwm_fade.gif> Fade 
+
 
  
-# Exemplos de códigos para os modos TIMER 0
+## Exemplos de códigos para os modos TIMER 0
 <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/timer/exemplos_timer_0_modos>Códigos</a> utilizando temporização e PWM
 <BR>
 
-## Timer 1
+# Timer 1
 
 <a href=https://github.com/mchavesferreira/mice/blob/main/timer/timer1/Timer_1_livro.pdf>Timer 1 Capítulo livro</a>
 
@@ -42,7 +47,7 @@ paginas 74
 
 <a href=https://github.com/mchavesferreira/mice/tree/main/timer/timer1> Códigos exemplos timer 1</a>
 
-## exemplo pwm
+### PWM Timer 1
 
 https://github.com/mchavesferreira/mice/blob/main/timer/timer1/pwm1.asm
 
