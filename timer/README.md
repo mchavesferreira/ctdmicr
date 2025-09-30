@@ -12,6 +12,9 @@ Datasheet:  https://cdn.awsli.com.br/945/945993/arquivos/Atmel-7810-Automotive-M
 
 paginas 74
 
+### Guia de registradores:
+https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registradores.docx
+
 ## Modos para o timer 0
 
 <img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modonormal.png>
