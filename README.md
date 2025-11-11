@@ -359,6 +359,17 @@ Comunicação UART
 
 <a href=https://github.com/mchavesferreira/smie/tree/main/serial>Saiba mais sobre a comunicação serial</a>
 
+## Multiplexação de display
+
+Uso de timers para varrer entradas ou saídas. 
+
+<img width="950" height="571" alt="image" src="https://github.com/user-attachments/assets/20dc137d-1489-433c-98e8-04da63c082ca" />
+
+Pagina 260 livro
+
+Considere os códigos e simulações desta pasta: 
+https://github.com/mchavesferreira/ctdmicr/tree/main/codigos_smie2023
+
 
  
 	
