@@ -1,4 +1,4 @@
-# Aula: Entendendo o Registrador SREG e Aplicação Prática
+# Aula: Entendendo o flag "T" Registrador SREG e Aplicação Prática
 
 ## Introdução
 O registrador de status **SREG** (Status Register) é um dos principais componentes do microcontrolador ATmega328P. Ele armazena informações sobre o estado atual do microprocessador, como flags de operações aritméticas e controle de interrupções. O **SREG** é amplamente utilizado em rotinas críticas e desempenha um papel importante em sistemas embarcados.
