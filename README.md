@@ -18,7 +18,7 @@
 - 21/10 -  SNCT
 - 28/10 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
 - 04/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
-- 11/11 - Multiplexação de display (cronometro)
+- 11/11 - Multiplexação de display  [Multiplexação de display](#Multiplexação-de-display)
 - 18/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
 - 25/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
 - 02/12 - Prova 2
