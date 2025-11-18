@@ -210,6 +210,9 @@ Esses flags no **SREG** permitem que instruções de desvio condicional (`breq`,
 
   
 
+## Exemplo conversor AD para um sensor de temperatura
+
+https://raw.githubusercontent.com/mchavesferreira/ctdmicr/refs/heads/main/conversor_ad/exemplo_AD_sensortemperatura.png
 
 
 
