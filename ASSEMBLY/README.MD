@@ -107,6 +107,14 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registra
 https://github.com/mchavesferreira/ctdmicr/tree/main/timer/exemplos_timer_0_modos
 
 
+### Aula sobre EEPROM
+Explicação dos registradores e exemplos de códigos
+
+https://github.com/mchavesferreira/ctdmicr/tree/main/eeprom
+
+
+
+
 
 
 
