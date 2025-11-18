@@ -6,11 +6,21 @@
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/rotinas/decodificanumerolcd255.asm
 
+#### rotina de motor de passo assembly
+
+https://github.com/mchavesferreira/ctdmicr/blob/main/codigos_smie2023/rotina_motor_de_passo.asm
+
+### Programa exemplo com semaforo  esquema de simulação em proteus
+
+https://github.com/mchavesferreira/ctdmicr/blob/main/Exemplo%201%20-%20semaforo/semaforo.zip
 
 ### Decodificar 0 a F para display de sete segmentos
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/rotinas/decodifica1display7segmentos.asm
 
+### esquema da placa arduino uno 
+
+https://github.com/mchavesferreira/ctdmicr/blob/main/arquiteturas/arduino-uno-schematic.pdf
 
 ### Manual de instruções para AVR 
 
