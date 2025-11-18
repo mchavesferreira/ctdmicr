@@ -66,7 +66,6 @@ https://github.com/mchavesferreira/mice/tree/main/conversor_ad/ad_assembly
       ; Reset Vector
       rjmp  Start
 
-
 ;====================================================================
 ; CODE SEGMENT
 ;====================================================================
@@ -113,9 +112,12 @@ Loop:
  ```
 
 
-Exemplo de desvios por comparação
-> < ou =
-> 
+## Rotinas de comparação de valores
+
+Desvios por comparação > < ou => 
+
+https://github.com/mchavesferreira/ctdmicr/blob/main/conversor_ad/faixas.asm
+
 ``` rubby
 ;;; ---------------- exemplo com desvios de comparacao: =, <, >
  cp r11,r12  ; ou sub r11,r12
@@ -127,7 +129,26 @@ Exemplo de desvios por comparação
  brni negativo
  brpl positivo
   ```
-# Explicação sobre Flags do Registrador de Status (SREG) no ATmega328P
+
+<details><summary>Comparação por faixas de valores</summary>  
+ ;;; ------------------ comparacoes e desvios por faixa de valores
+ldi aux,50
+cp r21,aux
+brlo faixa1   ; r21 <50  
+ldi aux,100
+cp r21,aux
+brlo faixa2   ; 50<= r21 <100  
+ldi aux,150
+cp r21,aux
+brlo faixa3   ;100 <= r21 <150 
+ldi aux,200
+cp r21,aux
+brlo faixa4   ;150 <= r21 <200 
+rjmp faixa5   ; r21>=200
+```
+</details>
+
+## Explicação sobre Flags do Registrador de Status (SREG) no ATmega328P
 
 No ATmega328P, as operações de comparação e subtração, como `cp` (compare) e `sub` (subtract), afetam flags específicos no **Status Register (SREG)**. Esse registrador de 8 bits contém informações sobre o estado do processador e permite que instruções de desvio condicional avaliem as condições de comparação.
 
@@ -187,23 +208,7 @@ O SREG é um registrador de 8 bits, onde cada bit representa um flag específico
 Esses flags no **SREG** permitem que instruções de desvio condicional (`breq`, `brne`, `brlo`, `brge`, etc.) realizem saltos baseados nos resultados das comparações.
 
   
- Comparação por faixas de valores
- ```
- ;;; ------------------ comparacoes e desvios por faixa de valores
-ldi aux,50
-cp r21,aux
-brlo faixa1   ; r21 <50  
-ldi aux,100
-cp r21,aux
-brlo faixa2   ; 50<= r21 <100  
-ldi aux,150
-cp r21,aux
-brlo faixa3   ;100 <= r21 <150 
-ldi aux,200
-cp r21,aux
-brlo faixa4   ;150 <= r21 <200 
-rjmp faixa5   ; r21>=200
-``` 
+
 
 
 ##  Exemplo Lendo AD e exibindo no diplay LCD Faixas
