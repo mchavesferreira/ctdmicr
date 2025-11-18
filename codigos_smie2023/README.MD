@@ -7,3 +7,10 @@
 #### Maquina de Chá
 <img src=https://raw.githubusercontent.com/mchavesferreira/ctdmicr/refs/heads/main/codigos_smie2023/maquina_de_cha_projetos_alunos.png>
 
+
+
+#### Esquema de um relogio construido display grande de leds
+
+<img src=https://raw.githubusercontent.com/mchavesferreira/ctdmicr/refs/heads/main/codigos_smie2023/esquema_relogio_grande.png>
+
+
