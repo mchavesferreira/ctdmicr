@@ -27,6 +27,11 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/atmel-0856-avr-ins
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/anexo%20A%20-%20Instru%C3%A7oes%20Assembly%20AVR.pdf
 
+
+### datasheet ATMEGA 328P versão atmel
+
+https://github.com/mchavesferreira/ctdmicr/blob/main/manuaisatmega/datasheet_atmega32p_versao_atmel.pdf
+
 ### Exempo de um programa simples em assembly para controle do tanque
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/exemplo.pdf
