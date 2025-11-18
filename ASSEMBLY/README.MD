@@ -96,7 +96,15 @@ https://github.com/mchavesferreira/ctdmicr/tree/main/serial
 https://github.com/mchavesferreira/ctdmicr/tree/main/timer
 
 
+### Guia de registradores para timers
 
+https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registradores.docx
+
+### Códigos exemplos para o Timer 0
+
+- overvflow, overflow com contador, CTC, pwm rápido, pwm fase corrigida e modo captura
+
+https://github.com/mchavesferreira/ctdmicr/tree/main/timer/exemplos_timer_0_modos
 
 
 
