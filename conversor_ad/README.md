@@ -118,7 +118,7 @@ Desvios por comparação > < ou =>
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/conversor_ad/faixas.asm
 
- ```rubyy
+ ```ruby
 ;;; ---------------- exemplo com desvios de comparacao: =, <, >
  cp r11,r12  ; ou sub r11,r12
   
@@ -128,9 +128,10 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/conversor_ad/faixas.asm
  brge r11_maior_igual
  brni negativo
  brpl positivo
-  ```
+ ```
 
 <details><summary>Comparação por faixas de valores</summary>  
+ ```ruby	
  ;;; ------------------ comparacoes e desvios por faixa de valores
 ldi aux,50
 cp r21,aux
@@ -211,7 +212,6 @@ Esses flags no **SREG** permitem que instruções de desvio condicional (`breq`,
 
 
 
-##  Exemplo Lendo AD e exibindo no diplay LCD Faixas
 
 https://github.com/mchavesferreira/mice/blob/main/conversor_ad/faixas.asm
 
