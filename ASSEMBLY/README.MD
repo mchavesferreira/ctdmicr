@@ -18,6 +18,12 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/Exemplo%201%20-%20semaforo/
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/rotinas/decodifica1display7segmentos.asm
 
+### Rotina com multiplas conversões em assembly
+
+ASCII- and BCD-coded, 16 bits, binario, asc5, bcd5, ...
+
+https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/rotinas/CONVERT.asm
+
 ### esquema da placa arduino uno 
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/arquiteturas/arduino-uno-schematic.pdf
