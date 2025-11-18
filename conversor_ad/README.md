@@ -130,7 +130,8 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/conversor_ad/faixas.asm
  brpl positivo
  ```
 
-<details><summary>Comparação por faixas de valores</summary>  
+ Exemplo Comparação por faixas de valores  
+	
  ```ruby	
  ;;; ------------------ comparacoes e desvios por faixa de valores
 ldi aux,50
@@ -147,7 +148,7 @@ cp r21,aux
 brlo faixa4   ;150 <= r21 <200 
 rjmp faixa5   ; r21>=200
 ```
-</details>
+
 
 ## Explicação sobre Flags do Registrador de Status (SREG) no ATmega328P
 
