@@ -1,5 +1,4 @@
-# Utilizando Display 7 segmentos em assembly
-
+# Conhecendo Display 7 segmentos
 <BR>
 <BR>
 
