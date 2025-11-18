@@ -26,7 +26,7 @@ loop_ad:
 
 <details><summary>Explicação da rotina AD</summary>
 	
-```ruby
+ ```ruby
 analog_read:
     ldi r30, 0b00100000          ; Configura o canal analógico e a referência de tensão
                                  ; Carrega 0b00100000 em r30:
@@ -61,7 +61,7 @@ loop_ad:
 
 https://github.com/mchavesferreira/mice/tree/main/conversor_ad/ad_assembly
 
-``` rubby
+ ```ruby
 .org 0x0000
       ; Reset Vector
       rjmp  Start
@@ -118,7 +118,7 @@ Desvios por comparação > < ou =>
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/conversor_ad/faixas.asm
 
-``` rubby
+ ```rubyy
 ;;; ---------------- exemplo com desvios de comparacao: =, <, >
  cp r11,r12  ; ou sub r11,r12
   
