@@ -145,7 +145,7 @@ Durante o reset, todos os registradores de E/S são ajustados para seus valores 
 # Programa Pisca Led
 
 Programa Pisca Led
-<center><a href=https://wokwi.com/projects/341066839950885460><img src=imagens/pisca.png  width=300 height=300 border=0></a></center>
+<center><a href=https://wokwi.com/projects/341066839950885460>Simulação</a></center>
 
  ```ruby  
 ; Pisca LED on PB5(Arduino Uno pin 13)
