@@ -22,8 +22,8 @@
 - 18/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
 - 25/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
 - 02/12 - Prova 2
-- 09/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
-- 16/12 - IFA
+- 02/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
+
 
 
  Help:  
