@@ -17,19 +17,19 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registra
 
 ## Modos para o timer 0
 
-<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modonormal.png>
+<img src=../imagens/modonormal.png>
 
-<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/modoctc.png>
+<img src=../imagens/modoctc.png>
 
-<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/fasecorrigida.png>
+<img src=../imagens/fasecorrigida.png>
 
-<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/pwmrapido.png>
+<img src=../imagens/pwmrapido.png>
 
  ## Sinais com pwm
 
-<img src=https://github.com/mchavesferreira/ctdmicr/blob/main/timer/imagens/PWMan.gif> Valor médio com PWM<P>
+<img src=../timer/imagens/PWMan.gif> Valor médio com PWM<P>
 
-<img src=https://github.com/mchavesferreira/ctdmicr/blob/main/timer/imagens/pwm_fade.gif> Fade 
+<img src=../timer/imagens/pwm_fade.gif> Fade 
 
 
  
