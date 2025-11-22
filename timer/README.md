@@ -4,7 +4,7 @@
 
 Na entrada dos temporizadores há um pré-escalador, que basicamente é um divisor de frequência com diferentes saídas conectadas a um multiplexador. Os temporizadores 0 e 1 compartilham o pré-escalador, mas com seleção independente.
 
-<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/divisor.png>
+<img src=../imagens/divisor.png>
 
 # Timer 0
 
@@ -39,12 +39,12 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registra
 
 # Timer 1
 
-<a href=https://github.com/mchavesferreira/mice/blob/main/timer/timer1/Timer_1_livro.pdf>Timer 1 Capítulo livro</a>
+<a href=https://github.com/mchavesferreira/ctdmicr/blob/main/timer/timer1/Timer_1_livro.pdf>Timer 1 Capítulo livro</a>
 
 
 ### Blocos Timer 1
 
-<img src=https://raw.githubusercontent.com/mchavesferreira/mice/refs/heads/main/imagens/bloco_timer1.png>
+<img src=https://raw.githubusercontent.com/mchavesferreira/ctdmicr/refs/heads/main/imagens/bloco_timer1.png>
 
 ### Pratique com timer 1
 
@@ -52,13 +52,13 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registra
 
 ### PWM Timer 1
 
-https://github.com/mchavesferreira/mice/blob/main/timer/timer1/pwm1.asm
+https://github.com/mchavesferreira/ctdmicr/blob/main/timer/timer1/pwm1.asm
 
 
 ## exemplo estouro timer 1 com lcd
 
 
-https://github.com/mchavesferreira/mice/blob/main/timer/timer1/Timer_1_eventos_100ms.asm
+https://github.com/mchavesferreira/ctdmicr/blob/main/timer/timer1/Timer_1_eventos_100ms.asm
 
 
 
