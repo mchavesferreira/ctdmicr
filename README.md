@@ -69,12 +69,12 @@ Teclas de atalho e tutorial para o <a href=https://docs.wokwi.com/pt-BR/guides/d
 
 Atmel Studio:<a href=http://studio.download.atmel.com/7.0.2389/as-installer-7.0.2389-full.exe>Atmel Studio 7.0</a><BR>
   
-Gravador para firmware .hex utilizando bootloader Arduino: <a href=https://github.com/mchavesferreira/smie/blob/main/hexloader.zip>Hexloader</a>
+Gravador para firmware .hex utilizando bootloader Arduino: <a href=hexloader.zip>Hexloader</a>
  
 # Mapeamento-de-memória
  
 Instruções principais para a movimentação de bytes na memória do Atmega328
-<center><img src=https://raw.githubusercontent.com/mchavesferreira/smie/main/imagens/movimentacao_bits_bytes.png></center>
+<center><img src=imagens/movimentacao_bits_bytes.png></center>
  
 # Configuração de pinos
 
@@ -145,7 +145,7 @@ Durante o reset, todos os registradores de E/S são ajustados para seus valores 
 # Programa Pisca Led
 
 Programa Pisca Led
-<center><a href=https://wokwi.com/projects/341066839950885460><img src=https://github.com/mchavesferreira/mcr/blob/main/imagens/pisca.png  width=300 height=300 border=0></a></center>
+<center><a href=https://wokwi.com/projects/341066839950885460><img src=imagens/pisca.png  width=300 height=300 border=0></a></center>
 
  ```ruby  
 ; Pisca LED on PB5(Arduino Uno pin 13)
@@ -338,7 +338,7 @@ Maquina de lavar </a>
 
 Slide, código para ativação de Int0 e Int1
 
-<a href=https://github.com/mchavesferreira/smie/tree/main/interrupcao>Exemplo Interrupção externa</a>
+<a href=interrupcao>Exemplo Interrupção externa</a>
 
 Exemplo 
 	
@@ -351,13 +351,13 @@ Uso de Timer 0, 1 e 2:
 
 ## Conversor AD
 Código para conversão AD utilizando periférico interno
-<a href=https://github.com/mchavesferreira/smie/tree/main/conversor_ad>Saiba mais sobre o conversor AD</a>
+<a href=conversor_ad>Saiba mais sobre o conversor AD</a>
 
 ## Comunicação Serial
 
 Comunicação UART 
 
-<a href=https://github.com/mchavesferreira/smie/tree/main/serial>Saiba mais sobre a comunicação serial</a>
+<a href=serial>Saiba mais sobre a comunicação serial</a>
 
 ## Multiplexação de display
 
