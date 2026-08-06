@@ -142,7 +142,6 @@ Copie o seguinte codigo
 
 
 ```java
-org 10
 start:
 ld A, 0
 ld D, 2         
@@ -156,6 +155,7 @@ jr loop
 fim:
 LD A, 0
 LD D, 0
+jr start
 
 ```
 
