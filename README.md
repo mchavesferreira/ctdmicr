@@ -2,27 +2,26 @@
 
 
 
-## Aulas Turma 2025
+## Aulas Turma 2°/2026
 
-- 29/07  - Introdução a Disciplina, Histórico sobre microcomputadores. Revisão de sistemas digitais, conversão de bases, decodificadores e memórias
-- 05/08 - Arquitetura de funcionamento de um microprocessador genérico. 
-- 12/08 - <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/processadores> Z80 Funcionamento básico </a>. Arquitetura VonNeuman, Havard, CISC, RISC. Memórias Voláteis e não Voláteis
-- 19/08 -  Arquitetura de microcontroladores. 8051, PIC16F628, AVR Atmega 328P [Mapeamento de Memória](#Mapeamento-de-memória)
-- 26/08 -  Primeiras instruções assembly para Atmega328P. Ambiente de programação.  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
-- 02/09 -  Pisca Led com biblioteca. Display 7 segmentos  [Display 7 Segmentos](#Display-7-Segmentos)
-- 09/09 -  [Display LCD 16x2](#Display-LCD-16x2)
-- 16/09 -  Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
-- 23/09 -  Interrupções, Temporização modos [Interrupção Externa](#Interrupção)
-- 30/09 -  Temporização:  Timer0 - [Temporização](#Temporização)<BR>
-- 07/10  - Avaliação Escrita/Projeto 1
-- 21/10 -  SNCT
-- 28/10 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
-- 04/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
-- 11/11 - Multiplexação de display  [Multiplexação de display](#Multiplexação-de-display)
-- 18/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
-- 25/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
-- 02/12 - Prova 2
-- 02/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
+- 30/07  - Introdução a Disciplina, Histórico sobre microcomputadores. Revisão de sistemas digitais, conversão de bases, decodificadores e memórias
+- 06/08 - Arquitetura de funcionamento de um microprocessador genérico. <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/processadores> Z80 Funcionamento básico </a>.
+- 13/08 -  Arquitetura VonNeuman, Havard, CISC, RISC. Memórias Voláteis e não Voláteis. Arquitetura de microcontroladores. 8051, PIC16F628, AVR Atmega 328P [Mapeamento de Memória](#Mapeamento-de-memória)
+- 20/08 - Primeiras instruções assembly para Atmega328P. Ambiente de programação.  [Programa Pisca Led](#Programa-Pisca-Led), [Programa Reservatorio](#Programa-Reservatorio)
+- 27/08 -  Pisca Led com biblioteca. Display 7 segmentos  [Display 7 Segmentos](#Display-7-Segmentos)
+- 03/09 -  [Display LCD 16x2](#Display-LCD-16x2)
+- 10/09 -  Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
+- 17/09 -  Interrupções, Temporização modos [Interrupção Externa](#Interrupção)
+- 24/09 -  Temporização:  Timer0 - [Temporização](#Temporização)<BR>
+- 01/10 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
+- 08/10  - Avaliação Escrita/Projeto 1
+- 22/10 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
+- 29/10 -  SNCT
+- 05/11 - Multiplexação de display  [Multiplexação de display](#Multiplexação-de-display)
+- 12/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
+- 19/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
+- 26/11 - Prova 2
+- 03/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
 
 
 
