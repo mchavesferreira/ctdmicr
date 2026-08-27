@@ -294,6 +294,75 @@ volta:
 ```
 </details>
 
+
+# programa para o platformio
+
+```ruby 
+//--------------------------------------------------------------------------- //
+// EXEMPLO 		para o plaformio			  //	
+//--------------------------------------------------------------------------- //
+
+#include <avr/io.h>
+
+; LED bit in PORTB
+.equ LED, PB5   ; Arduino Uno (atmega328p)
+
+.text
+
+;
+; Main program
+;
+.global main
+main:			
+INICIO:
+     LDI R19, 0b00000111	//carrega R19 
+     OUT  _SFR_IO_ADDR(DDRB),R19		//configura todos os pinos   _SFR_IO_ADDR( _SFR_IO_ADDR(DDRB))
+     LDI R19, 0b00111000
+     OUT  _SFR_IO_ADDR(PORTB),R19
+; aguarda botao start
+PRINCIPAL:      
+     SBIC _SFR_IO_ADDR(PINB),5		
+     RJMP PRINCIPAL
+     RJMP ENCHER
+
+; Liga válvula aguarda sensor cheio
+ENCHER:
+    SBI  _SFR_IO_ADDR(PORTB),0
+    SBIC _SFR_IO_ADDR(PINB),3
+    RJMP ENCHER
+    RJMP MISTURAR
+
+; desliga V1, liga misturador por 2 seg. 
+MISTURAR:
+    CBI  _SFR_IO_ADDR(PORTB),0
+    SBI  _SFR_IO_ADDR(PORTB),2
+    RCALL ATRASO 
+    RCALL ATRASO 
+    CBI  _SFR_IO_ADDR(PORTB), 2
+    RJMP ESVAZIAR
+
+; Liga válvula 2 aguarda sensor vazio
+ESVAZIAR:
+    SBI  _SFR_IO_ADDR(PORTB),1
+    SBIC _SFR_IO_ADDR(PINB),4
+    RJMP ESVAZIAR
+    CBI  _SFR_IO_ADDR(PORTB),1
+    RJMP PRINCIPAL
+; .  .    .   .    .    .    .    .   .     .   
+; rotina de atraso 1 segundo. 
+ATRASO:	
+      LDI R19,80	
+volta:		
+      DEC  R17	
+      BRNE volta
+      DEC  R18	
+      BRNE volta
+      DEC  R19
+      BRNE volta
+      RET
+```
+	  
+
 Simulação:  https://wokwi.com/projects/394247093827346433
 
 ![image](https://github.com/mchavesferreira/mcr/assets/63993080/fee83e1b-24d9-4df6-bfa0-f8256ef35413)
