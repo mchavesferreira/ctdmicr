@@ -74,29 +74,61 @@ volta:
  ```
 
  ```ruby
-; Teste de leitura e pull-up
+; =========================================================
+; ATmega328P
+; Teste de entrada digital PD7 com pull-up
+; LED interno do Arduino UNO em PB5
+; =========================================================
 
 #include <avr/io.h>
 
-.text
-
+.section .text
 .global main
+
 main:
-   ; configurando pinos de entrada e saída
-   cbi _SFR_IO_ADDR(DDRD), PD7
-   sbi _SFR_IO_ADDR(PORTD), PD7
-   sbi _SFR_IO_ADDR(PORTB), PB5
- 
-   ; Main loop
+
+    ; -----------------------------------------------------
+    ; PD7 como entrada
+    ; -----------------------------------------------------
+    cbi _SFR_IO_ADDR(DDRD), PD7
+
+    ; Ativa pull-up interno em PD7
+    sbi _SFR_IO_ADDR(PORTD), PD7
+
+
+    ; -----------------------------------------------------
+    ; PB5 como saída
+    ; Arduino UNO: LED interno (D13)
+    ; -----------------------------------------------------
+    sbi _SFR_IO_ADDR(DDRB), PB5
+
+    ; Inicialmente LED apagado
+    cbi _SFR_IO_ADDR(PORTB), PB5
+
+
 loop:
-   sbis _SFR_IO_ADDR(PIND),PD7    ; LED on
-   rjmp is_zero
-   sbi _SFR_IO_ADDR(PORTB), PB5     ; LED on
-   rjmp continue
-is_zero:
-   cbi _SFR_IO_ADDR(PORTB),PB5     ; LED on
-continue:
-   rjmp loop
+
+    ; Se PD7 = 1, pula a próxima instrução
+    sbis _SFR_IO_ADDR(PIND), PD7
+
+    ; Só executa se PD7 = 0
+    rjmp botao_acionado
+
+
+    ; PD7 = 1
+    ; Entrada aberta devido ao pull-up
+    cbi _SFR_IO_ADDR(PORTB), PB5
+
+    rjmp loop
+
+
+botao_acionado:
+
+    ; PD7 = 0
+    ; Pino conectado ao GND
+    sbi _SFR_IO_ADDR(PORTB), PB5
+
+    rjmp loop
 
  ```    
  
