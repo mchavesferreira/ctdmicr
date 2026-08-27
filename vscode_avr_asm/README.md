@@ -28,19 +28,20 @@ debug_svd_path = atmega328p.svd
 
  muda o nome do arquivo /src/main.c para main.S
 
- ```ruby
 
-; Blinking LED demo
-; Jorge Juan-Chico. May, 2021
-;
+ Forma rápida,
+ 
+ Baixe o pacote e abra o platformio
+ 
+ platformio_exemplo_pisca_asm.zip
+
+ ```ruby
 ; Blink: blinking LED demo for ATmega328p Arduino boards.
 
 #include <avr/io.h>
 
-
 ; LED bit in PORTB
 .equ LED, PB5   ; Arduino Uno (atmega328p)
-;.equ LED, PB7   ; Arduino Mega 2560 (atmega2560)
 
 .text
 
@@ -49,13 +50,8 @@ debug_svd_path = atmega328p.svd
 ;
 .global main
 main:
-
-    ; Initialization code
-    ; cycle counter: r22:r21:r20 (24 bits)
-
-.ORG 0x000
     LDI R16,0b11111111		//carrega R16 com o valor 0xFF
-    OUT DDRB,R16
+    OUT _SFR_IO_ADDR(DDRB),R16
 
     ; Main loop
 loop:
@@ -75,6 +71,31 @@ volta:
    DEC  R19			//decrementa R19
    BRNE volta
  ret
- 
  ```
+
+ ```ruby
+
+
+.global main
+main:
+
+    cbi _SFR_IO_ADDR(DDRD), PD7
+    sbi _SFR_IO_ADDR(PORTD), PD7
+    sbi _SFR_IO_ADDR(PORTB), PB5
+  
+   ; LDI R16,0b11111111		//carrega R16 com o valor 0xFF
+    ;OUT DDRB,R16
+
+    ; Main loop
+loop:
+    sbis _SFR_IO_ADDR(PORTD),PD7    ; LED on
+    rjmp is_zero
+    sbi _SFR_IO_ADDR(PORTB), PB5     ; LED on
+    rjmp continue
+is_zero:
+    cbi _SFR_IO_ADDR(PORTB),PB5     ; LED on
+continue:
+    rjmp loop
+
+ ```    
  
