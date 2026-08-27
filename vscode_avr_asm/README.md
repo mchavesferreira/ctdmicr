@@ -74,28 +74,29 @@ volta:
  ```
 
  ```ruby
+; Teste de leitura e pull-up
 
+#include <avr/io.h>
+
+.text
 
 .global main
 main:
-
-    cbi _SFR_IO_ADDR(DDRD), PD7
-    sbi _SFR_IO_ADDR(PORTD), PD7
-    sbi _SFR_IO_ADDR(PORTB), PB5
-  
-   ; LDI R16,0b11111111		//carrega R16 com o valor 0xFF
-    ;OUT DDRB,R16
-
-    ; Main loop
+   ; configurando pinos de entrada e saída
+   cbi _SFR_IO_ADDR(DDRD), PD7
+   sbi _SFR_IO_ADDR(PORTD), PD7
+   sbi _SFR_IO_ADDR(PORTB), PB5
+ 
+   ; Main loop
 loop:
-    sbis _SFR_IO_ADDR(PORTD),PD7    ; LED on
-    rjmp is_zero
-    sbi _SFR_IO_ADDR(PORTB), PB5     ; LED on
-    rjmp continue
+   sbis _SFR_IO_ADDR(PIND),PD7    ; LED on
+   rjmp is_zero
+   sbi _SFR_IO_ADDR(PORTB), PB5     ; LED on
+   rjmp continue
 is_zero:
-    cbi _SFR_IO_ADDR(PORTB),PB5     ; LED on
+   cbi _SFR_IO_ADDR(PORTB),PB5     ; LED on
 continue:
-    rjmp loop
+   rjmp loop
 
  ```    
  
