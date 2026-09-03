@@ -11,3 +11,8 @@
 <BR><img src=imagens/7segmentos5.gif>
 <Br>Vista do componente
 <img src=https://www.sta-eletronica.com.br/resources/artigos/funcionamentodeumdisplayde7segmentoscomoarduino3.jpg width=300>
+
+
+# Simulação
+
+<a href=https://wokwi.com/projects/381660016642918401>Simulação display 7 segmentos (wokwi)
