@@ -9,7 +9,7 @@
 ; Prof. Marcos Chaves
 
 ;====================================================================
-;DEFINIÇÕES DA PORTAS E FLAGS
+;DEFINIÃ‡Ã•ES DA PORTAS E FLAGS
 ;===============================================================================
 ;FLAG 
 
@@ -36,7 +36,7 @@
 .EQU DIG3  = 0X03D1            ;DIGITO 2
 .EQU DIG4  = 0X03D0            ;DIGITO 2
 
-.equ DISPLAY  = PORTD	//PORTD é onde está conectado o Display (seg a = LSB)
+.equ DISPLAY  = PORTD	//PORTD Ã© onde estÃ¡ conectado o Display (seg a = LSB)
 
 ;====================================================================
 ; VARIABLES
@@ -63,7 +63,7 @@ Start:
       ; Write your code here
 	LDI  AUX,0xFF	    
 	OUT  DDRB,AUX  	//habilita o pull-up do PB0 (demais pinos em 1)
-	OUT  DDRD, AUX    	//PORTD como saída
+	OUT  DDRD, AUX    	//PORTD como saÃ­da
 	OUT  DDRC,AUX   	//desliga o display
 
 ; 
@@ -73,7 +73,7 @@ Start:
 
 ;
 
-  ldi r16,0b00000000  ;  ativa pinos 0C0A E 0C0B com mudança na igualdade, operacao TC0 modo NORMAL
+  ldi r16,0b00000000  ;  ativa pinos 0C0A E 0C0B com mudanÃ§a na igualdade, operacao TC0 modo NORMAL
 	out TCCR0A,r16
 	
 	/* TCCR0A  Registrador de controle A do TC0  
@@ -108,9 +108,9 @@ Start:
 	/* TIMSK0 Interruptor de mascara do contador TC0
 	- - - - - 0CIE0B 0CIE0A TOIE0
 	7 6 5 4 3   2      1      0
-	0CIE0B ativa a interrupção na igualdade de comparação 0CR0B
-	0CIE0A ativa a interrupção na igualdade de comparação 0CR0A
-	TOIE0  ativa a interrupção de estouro em TOP=FF
+	0CIE0B ativa a interrupÃ§Ã£o na igualdade de comparaÃ§Ã£o 0CR0B
+	0CIE0A ativa a interrupÃ§Ã£o na igualdade de comparaÃ§Ã£o 0CR0A
+	TOIE0  ativa a interrupÃ§Ã£o de estouro em TOP=FF
 
 	*/
 
@@ -267,31 +267,31 @@ TIM0_OV:
 exibir_display0:
      clr numero_digito_exibir  
 	 LDS   aux,DIG0
-	 RCALL Decodifica	//chama sub-rotina de decodificação	  para display 7 segmentos
+	 RCALL Decodifica	//chama sub-rotina de decodificaÃ§Ã£o	  para display 7 segmentos
 	 cbi PORTC,0
 	 reti	
 
 exibir_display1:
 	 LDS   aux,DIG1
-	 RCALL Decodifica	//chama sub-rotina de decodificação	  para display 7 segmentos
+	 RCALL Decodifica	//chama sub-rotina de decodificaÃ§Ã£o	  para display 7 segmentos
 	 cbi PORTC,1
 	 reti	
 
 exibir_display2:
 	 LDS   aux,DIG2
-	 RCALL Decodifica	//chama sub-rotina de decodificação	  para display 7 segmentos
+	 RCALL Decodifica	//chama sub-rotina de decodificaÃ§Ã£o	  para display 7 segmentos
 	 cbi PORTC,2
 	 reti	
 
 exibir_display3:
 	 LDS   aux,DIG3
-	 RCALL Decodifica	//chama sub-rotina de decodificação	  para display 7 segmentos
+	 RCALL Decodifica	//chama sub-rotina de decodificaÃ§Ã£o	  para display 7 segmentos
 	 cbi PORTC,3
 	 reti
 
 exibir_display4:
 	 LDS   aux,DIG4
-	 RCALL Decodifica	//chama sub-rotina de decodificação	  para display 7 segmentos
+	 RCALL Decodifica	//chama sub-rotina de decodificaÃ§Ã£o	  para display 7 segmentos
 	 cbi PORTC,4
 	 reti
 
@@ -307,16 +307,7 @@ TIM1_OVERFLOW:
 evento_1seg:   ; eventos a cada 1 segundo
       
          inc segundos
-		      inc segundos
-			       inc segundos
-				        inc segundos
-						    inc segundos
-		      inc segundos
-			       inc segundos
-				        inc segundos
-				inc segundos
-				        inc segundos
-        
+comparasegundos:        
          ldi aux,60
          cp segundos,aux
          breq aumenta_minutos
@@ -353,19 +344,19 @@ separa_numeros:
 //------------------------------------------------------------------------------------
 Decodifica:
  
-	LDI  ZH,HIGH(Tabela<<1)	//carrega o endereço da tabela no registrador Z, de 16 bits (trabalha como um ponteiro)
-	LDI  ZL,LOW(Tabela<<1) 	//deslocando a esquerda todos os bits, pois o bit 0 é para a seleção do byte alto ou baixo no end. de memória
-	ADD  ZL,AUX 	   		//soma posição de memória correspondente ao nr. a apresentar na parte baixa do endereço
-	BRCC le_tab           	//se houve Carry, incrementa parte alta do endereço, senão lê diretamente a memória
+	LDI  ZH,HIGH(Tabela<<1)	//carrega o endereÃ§o da tabela no registrador Z, de 16 bits (trabalha como um ponteiro)
+	LDI  ZL,LOW(Tabela<<1) 	//deslocando a esquerda todos os bits, pois o bit 0 Ã© para a seleÃ§Ã£o do byte alto ou baixo no end. de memÃ³ria
+	ADD  ZL,AUX 	   		//soma posiÃ§Ã£o de memÃ³ria correspondente ao nr. a apresentar na parte baixa do endereÃ§o
+	BRCC le_tab           	//se houve Carry, incrementa parte alta do endereÃ§o, senÃ£o lÃª diretamente a memÃ³ria
 	INC  ZH    
       
 le_tab:		
-	LPM  R0,Z            	//lê valor em R0
+	LPM  R0,Z            	//lÃª valor em R0
 	OUT  DISPLAY,R0   		//mostra no display
 	RET
 //------------------------------------------------------------------------------------
-//	Tabela p/ decodificar o display: como cada endereço da memória flash é de 16 bits, 
-//	acessa-se a parte baixa e alta na decodificação
+//	Tabela p/ decodificar o display: como cada endereÃ§o da memÃ³ria flash Ã© de 16 bits, 
+//	acessa-se a parte baixa e alta na decodificaÃ§Ã£o
 //------------------------------------------------------------------------------------
 Tabela: .dw 0x7940, 0x3024, 0x1219, 0x7802, 0x1800, 0x0308, 0x2146, 0x0E06
 //             1 0     3 2     5 4     7 6     9 8     B A     D C     F E  
