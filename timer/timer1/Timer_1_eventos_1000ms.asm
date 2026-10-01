@@ -149,11 +149,12 @@ Start:
 
 Loop:
    
- ;   imprimir hora:minutos:segundos
-	ldi lcd_col,0 ;define coluna0
-	rcall lcd_lin1_col ;define linha 1
-	  
-   rjmp  Loop ; fim loop 
+     ;   imprimir hora:minutos:segundos
+	ldi lcd_col,7       ;define coluna7
+	rcall lcd_lin1_col     ;define linha 1
+	mov lcd_number,segundos
+	rcall lcd_write_number  
+    rjmp  Loop         ; fim loop 
 
 
 ;====================================================================
