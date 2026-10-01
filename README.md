@@ -23,10 +23,11 @@
 - 26/11 - <b>Prova 2</b>
 - 03/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
 
+### Referências para projeto e prova:
+
+<a href=https://github.com/mchavesferreira/ctdmicr/tree/main/ASSEMBLY> Acesse aqui vários exemplos de rotinas e exemplo de prova</a>
 
 
- Help:  
- 
  https://chatgpt.com/g/g-TFvuISQH5-professor-dos-embarcados
  
 ## Utilizando Atmega328P para a compreensão e funcionamento de microprocessadores e microcontroladores em geral utilizando a linguagem Assembly.
