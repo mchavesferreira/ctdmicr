@@ -38,6 +38,8 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registra
 <BR>
 
 
+# Timer 1
 
+<a href=https://github.com/mchavesferreira/ctdmicr/tree/main/timer/timer1>Saiba mais...</a>
 
 
