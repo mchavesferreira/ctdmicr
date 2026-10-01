@@ -15,6 +15,9 @@ paginas 74
 ### Guia de registradores:
 https://github.com/mchavesferreira/ctdmicr/blob/main/timer/TIMER_0_guia_registradores.docx
 
+## Pinos OCxA e OCxB
+<img width="1131" height="674" alt="image" src="https://github.com/user-attachments/assets/2d498726-e8df-4ab2-929a-db630baff2df" />
+
 ## Modos para o timer 0
 
 <img src=../imagens/modonormal.png>
