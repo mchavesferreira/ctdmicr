@@ -56,7 +56,7 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/timer/timer1/Timer_1_evento
 
 
 
-### Utilize timer 1 no lugar do delay
+## Utilize timer 1 no lugar do delay
 
 Substitua delay_seconds por uma contagem de tempo. No método com atraso, liga-se o motor e chama a rotina de atraso de CPU.
 
@@ -73,10 +73,10 @@ Lavar1
    │   CPU conta o tempo
    │
    └── Desliga motor
-   
+```   
 Utilizando Timer 1 Overflow.  Configuramos o timer 1 para tratar a interrupção a cada 1000ms. No programa principal inicia r2 com o tempo desejado. Então na rotina de desvio testa se r2>0 e decrementa.
 
-No programa principal verifica se r2=0, se sim, é por que passou o tempo desejado entao desliga o motor.
+No programa principal verifica se r2=0, se sim, é por que passou o tempo desejado então desliga o motor.
 
 
  ```ruby  
