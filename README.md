@@ -460,7 +460,7 @@ https://github.com/mchavesferreira/ctdmicr/tree/main/codigos_smie2023
 
 - Documentar em relatório simples descrendo o projeto, procurem relacionar o uso dos requisitos com aplicações reais.
 - Complexidade e criatividade serão ponderadas.  
-- Prazo Trabalho prático: 21/10/2025 (Peso do trabalho na nota final: 20%)
+- Prazo Trabalho prático: 22/10/2026 (Peso do trabalho na nota final: 20%)
 <BR>
 
 <BR>Peso das provas escritas: P1 30%  e  P2 30% 
