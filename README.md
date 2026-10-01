@@ -13,7 +13,7 @@
 - 10/09 -  Projeto Microcontrolado: [Maquina de Lavar](#Maquina-de-Lavar)
 - 17/09 -  Interrupções, Temporização modos [Interrupção Externa](#Interrupção)
 - 24/09 -  Temporização:  Timer0 - [Temporização](#Temporização)<BR>
-- 01/10 - Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/mice/tree/main/interrupcao>clique aqui</a>
+- 01/10 -  Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/timer/timer1>clique aqui</a>
 - 08/10  - <b>Avaliação Escrita/Projeto 1</b>
 - 22/10 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
 - 29/10 -  SNCT
