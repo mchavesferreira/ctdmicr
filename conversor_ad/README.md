@@ -114,6 +114,8 @@ Loop:
 
 ## Rotinas de comparação de valores
 
+Set instruções assembly: https://github.com/mchavesferreira/ctdmicr/blob/main/ASSEMBLY/anexo%20A%20-%20Instru%C3%A7oes%20Assembly%20AVR.pdf
+
 Desvios por comparação > < ou => 
 
 https://github.com/mchavesferreira/ctdmicr/blob/main/conversor_ad/faixas.asm
@@ -126,7 +128,7 @@ https://github.com/mchavesferreira/ctdmicr/blob/main/conversor_ad/faixas.asm
  brlo r11_menor   ; menor
  brne r11_naoigual
  brge r11_maior_igual
- brni negativo
+ brmi negativo
  brpl positivo
  ```
 
