@@ -211,6 +211,9 @@ O SREG é um registrador de 8 bits, onde cada bit representa um flag específico
 
 Esses flags no **SREG** permitem que instruções de desvio condicional (`breq`, `brne`, `brlo`, `brge`, etc.) realizem saltos baseados nos resultados das comparações.
 
+## Simulador de Flags SREG
+
+https://mchavesferreira.github.io/simulador_cp_sreg_atmega328p.html
   
 
 ## Exemplo conversor AD para um sensor de temperatura
