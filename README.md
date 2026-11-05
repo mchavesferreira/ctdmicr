@@ -14,11 +14,11 @@
 - 17/09 -  Interrupções, Temporização modos [Interrupção Externa](#Interrupção)
 - 24/09 -  Temporização:  Timer0 - [Temporização](#Temporização)<BR>
 - 01/10 -  Introdução e prática com timer 1  <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/timer/timer1>clique aqui</a>
-- 08/10  - <b>Avaliação Escrita/Projeto 1</b>
-- 22/10 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
+- 08/10  - <b>Avaliação Escrita</b>
+- 22/10 -  Apresentação do projeto 1
 - 29/10 -  SNCT
-- 05/11 - Multiplexação de display  [Multiplexação de display](#Multiplexação-de-display)
-- 12/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
+- 05/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/conversor_ad>Conversor AD</a>
+- 12/11 - <a href=https://github.com/mchavesferreira/mice/tree/main/serial>Comunicação UART/Serial</a>
 - 19/11 - <a href=https://github.com/mchavesferreira/mice/blob/main/eeprom/README.MD>Memória EEPROM</a> (prática Timer, Uart, Conversor AD, eeprom, lcd, botões)
 - 26/11 - <b>Prova 2</b>
 - 03/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
