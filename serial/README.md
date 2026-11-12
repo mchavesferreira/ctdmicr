@@ -176,7 +176,7 @@ Start:
     rjmp Start
 ```  
 
-Biblioteca: https://github.com/mchavesferreira/mice/blob/main/serial/include%20%22lib328Pv02.inc
+Pratique:  https://github.com/mchavesferreira/ctdmicr/tree/main/serial/print_ifsp
   
 ## Rotina para separação de caracteres em LCD ou em comunicações seriais
   
@@ -322,7 +322,7 @@ menos:
 	rjmp Loop
 ```
 
-
+Pratique:  https://github.com/mchavesferreira/ctdmicr/tree/main/serial/pwm_serial
 
 ## Rotina para Conversão de dados
 
