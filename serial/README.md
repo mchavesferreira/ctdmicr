@@ -156,10 +156,12 @@ usart_receive:
 # Exemplo enviando a palavra IFSP utilizando a biblioteca
 
 ```ruby
-.include "lib328Pv02.inc"
-     
-	rcall  usart_init ; configura a comunicacao serial em 9600 bps
+    rjmp  Start
 
+.include "lib328Pv02.inc"
+Start:
+      ; Write your code here
+	rcall  usart_init ; configura a comunicação serial em 36¨00 bps
 	ldi transmit_caracter,'I'	; carrega o caracter
 	rcall usart_transmit	; chama a rotina para transmitir o caracter com a USART	
 	ldi transmit_caracter,'F'
@@ -168,6 +170,10 @@ usart_receive:
 	rcall usart_transmit
 	ldi transmit_caracter,'P'
 	rcall usart_transmit
+	ldi delay_time,2
+    rcall delay_seconds
+
+    rjmp Start
 ```  
 
 Biblioteca: https://github.com/mchavesferreira/mice/blob/main/serial/include%20%22lib328Pv02.inc
