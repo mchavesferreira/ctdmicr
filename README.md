@@ -475,8 +475,7 @@ Utilizar o projeto 1 acrescentando outros periféricos e recursos.
 - Realizar leitura analógica (conversor AD)
 - utilizar potênciometros como entrada analógica, 
 - Imprimir na UART (serial) as etapas e "status" de funcionamento
-- Registrar ajustes em EEPROM
-- Utilizar multiplexação de pinos 
+- Registrar e recuperar um ajuste em EEPROM
 
 Referências:
 [1] Atmega 328P 8-bit AVR Microcontroller with 32K Bytes In-System Programmable Flash - Datasheet
