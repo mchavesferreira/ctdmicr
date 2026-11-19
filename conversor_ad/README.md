@@ -12,7 +12,7 @@ referência:   https://github.com/mchavesferreira/mice/blob/main/conversor_ad/ca
  ; ### Sub-rotina ADC com 8 bits => LSB = Vref/(2^n-1) = 5/255 =~ 20mV => 0b00000001 =~ 20mV ###
 .def adc_value = r14
 analog_read:
-	ldi r30,0b00100000
+	ldi r30,0b01100000   ; AVCC, ADLAR=1, ADC0  referencia 5V alimentacao
 	sts ADMUX,r30
 	ldi r30,0b11000111
 	sts ADCSRA,r30
@@ -28,8 +28,8 @@ loop_ad:
 	
  ```ruby
 analog_read:
-    ldi r30, 0b00100000          ; Configura o canal analógico e a referência de tensão
-                                 ; Carrega 0b00100000 em r30:
+    ldi r30, 0b01100000          ; Configura o canal analógico e a referência de tensão
+                                 ; Carrega 0 em r30:
                                  ; - Bit 6: REFS0 = 1, seleciona a referência de tensão como AVcc
                                  ; - Bits 3-0: MUX[3:0] = 0000, seleciona o canal ADC0
     sts ADMUX, r30               ; Armazena o valor em ADMUX para configurar o ADC
@@ -71,7 +71,7 @@ https://github.com/mchavesferreira/mice/tree/main/conversor_ad/ad_assembly
 ;====================================================================
 .include "lib328Pv02.inc"
 Start:
-      ; Write your code here
+   ; Write your code here
 	rcall lcd_init	; inicializa o LCD (coluna 0, linha 0)		 
 	rcall lcd_clear	;	
 	
