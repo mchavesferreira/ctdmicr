@@ -23,6 +23,14 @@
 - 26/11 - <b>Prova 2</b>
 - 03/12 - [PROJETO](#PROJETO) Apresentação FINAL, Projeto 2 da disciplina 
 
+# Programando ASSEMBLY para o Atmega328P com blocos
+
+Acesse: https://mchavesferreira.github.io/blocklyavr
+
+## Simulador SREG
+
+https://mchavesferreira.github.io/simulador_cp_sreg_atmega328p.html
+
 ### Referências para projeto e prova:
 
 <a href=https://github.com/mchavesferreira/ctdmicr/tree/main/ASSEMBLY> Acesse aqui vários exemplos de rotinas e exemplo de prova</a>
